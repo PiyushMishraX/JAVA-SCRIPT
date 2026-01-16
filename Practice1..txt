@@ -1,0 +1,8 @@
+user alert
+Display your name PopUp
+math
+75-25
+3+3-5
+facbook page to display "I am Leaning JS"
+
+ALL IN CONSOLE
