@@ -13,8 +13,8 @@ const a =12;
 
 var a; // initialization
 var a=12; // declarztion
-let a;
-let a = 12;
+let a; // initialization
+let a = 12; // declaration
 // const a; no
 const a =12;
 
