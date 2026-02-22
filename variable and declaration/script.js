@@ -27,6 +27,9 @@ age = 30; // ok
 // let age = 40; //  Error (same block)
 
 
+const PI = 3.14;
+// PI = 3.14159; // Error
+
 
 
 
