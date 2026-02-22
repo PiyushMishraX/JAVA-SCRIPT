@@ -22,7 +22,9 @@ const a =12;
 var score = 10;
 var score = 20;
 
-
+let age = 25;
+age = 30; // ok
+// let age = 40; //  Error (same block)
 
 
 
