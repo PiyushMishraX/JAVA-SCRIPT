@@ -30,7 +30,9 @@ age = 30; // ok
 const PI = 3.14;
 // PI = 3.14159; // Error
 
-
+const student = { name: "Riya" };
+student.name = "Priya"; // OK
+student = {}; // Error
 
 
 
