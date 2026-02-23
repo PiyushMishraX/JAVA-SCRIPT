@@ -43,5 +43,7 @@ console.log(x); //  5
 console.log(y); //  ReferenceError
 console.log(z); //  ReferenceError
 
-
+// hoisting
+console.log(a); // undefined
+var a = 10;
 
