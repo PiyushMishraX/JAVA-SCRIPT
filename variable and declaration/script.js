@@ -19,34 +19,34 @@ let a = 12; // declaration
 const a =12;
 
 
-var score = 10;
-var score = 20;
+// var score = 10;
+// var score = 20;
 
-let age = 25;
-age = 30; // ok
-// let age = 40; //  Error (same block)
+// let age = 25;
+// age = 30; // ok
+// // let age = 40; //  Error (same block)
 
 
-const PI = 3.14;
-// PI = 3.14159; // Error
+// const PI = 3.14;
+// // PI = 3.14159; // Error
 
-const student = { name: "Riya" };
-student.name = "Priya"; // OK
-student = {}; // Error
+// const student = { name: "Riya" };
+// student.name = "Priya"; // OK
+// student = {}; // Error
 
-{
-var x = 5;
-let y = 10;
-const z = 15;
-}
-console.log(x); //  5
-console.log(y); //  ReferenceError
-console.log(z); //  ReferenceError
+// {
+// var x = 5;
+// let y = 10;
+// const z = 15;
+// }
+// console.log(x); //  5
+// console.log(y); //  ReferenceError
+// console.log(z); //  ReferenceError
 
-// hoisting
-console.log(a); // undefined
-var a = 10;
+// // hoisting
+// console.log(a); // undefined
+// var a = 10;
 
-console.log(b); // ReferenceError
-let b = 20;
+// console.log(b); // ReferenceError
+// let b = 20;
 
