@@ -62,6 +62,6 @@ const a =12;
 // undefined + 1 // Na
 
 
-if ("0") {
-console.log("Runs");  // "0" is a non-empty string = truthy
-}
+// if ("0") {
+// console.log("Runs");  // "0" is a non-empty string = truthy
+// }
