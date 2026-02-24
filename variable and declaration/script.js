@@ -61,3 +61,7 @@ const a =12;
 // // 1
 // undefined + 1 // Na
 
+
+if ("0") {
+console.log("Runs");  // "0" is a non-empty string = truthy
+}
