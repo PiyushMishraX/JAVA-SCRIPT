@@ -50,3 +50,13 @@ const a =12;
 // console.log(b); // ReferenceError
 // let b = 20;
 
+// type coercion 
+"5" + 1     
+"5" - 1     
+true + 1    
+null + 1    
+// "51"   → number converted to string
+// 4      → string converted to number
+// 2
+// 1
+undefined + 1 // Na
