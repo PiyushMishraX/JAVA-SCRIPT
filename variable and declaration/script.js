@@ -85,7 +85,7 @@ const a =12;
 // typeof function(){}     
 // // "function"
 
-console.log(null + 1);      
-console.log("5" + 3);       
-console.log("5" - 3);       
-console.log(true + false);
+// console.log(null + 1);      
+// console.log("5" + 3);       
+// console.log("5" - 3);       
+// console.log(true + false);
