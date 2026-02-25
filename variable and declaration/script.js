@@ -66,6 +66,8 @@ const a =12;
 // console.log("Runs");  // "0" is a non-empty string = truthy
 // }
 
+
+
 // typeof "Sheryians"      
 // typeof 99               
 // typeof true             
@@ -82,3 +84,8 @@ const a =12;
 // // "object"
 // typeof function(){}     
 // // "function"
+
+console.log(null + 1);      
+console.log("5" + 3);       
+console.log("5" - 3);       
+console.log(true + false);
