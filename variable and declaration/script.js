@@ -65,3 +65,20 @@ const a =12;
 // if ("0") {
 // console.log("Runs");  // "0" is a non-empty string = truthy
 // }
+
+typeof "Sheryians"      
+typeof 99               
+typeof true             
+typeof undefined        
+typeof null             
+typeof []               
+typeof {}               
+// "string"
+// "number"
+// "boolean"
+// "undefined"
+// "object" ← known bug
+// "object"
+// "object"
+typeof function(){}     
+// "function"
