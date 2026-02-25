@@ -89,3 +89,7 @@ const a =12;
 // console.log("5" + 3);       
 // console.log("5" - 3);       
 // console.log(true + false);
+
+console.log(typeof []);
+console.log(typeof null);
+console.log(typeof 123n);
