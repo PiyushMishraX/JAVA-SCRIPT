@@ -101,3 +101,9 @@ const a =12;
 
 // console.log(5 == "5");   
 // console.log(5 === "5"); 
+
+
+let a = 10, b = 3;
+console.log(a + b);   // 13
+console.log(a % b);  // 1
+console.log(2 ** 3);  // 8
