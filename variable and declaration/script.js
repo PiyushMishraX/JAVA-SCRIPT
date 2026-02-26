@@ -98,3 +98,6 @@ const a =12;
 // console.log(Boolean("0"));   // truthy   
 // console.log(Boolean([]));    // truthy
 // console.log(Boolean(undefined));// falsy
+
+console.log(5 == "5");   
+console.log(5 === "5"); 
