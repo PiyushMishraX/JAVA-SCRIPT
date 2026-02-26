@@ -93,3 +93,8 @@ const a =12;
 // console.log(typeof []);
 // console.log(typeof null);
 // console.log(typeof 123n);
+
+console.log(Boolean(0));    // falsy    
+console.log(Boolean("0"));   // truthy   
+console.log(Boolean([]));    // truthy
+console.log(Boolean(undefined));// falsy
