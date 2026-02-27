@@ -113,3 +113,8 @@ const a =12;
 // += // a += b  => a = a + b
 // -=// a -= b
 // *=, /=, %=
+
+
+let score = 5;
+score += 2;     
+// score = 7
