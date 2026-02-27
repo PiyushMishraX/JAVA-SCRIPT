@@ -119,8 +119,8 @@ const a =12;
 // score += 2;     
 // // score = 7
 
-==    // equal (loose)  
-===     // equal (strict – value + type)
-!=      // not equal (loose)
-!==     // not equal (strict)
-> < >= <=
+// ==    // equal (loose)  
+// ===     // equal (strict – value + type)
+// !=      // not equal (loose)
+// !==     // not equal (strict)
+// > < >= <=
