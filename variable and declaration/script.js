@@ -115,6 +115,6 @@ const a =12;
 // *=, /=, %=
 
 
-let score = 5;
-score += 2;     
-// score = 7
+// let score = 5;
+// score += 2;     
+// // score = 7
