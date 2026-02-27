@@ -118,3 +118,9 @@ const a =12;
 // let score = 5;
 // score += 2;     
 // // score = 7
+
+==    // equal (loose)  
+===     // equal (strict – value + type)
+!=      // not equal (loose)
+!==     // not equal (strict)
+> < >= <=
