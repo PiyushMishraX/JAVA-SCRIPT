@@ -107,3 +107,10 @@ const a =12;
 // console.log(a + b);   // 13
 // console.log(a % b);  // 1
 // console.log(2 ** 3);  // 8
+
+=       
++=      -=      
+// assigns value
+// a += b  => a = a + b
+// a -= b
+*=, /=, %=
