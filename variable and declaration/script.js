@@ -125,7 +125,7 @@ const a =12;
 // !==     // not equal (strict)
 // > < >= <=
 
-&& // AND – both must be true
-|| // OR – either one true
-! // NOT – negates truthiness
+// && // AND – both must be true
+// || // OR – either one true
+// ! // NOT – negates truthiness
 
