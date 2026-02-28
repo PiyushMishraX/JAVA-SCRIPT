@@ -134,9 +134,9 @@ const a =12;
 //  console.log("Allowed");
 // }
 
-+ // tries to convert to number
-- // negates
-++ // increment
--- // decrement
-typeof // returns data type
+// + // tries to convert to number
+// - // negates
+// ++ // increment
+// -- // decrement
+// typeof // returns data type
 
