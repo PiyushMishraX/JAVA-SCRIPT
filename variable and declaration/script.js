@@ -129,7 +129,7 @@ const a =12;
 // || // OR – either one true
 // ! // NOT – negates truthiness
 
-let age = 20, hasID = true;
-if (age >= 18 && hasID) {
- console.log("Allowed");
-}
+// let age = 20, hasID = true;
+// if (age >= 18 && hasID) {
+//  console.log("Allowed");
+// }
