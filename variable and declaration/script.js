@@ -133,3 +133,10 @@ const a =12;
 // if (age >= 18 && hasID) {
 //  console.log("Allowed");
 // }
+
++ // tries to convert to number
+- // negates
+++ // increment
+-- // decrement
+typeof // returns data type
+
