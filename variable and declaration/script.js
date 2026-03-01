@@ -143,4 +143,6 @@ const a =12;
 // let x = "5";
 // console.log(+x); // 5 (converted to number)
 
-
+//ternary operator
+let score = 80;
+let grade = score > 50 ? "Pass" : "Fail";
