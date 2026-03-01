@@ -154,3 +154,9 @@ const a =12;
 // typeof [] // "object"
 // typeof {} // "object"
 // typeof function(){} // "function"
+
+
+console.log("10" + 1);
+console.log("10" - 1);
+console.log(true + false);
+console.log(!!"Sheryians");
