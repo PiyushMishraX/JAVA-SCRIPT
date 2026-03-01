@@ -144,5 +144,13 @@ const a =12;
 // console.log(+x); // 5 (converted to number)
 
 //ternary operator
-let score = 80;
-let grade = score > 50 ? "Pass" : "Fail";
+// let score = 80;
+// let grade = score > 50 ? "Pass" : "Fail";
+
+// Tyoe of
+typeof 123 // "number"
+typeof "hi" // "string"
+typeof null // "object" (JS bug)
+typeof [] // "object"
+typeof {} // "object"
+typeof function(){} // "function"
