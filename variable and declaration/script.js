@@ -140,7 +140,7 @@ const a =12;
 // -- // decrement
 // typeof // returns data type
 
-let x = "5";
-console.log(+x); // 5 (converted to number)
+// let x = "5";
+// console.log(+x); // 5 (converted to number)
 
 
