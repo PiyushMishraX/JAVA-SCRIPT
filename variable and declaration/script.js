@@ -160,3 +160,7 @@ const a =12;
 // console.log("10" - 1);
 // console.log(true + false);
 // console.log(!!"Sheryians");
+
+let str = "42";
+let num = +str;
+console.log(num);  // 42
