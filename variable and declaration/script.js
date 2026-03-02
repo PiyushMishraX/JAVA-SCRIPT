@@ -168,8 +168,8 @@ const a =12;
 // let age = 17;
 // let msg = age >= 18 ? "Adult" : "Minor";
 
-// calculator
-// Using switch + arithmetic operators
-function calc(a, b, operator) {
-// +, -, *, /
-}
+// // calculator
+// // Using switch + arithmetic operators
+// function calc(a, b, operator) {
+// // +, -, *, /
+// }
