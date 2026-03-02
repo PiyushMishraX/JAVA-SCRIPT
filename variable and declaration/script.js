@@ -165,5 +165,5 @@ const a =12;
 // let num = +str;
 // console.log(num);  // 42
 
-let age = 17;
-let msg = age >= 18 ? "Adult" : "Minor";
+// let age = 17;
+// let msg = age >= 18 ? "Adult" : "Minor";
