@@ -173,3 +173,6 @@ const a =12;
 // function calc(a, b, operator) {
 // // +, -, *, /
 // }
+
+let marks = 82;
+// Print "Excellent", "Good", "Average", or "Fail" based on ranges
