@@ -174,5 +174,5 @@ const a =12;
 // // +, -, *, /
 // }
 
-let marks = 82;
-// Print "Excellent", "Good", "Average", or "Fail" based on ranges
+// let marks = 82;
+// // Print "Excellent", "Good", "Average", or "Fail" based on ranges
