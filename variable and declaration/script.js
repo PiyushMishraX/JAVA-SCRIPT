@@ -177,10 +177,10 @@ const a =12;
 // let marks = 82;
 // // Print "Excellent", "Good", "Average", or "Fail" based on ranges
 
-if (condition) {
-// runs if condition is true
-} else if (anotherCondition) {
-// runs if first was false, second is true
-} else {
-// runs if none are true
-}
+// if (condition) {
+// // runs if condition is true
+// } else if (anotherCondition) {
+// // runs if first was false, second is true
+// } else {
+// // runs if none are true
+// }
