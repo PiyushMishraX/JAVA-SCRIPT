@@ -206,14 +206,14 @@ const a =12;
 // // fallback
 // }
 
-let fruit = "apple";
-switch (fruit) {
-case "banana":
-console.log("Yellow");
-break;
-case "apple":
-console.log("Red");
-break;
-default:
-console.log("Unknown");
-}
+// let fruit = "apple";
+// switch (fruit) {
+// case "banana":
+// console.log("Yellow");
+// break;
+// case "apple":
+// console.log("Red");
+// break;
+// default:
+// console.log("Unknown");
+// }
