@@ -194,3 +194,14 @@ const a =12;
 // } else {
 // console.log("C");
 // }
+
+switch (value) {
+case value1:
+// code
+break;
+case value2:
+// code
+break;
+default:
+// fallback
+}
