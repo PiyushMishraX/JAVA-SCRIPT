@@ -205,3 +205,15 @@ const a =12;
 // default:
 // // fallback
 // }
+
+let fruit = "apple";
+switch (fruit) {
+case "banana":
+console.log("Yellow");
+break;
+case "apple":
+console.log("Red");
+break;
+default:
+console.log("Unknown");
+}
