@@ -195,13 +195,13 @@ const a =12;
 // console.log("C");
 // }
 
-switch (value) {
-case value1:
-// code
-break;
-case value2:
-// code
-break;
-default:
-// fallback
-}
+// switch (value) {
+// case value1:
+// // code
+// break;
+// case value2:
+// // code
+// break;
+// default:
+// // fallback
+// }
