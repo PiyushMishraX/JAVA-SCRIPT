@@ -217,3 +217,9 @@ const a =12;
 // default:
 // console.log("Unknown");
 // }
+
+
+function checkAge(age) {
+ if (age < 18) return "Denied";
+ return "Allowed";
+}
