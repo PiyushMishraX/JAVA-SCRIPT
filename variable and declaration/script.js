@@ -223,3 +223,7 @@ const a =12;
 //  if (age < 18) return "Denied";
 //  return "Allowed";
 // }
+
+for (let i = 0; i < 5; i++) {
+ console.log(i);
+}
