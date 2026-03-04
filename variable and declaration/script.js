@@ -219,7 +219,7 @@ const a =12;
 // }
 
 
-function checkAge(age) {
- if (age < 18) return "Denied";
- return "Allowed";
-}
+// function checkAge(age) {
+//  if (age < 18) return "Denied";
+//  return "Allowed";
+// }
