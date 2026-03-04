@@ -224,6 +224,6 @@ const a =12;
 //  return "Allowed";
 // }
 
-for (let i = 0; i < 5; i++) {
- console.log(i);
-}
+// for (let i = 0; i < 5; i++) {
+//  console.log(i);
+// }
