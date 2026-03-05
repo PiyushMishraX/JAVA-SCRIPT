@@ -250,7 +250,7 @@ const a =12;
 //  console.log(char);
 // }
 
-let nums = [10, 20, 30];
-nums.forEach((num) => {
- console.log(num);
-});
+// let nums = [10, 20, 30];
+// nums.forEach((num) => {
+//  console.log(num);
+// });
