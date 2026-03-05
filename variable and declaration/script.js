@@ -244,3 +244,8 @@ const a =12;
 //  if (i === 3) continue;
 //  console.log(i); // Skips 3
 // }
+
+
+for (let char of "Sheryians") {
+ console.log(char);
+}
