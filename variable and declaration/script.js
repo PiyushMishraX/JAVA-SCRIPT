@@ -255,7 +255,7 @@ const a =12;
 //  console.log(num);
 // });
 
-let user = { name: "Harsh", age: 26 };
-for (let key in user) {
- console.log(key, user[key]);
-}
+// let user = { name: "Harsh", age: 26 };
+// for (let key in user) {
+//  console.log(key, user[key]);
+// }
