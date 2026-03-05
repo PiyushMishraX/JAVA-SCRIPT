@@ -246,6 +246,6 @@ const a =12;
 // }
 
 
-for (let char of "Sheryians") {
- console.log(char);
-}
+// for (let char of "Sheryians") {
+//  console.log(char);
+// }
