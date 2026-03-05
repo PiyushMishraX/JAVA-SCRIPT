@@ -249,3 +249,8 @@ const a =12;
 // for (let char of "Sheryians") {
 //  console.log(char);
 // }
+
+let nums = [10, 20, 30];
+nums.forEach((num) => {
+ console.log(num);
+});
