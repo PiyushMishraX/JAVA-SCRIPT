@@ -282,6 +282,6 @@ const a =12;
 // }
 // greet("Harsh");
 
-const greet = function () {
- console.log("Hello!");
-};
+// const greet = function () {
+//  console.log("Hello!");
+// };
