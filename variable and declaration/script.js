@@ -271,3 +271,8 @@ function greet() {
  console.log("Welcome to Sheryians!");
 }
 greet();
+
+function greet(name) {
+ console.log("Hello " + name);
+}
+greet("Harsh");
