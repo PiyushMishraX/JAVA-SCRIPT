@@ -267,10 +267,10 @@ const a =12;
 // for-in = for object keys
 // while = for unpredictable conditions
 
-function greet() {
- console.log("Welcome to Sheryians!");
-}
-greet();
+// function greet() {
+//  console.log("Welcome to Sheryians!");
+// }
+// greet();
 
 function greet(name) {
  console.log("Hello " + name);
