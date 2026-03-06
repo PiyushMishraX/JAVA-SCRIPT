@@ -259,3 +259,10 @@ const a =12;
 // for (let key in user) {
 //  console.log(key, user[key]);
 // }
+
+// Loops = data processor.
+// Use the right loop for the job:
+// for = best for numbers/indexes
+// for-of = for array values
+// for-in = for object keys
+// while = for unpredictable conditions
