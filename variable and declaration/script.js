@@ -276,3 +276,8 @@ const a =12;
 //  console.log("Hello " + name);
 // }
 // greet("Harsh");
+
+function greet(name) {
+ console.log("Hello " + name);
+}
+greet("Harsh");
