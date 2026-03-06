@@ -266,3 +266,8 @@ const a =12;
 // for-of = for array values
 // for-in = for object keys
 // while = for unpredictable conditions
+
+function greet() {
+ console.log("Welcome to Sheryians!");
+}
+greet();
