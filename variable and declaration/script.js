@@ -281,3 +281,7 @@ const a =12;
 //  console.log("Hello " + name);
 // }
 // greet("Harsh");
+
+const greet = function () {
+ console.log("Hello!");
+};
