@@ -277,7 +277,7 @@ const a =12;
 // }
 // greet("Harsh");
 
-function greet(name) {
- console.log("Hello " + name);
-}
-greet("Harsh");
+// function greet(name) {
+//  console.log("Hello " + name);
+// }
+// greet("Harsh");
