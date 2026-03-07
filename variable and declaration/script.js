@@ -287,47 +287,52 @@ const a =12;
 // };
 
 
-// Arrow Funstion 
-const greet = () => {
- console.log("Hi!");
-};
+// // Arrow Funstion 
+// const greet = () => {
+//  console.log("Hi!");
+// };
 
-function multiply(a = 1, b = 1) {
- return a * b;
-}
+// function multiply(a = 1, b = 1) {
+//  return a * b;
+// }
 
-function sum(...nums) {
- return nums.reduce((acc, val) => acc + val, 0);
-}
+// function sum(...nums) {
+//  return nums.reduce((acc, val) => acc + val, 0);
+// }
 
-let nums = [1, 2, 3];
-console.log(sum(...nums)); // Spread
+// let nums = [1, 2, 3];
+// console.log(sum(...nums)); // Spread
 
-function shout(msg) {
- return msg.toUpperCase();
-}
-function processMessage(fn) {
- console.log(fn("hello"));
-}
-processMessage(shout);
+// function shout(msg) {
+//  return msg.toUpperCase();
+// }
+// function processMessage(fn) {
+//  console.log(fn("hello"));
+// }
+// processMessage(shout);
 
-function createMultiplier(x) {
- return function (y) {
- return x * y;
- };
-}
-let double = createMultiplier(2);
-console.log(double(5)); // 10
+// function createMultiplier(x) {
+//  return function (y) {
+//  return x * y;
+//  };
+// }
+// let double = createMultiplier(2);
+// console.log(double(5)); // 10
 
 
 
-function outer() {
- let count = 0;
- return function () {
- count++;
- console.log(count);
- };
-}
-let counter = outer();
-counter(); // 1
-counter(); // 2
+// function outer() {
+//  let count = 0;
+//  return function () {
+//  count++;
+//  console.log(count);
+//  };
+// }
+// let counter = outer();
+// counter(); // 1
+// counter(); // 2
+
+
+// (function () {
+//  console.log("Runs immediately");
+// })();
