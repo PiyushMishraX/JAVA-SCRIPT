@@ -318,3 +318,16 @@ function createMultiplier(x) {
 }
 let double = createMultiplier(2);
 console.log(double(5)); // 10
+
+
+
+function outer() {
+ let count = 0;
+ return function () {
+ count++;
+ console.log(count);
+ };
+}
+let counter = outer();
+counter(); // 1
+counter(); // 2
