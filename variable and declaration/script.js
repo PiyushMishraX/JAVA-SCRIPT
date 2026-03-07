@@ -295,3 +295,7 @@ const greet = () => {
 function multiply(a = 1, b = 1) {
  return a * b;
 }
+
+function sum(...nums) {
+ return nums.reduce((acc, val) => acc + val, 0);
+}
