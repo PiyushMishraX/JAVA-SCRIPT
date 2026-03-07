@@ -302,3 +302,11 @@ function sum(...nums) {
 
 let nums = [1, 2, 3];
 console.log(sum(...nums)); // Spread
+
+function shout(msg) {
+ return msg.toUpperCase();
+}
+function processMessage(fn) {
+ console.log(fn("hello"));
+}
+processMessage(shout);
