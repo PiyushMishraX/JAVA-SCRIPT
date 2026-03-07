@@ -310,3 +310,11 @@ function processMessage(fn) {
  console.log(fn("hello"));
 }
 processMessage(shout);
+
+function createMultiplier(x) {
+ return function (y) {
+ return x * y;
+ };
+}
+let double = createMultiplier(2);
+console.log(double(5)); // 10
