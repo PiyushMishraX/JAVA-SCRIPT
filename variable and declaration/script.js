@@ -285,3 +285,10 @@ const a =12;
 // const greet = function () {
 //  console.log("Hello!");
 // };
+
+
+// Arrow Funstion 
+const greet = () => {
+ console.log("Hi!");
+};
+
