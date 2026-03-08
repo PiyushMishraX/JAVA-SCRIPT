@@ -337,36 +337,36 @@ const a =12;
 //  console.log("Runs immediately");
 // })();
 
-hello(); // works
-function hello() {
- console.log("Hi");
-}
+// hello(); // works
+// function hello() {
+//  console.log("Hi");
+// }
 
-greet(); // error
-const greet = function () {
- console.log("Hi");
-};
+// greet(); // error
+// const greet = function () {
+//  console.log("Hi");
+// };
 
-// Declarations are hoisted
-// Expressions are not
+// // Declarations are hoisted
+// // Expressions are not
 
-let fruits = ["apple", "banana", "mango"];
+// let fruits = ["apple", "banana", "mango"];
 
-let marks = [90, 85, 78];
-console.log(marks[1]); // 85
-marks[2] = 80; // Update index 2
-
-
-// Modifiers (Change original array)
-let arr = [1, 2, 3, 4];
-arr.push(5); // Add to end
-arr.pop(); // Remove last
-arr.shift(); // Remove first
-arr.unshift(0); // Add to start
-arr.splice(1, 2); // Remove 2 items starting at index 1
-arr.reverse(); // Reverse order
+// let marks = [90, 85, 78];
+// console.log(marks[1]); // 85
+// marks[2] = 80; // Update index 2
 
 
-// Extractors (Don't modify original array)
-let newArr = arr.slice(1, 3); // Copy from index 1 to 2
-arr.sort(); // Lexical sort by default
+// // Modifiers (Change original array)
+// let arr = [1, 2, 3, 4];
+// arr.push(5); // Add to end
+// arr.pop(); // Remove last
+// arr.shift(); // Remove first
+// arr.unshift(0); // Add to start
+// arr.splice(1, 2); // Remove 2 items starting at index 1
+// arr.reverse(); // Reverse order
+
+
+// // Extractors (Don't modify original array)
+// let newArr = arr.slice(1, 3); // Copy from index 1 to 2
+// arr.sort(); // Lexical sort by default
