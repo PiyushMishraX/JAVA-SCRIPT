@@ -341,3 +341,8 @@ hello(); // works
 function hello() {
  console.log("Hi");
 }
+
+greet(); // error
+const greet = function () {
+ console.log("Hi");
+};
