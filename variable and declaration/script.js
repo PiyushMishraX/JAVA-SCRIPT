@@ -346,3 +346,6 @@ greet(); // error
 const greet = function () {
  console.log("Hi");
 };
+
+// Declarations are hoisted
+// Expressions are not
