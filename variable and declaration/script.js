@@ -365,3 +365,8 @@ arr.shift(); // Remove first
 arr.unshift(0); // Add to start
 arr.splice(1, 2); // Remove 2 items starting at index 1
 arr.reverse(); // Reverse order
+
+
+// Extractors (Don't modify original array)
+let newArr = arr.slice(1, 3); // Copy from index 1 to 2
+arr.sort(); // Lexical sort by default
