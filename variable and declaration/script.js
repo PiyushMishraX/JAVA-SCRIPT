@@ -336,3 +336,8 @@ const a =12;
 // (function () {
 //  console.log("Runs immediately");
 // })();
+
+hello(); // works
+function hello() {
+ console.log("Hi");
+}
