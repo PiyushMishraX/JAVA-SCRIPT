@@ -349,3 +349,5 @@ const greet = function () {
 
 // Declarations are hoisted
 // Expressions are not
+
+let fruits = ["apple", "banana", "mango"];
