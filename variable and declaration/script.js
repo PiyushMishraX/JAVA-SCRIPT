@@ -352,4 +352,6 @@ const greet = function () {
 
 let fruits = ["apple", "banana", "mango"];
 
-let fruits = ["apple", "banana", "mango"];
+let marks = [90, 85, 78];
+console.log(marks[1]); // 85
+marks[2] = 80; // Update index 2
