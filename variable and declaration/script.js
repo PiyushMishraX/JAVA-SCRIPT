@@ -351,3 +351,5 @@ const greet = function () {
 // Expressions are not
 
 let fruits = ["apple", "banana", "mango"];
+
+let fruits = ["apple", "banana", "mango"];
