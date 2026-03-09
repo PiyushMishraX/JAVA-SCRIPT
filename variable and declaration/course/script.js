@@ -382,3 +382,7 @@ let even = nums.filter(n => n % 2 === 0);
 let total = nums.reduce((acc, val) => acc + val, 0);
 
 nums.forEach(n => console.log(n));
+
+nums.find(n => n > 2); // First match
+nums.some(n => n > 5); // At least one true
+nums.every(n => n > 0); // All true
