@@ -370,3 +370,8 @@ const a =12;
 // // Extractors (Don't modify original array)
 // let newArr = arr.slice(1, 3); // Copy from index 1 to 2
 // arr.sort(); // Lexical sort by default
+
+
+//Iteration methods 
+let prices = [100, 200, 300];
+let taxed = prices.map(p => p * 1.18);
