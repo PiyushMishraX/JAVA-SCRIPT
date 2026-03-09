@@ -375,3 +375,6 @@ const a =12;
 //Iteration methods 
 let prices = [100, 200, 300];
 let taxed = prices.map(p => p * 1.18);
+
+let nums = [1, 2, 3, 4];
+let even = nums.filter(n => n % 2 === 0);
