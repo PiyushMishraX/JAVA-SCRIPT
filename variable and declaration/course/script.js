@@ -373,19 +373,19 @@ const a =12;
 
 
 //Iteration methods 
-let prices = [100, 200, 300];
-let taxed = prices.map(p => p * 1.18);
+// let prices = [100, 200, 300];
+// let taxed = prices.map(p => p * 1.18);
 
-let nums = [1, 2, 3, 4];
-let even = nums.filter(n => n % 2 === 0);
+// let nums = [1, 2, 3, 4];
+// let even = nums.filter(n => n % 2 === 0);
 
-let total = nums.reduce((acc, val) => acc + val, 0);
+// let total = nums.reduce((acc, val) => acc + val, 0);
 
-nums.forEach(n => console.log(n));
+// nums.forEach(n => console.log(n));
 
-nums.find(n => n > 2); // First match
-nums.some(n => n > 5); // At least one true
-nums.every(n => n > 0); // All true
+// nums.find(n => n > 2); // First match
+// nums.some(n => n > 5); // At least one true
+// nums.every(n => n > 0); // All true
 
-let [first, second] = ["a", "b", "c"];
-let newArr = [...nums, 99]; // Spread to copy & add
+// let [first, second] = ["a", "b", "c"];
+// let newArr = [...nums, 99]; // Spread to copy & add
