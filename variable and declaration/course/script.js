@@ -404,3 +404,12 @@ console.log(student.age); // 21
 js
 student["full name"] = "Ravi Kumar"; // ✅
 student.course = "JavaScript"; // ✅
+
+let user = {
+ name: "Amit",
+ address: {
+ city: "Delhi",
+ pincode: 110001
+ }
+};
+console.log(user.address.city); // Delhi
