@@ -413,3 +413,5 @@ let user = {
  }
 };
 console.log(user.address.city); // Delhi
+
+let { name, age } = student;
