@@ -400,3 +400,7 @@ let student = {
 
 console.log(student["name"]); // Ravi
 console.log(student.age); // 21
+
+js
+student["full name"] = "Ravi Kumar"; // ✅
+student.course = "JavaScript"; // ✅
