@@ -391,38 +391,38 @@ const a =12;
 // let newArr = [...nums, 99]; // Spread to copy & add
 
 
-// -----  OBJECTS ------
-let student = {
- name: "Ravi",
- age: 21,
- isEnrolled: true
-}
+// // -----  OBJECTS ------
+// let student = {
+//  name: "Ravi",
+//  age: 21,
+//  isEnrolled: true
+// }
 
-console.log(student["name"]); // Ravi
-console.log(student.age); // 21
+// console.log(student["name"]); // Ravi
+// console.log(student.age); // 21
 
-js
-student["full name"] = "Ravi Kumar"; // ✅
-student.course = "JavaScript"; // ✅
+// js
+// student["full name"] = "Ravi Kumar"; // ✅
+// student.course = "JavaScript"; // ✅
 
-let user = {
- name: "Amit",
- address: {
- city: "Delhi",
- pincode: 110001
- }
-};
-console.log(user.address.city); // Delhi
+// let user = {
+//  name: "Amit",
+//  address: {
+//  city: "Delhi",
+//  pincode: 110001
+//  }
+// };
+// console.log(user.address.city); // Delhi
 
-let { name, age } = student;
+// let { name, age } = student;
 
-let {
- address: { city }
-} = user;
+// let {
+//  address: { city }
+// } = user;
 
-for (let key in student) {
- console.log(key, student[key]);
-}
+// for (let key in student) {
+//  console.log(key, student[key]);
+// }
 
-Object.keys(student); // ["name", "age", "isEnrolled"]
-Object.entries(student); // [["name", "Ravi"], ["age", 21], ...]
+// Object.keys(student); // ["name", "age", "isEnrolled"]
+// Object.entries(student); // [["name", "Ravi"], ["age", 21], ...]
