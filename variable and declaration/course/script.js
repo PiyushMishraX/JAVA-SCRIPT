@@ -389,3 +389,11 @@ const a =12;
 
 // let [first, second] = ["a", "b", "c"];
 // let newArr = [...nums, 99]; // Spread to copy & add
+
+
+// -----  OBJECTS ------
+let student = {
+ name: "Ravi",
+ age: 21,
+ isEnrolled: true
+}
