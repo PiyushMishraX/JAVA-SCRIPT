@@ -415,3 +415,7 @@ let user = {
 console.log(user.address.city); // Delhi
 
 let { name, age } = student;
+
+t {
+ address: { city }
+} = user;
