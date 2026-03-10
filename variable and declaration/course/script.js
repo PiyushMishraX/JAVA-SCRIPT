@@ -423,3 +423,6 @@ let {
 for (let key in student) {
  console.log(key, student[key]);
 }
+
+Object.keys(student); // ["name", "age", "isEnrolled"]
+Object.entries(student); // [["name", "Ravi"], ["age", 21], ...]
