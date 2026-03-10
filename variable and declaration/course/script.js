@@ -416,6 +416,10 @@ console.log(user.address.city); // Delhi
 
 let { name, age } = student;
 
-t {
+let {
  address: { city }
 } = user;
+
+for (let key in student) {
+ console.log(key, student[key]);
+}
