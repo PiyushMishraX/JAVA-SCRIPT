@@ -397,3 +397,6 @@ let student = {
  age: 21,
  isEnrolled: true
 }
+
+console.log(student["name"]); // Ravi
+console.log(student.age); // 21
