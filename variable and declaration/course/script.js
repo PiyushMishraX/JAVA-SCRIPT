@@ -446,3 +446,8 @@ const book = {
   author: "F. Scott Fitzgerald",
   price: 15.99
 };
+
+const studentNames = ["Alice", "Bob", "Charlie", "Diana"];
+studentNames.forEach(name => {
+  console.log(name);
+});
