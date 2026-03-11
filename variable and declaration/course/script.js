@@ -430,3 +430,5 @@ const a =12;
 
 let newStudent = { ...student };
 let newOne = Object.assign({}, student);
+
+let deepCopy = JSON.parse(JSON.stringify(user));
