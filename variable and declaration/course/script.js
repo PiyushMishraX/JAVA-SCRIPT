@@ -440,3 +440,9 @@ const a =12;
 // let report = {
 //  [key]: 89
 // };
+
+const book = {
+  title: "The Great Gatsby",
+  author: "F. Scott Fitzgerald",
+  price: 15.99
+};
