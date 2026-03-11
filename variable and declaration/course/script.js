@@ -441,25 +441,25 @@ const a =12;
 //  [key]: 89
 // };
 
-const book = {
-  title: "The Great Gatsby",
-  author: "F. Scott Fitzgerald",
-  price: 15.99
-};
+// const book = {
+//   title: "The Great Gatsby",
+//   author: "F. Scott Fitzgerald",
+//   price: 15.99
+// };
 
-const studentNames = ["Alice", "Bob", "Charlie", "Diana"];
-studentNames.forEach(name => {
-  console.log(name);
-});
+// const studentNames = ["Alice", "Bob", "Charlie", "Diana"];
+// studentNames.forEach(name => {
+//   console.log(name);
+// });
 
 
-const numbers = [1, 2, 3, 4, 5, 6, 7];
-const evenNumbers = [];
+// const numbers = [1, 2, 3, 4, 5, 6, 7];
+// const evenNumbers = [];
 
-for (const num of numbers) {
-  if (num % 2 === 0) {
-    evenNumbers.push(num);
-  }
-}
+// for (const num of numbers) {
+//   if (num % 2 === 0) {
+//     evenNumbers.push(num);
+//   }
+// }
 
-console.log(evenNumbers);
+// console.log(evenNumbers);
