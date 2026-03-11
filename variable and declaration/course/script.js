@@ -426,3 +426,7 @@ const a =12;
 
 // Object.keys(student); // ["name", "age", "isEnrolled"]
 // Object.entries(student); // [["name", "Ravi"], ["age", 21], ...]
+
+
+let newStudent = { ...student };
+let newOne = Object.assign({}, student);
