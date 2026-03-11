@@ -428,15 +428,15 @@ const a =12;
 // Object.entries(student); // [["name", "Ravi"], ["age", 21], ...]
 
 
-let newStudent = { ...student };
-let newOne = Object.assign({}, student);
+// let newStudent = { ...student };
+// let newOne = Object.assign({}, student);
 
-let deepCopy = JSON.parse(JSON.stringify(user));
+// let deepCopy = JSON.parse(JSON.stringify(user));
 
-console.log(user?.address?.city); // Delhi
-console.log(user?.profile?.email); // undefined (no error)
+// console.log(user?.address?.city); // Delhi
+// console.log(user?.profile?.email); // undefined (no error)
 
-let key = "marks";
-let report = {
- [key]: 89
-};
+// let key = "marks";
+// let report = {
+//  [key]: 89
+// };
