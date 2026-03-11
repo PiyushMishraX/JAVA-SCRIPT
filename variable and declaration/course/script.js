@@ -432,3 +432,6 @@ let newStudent = { ...student };
 let newOne = Object.assign({}, student);
 
 let deepCopy = JSON.parse(JSON.stringify(user));
+
+console.log(user?.address?.city); // Delhi
+console.log(user?.profile?.email); // undefined (no error)
