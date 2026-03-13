@@ -87,3 +87,11 @@
 //     var x = 2; // functtion scoped so global too -- overwrite x to 2
 // }
 // console.log(x);
+
+
+// let a = 10; // block scoped  // global
+// {
+//     let a =20;  // block scoped 
+//     console.log("Inside", a);
+// }
+// console.log("Outside:",a);
