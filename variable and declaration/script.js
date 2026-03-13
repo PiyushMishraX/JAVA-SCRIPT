@@ -95,3 +95,21 @@
 //     console.log("Inside", a);
 // }
 // console.log("Outside:",a);
+
+// if(true){
+//     var a =1 ; // function     
+//     let b = 2; //{ } curly braces
+// }
+// console.log(a);
+// console.log(b);
+
+// const person = { name : "Harsh"};
+// person.name = "sharma"; // update kar sakte hai -- object property can be  changed 
+// person = {}; // reassign nahi kat sakte hai 
+
+// Object.freeze
+// Object.freeze()
+// Object.freeze(obj)
+
+// const prevents the variable from being reassigned to a different value or object, but it does not make the object's contents immutable.
+// Object.freeze() makes the contents of the object immutable but does not prevent the variable holding the object from being reassigned (unless the variable was declared with const)
