@@ -59,3 +59,31 @@
 // b =32;
 
 // let b = 233;v
+
+
+// hosting -> intilalization moves to top while declatation remains 
+// var -> undefined 
+// let -> X
+// const -> X
+
+//                      var a = undefined ;
+// console.log(a);      console.log(a);
+// var a =12;           a = 12;
+
+
+// Q1
+// console.group(nm);
+// var nm = "Harsh";
+
+// q2
+// console.log(age);
+// let age = 20;
+
+
+// q3
+
+// var x = 1; // global
+// {
+//     var x = 2; // functtion scoped so global too -- overwrite x to 2
+// }
+// console.log(x);
