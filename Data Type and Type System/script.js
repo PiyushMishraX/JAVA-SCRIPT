@@ -182,8 +182,27 @@
 
 // practice 
 
-// predict result
-// true + false = 1 +0 = 1 = TURE
-// null + 1 = 0 + 1 = true
+// predict results --
+
+// true + false = 1 +0 = 1
+// because of + operation 
+// true is coerced to 1
+// false is coerced to 0 
+// So, true + false becomes 1 + 0, which evaluates to 1 — a number, not a boolean.
+
+
+// null + 1 = 0 + 1 
 // 5 + "5" = '55'
-// !!undefined = false
+// !!undefined = false 
+
+
+
+// why 
+// typeof NaN === 'number' // true  
+// 5 * "harsh" = NaN  //falied number operation so type is number
+
+
+let x;
+console.log(x);
+let y= null;
+console.log(y);
