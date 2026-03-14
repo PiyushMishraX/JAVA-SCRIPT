@@ -26,3 +26,36 @@
 // dance();
 // dance();
 // dance();
+
+
+
+
+
+
+
+
+
+// CREATE function
+// method 1 - function declaratio
+// function fn(){
+//     console.log("happy new year");
+// }
+// fn();
+
+// method 2 - function expression
+// let fnc = function() {
+//     console.log("hey hey");
+// }
+// fnc();
+
+
+// fat arrow function
+// let fnc = () =>{
+//     console.log("hello");
+// };
+// fnc();
+
+
+
+
+
