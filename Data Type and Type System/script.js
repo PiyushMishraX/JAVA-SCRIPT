@@ -161,3 +161,19 @@
 // "5" - 1 // "5" -> 5
 // 4 
 // // - -> sirf minus bus karta hai 
+
+
+
+// Truthy and falsy values
+// If(12){}
+
+// flasy (FALSE vlaues) --
+// 0 fase "" null  undefined NaN document.all
+// check true false ( use !! ) -- !!0 --> flase
+
+
+// baki saary values true mai  covert hongi
+// inncluding - "0" 
+ 
+// "false" [] {} function(){}
+
