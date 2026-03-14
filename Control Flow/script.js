@@ -153,5 +153,29 @@
 //     return "computer";
 // }
 
-
 // console.log(rps("rock", "scissor"));
+
+
+
+
+// common confusion - fll through in sswitch case 
+
+// // let x =2 ;
+// // switch (x){
+// //     case 2:
+// //         console.log("two");
+// //     case 3:
+// //         console.log("Three");
+// // }
+
+// // // output : two , three , <- bug if break is missing
+
+// let x =2 ;
+// switch (x){
+//     case 2:
+//         console.log("two");
+//         break;
+//     case 3:
+//         console.log("Three");
+//         // break;
+// }
