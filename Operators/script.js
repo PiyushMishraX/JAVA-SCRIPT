@@ -15,7 +15,7 @@
 
 // 12 -2, 12*2 , 12/6
 
-// modulus 12%2 = 0 , 12%5 = 2
+// modulus / modulo 12%2 = 0 , 12%5 = 2
 // power 2**3 = 8 exponentiation
 
 

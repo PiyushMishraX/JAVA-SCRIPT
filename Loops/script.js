@@ -239,3 +239,66 @@
 
 
 
+// break continue
+
+// for(let i= 1; i<101; i++){
+//     console.log(i);
+//     if(i%7 === 0){
+//         break;
+//     }
+// }
+
+
+
+// skip muliplies of three
+// for(let i= 1; i<21; i++){
+//     if(i%3 === 0) continue;
+//     console.log(i);
+// }
+
+
+
+
+// // 5 odd numbers
+// let count = 0;
+// for(let i =1; i<101; i++){
+//     if(i%2 === 1){ 
+//         // if(i%2 !== 0)
+//         count ++;
+//         console.log(i);
+//     }
+//     if(count === 5) break;
+// }
+
+/*----------------------------------------------------------------------------------------------------*/
+// level up using chatgpt
+// i am complete begineer in js and i prefer hinglish . give me some questions to solve around which are ultimate begineer friendly
+
+
+
+// let num = 12345;
+// let count =0;
+
+// while(num>0){
+//     count++;
+//     num = Math.floor(num/10);
+//     // math.floor removes .xx -> 1234.5 -> 1234
+// }
+// console.log(count);
+
+// let num = 12345;
+// let count =0;
+// while(num>=1){
+// // while(num > 0) -> X there are point values always till the limit of system reach likely 324 ppin tvlaues
+//     count++;
+//     num = num/10;
+//     // math.floor removes .xx -> 1234.5 -> 1234
+// }
+// console.log(count);
+
+
+
+// confusion in loops
+// when to use for for and while loop
+// when start end and change given -> for
+// when we just know when to stop
