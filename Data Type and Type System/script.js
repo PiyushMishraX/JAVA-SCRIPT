@@ -177,3 +177,13 @@
  
 // "false" [] {} function(){}
 
+
+
+
+// practice 
+
+// predict result
+// true + false = 1 +0 = 1 = TURE
+// null + 1 = 0 + 1 = true
+// 5 + "5" = '55'
+// !!undefined = false
