@@ -184,6 +184,16 @@
 
 
 
+// ----- VERY VERY IMP ------
+// let score = 78;
+
+// let grade = score >= 90 ? "A" : score >= 75 ? "B" : score>= 60 ? "C" : Fail;
+
+// console.log(grade);
 
 
+// let points = 120;
+// let status = points > 100 ? "Gold" : points > 50 ? "Silver" : "Bronze";
+
+// console.log(status)
 
