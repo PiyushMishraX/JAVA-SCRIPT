@@ -106,3 +106,13 @@
 // --a = 10(print);
 // a-- = 12(print ) a = 10
 
+
+// TERNARY operator
+
+// ?:
+// condition ? true hui ka code : false hui ka code
+
+// 12>13 ? console.log("true") : console.log("false");
+
+
+
