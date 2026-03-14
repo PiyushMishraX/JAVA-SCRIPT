@@ -100,3 +100,20 @@
 // let b = a;
 
 // b.name = "bro";
+
+
+
+
+// DYNAMIC TYPING - js mai statc typing ( dats types) nahi hai and yaha par dynamic typing hai jiska matlab hai dat ko change kr skte ho, yuki yaha par dynamic data types hai
+
+
+// int a = 12; // can't change to other type such as string etc
+
+// let a =12;
+// a = "hello";
+// a = [];
+// a = true;
+// a = null;
+// a = undefined;
+// // static typing is better mostly 
+
