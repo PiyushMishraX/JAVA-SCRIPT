@@ -116,4 +116,36 @@
 // a = null;
 // a = undefined;
 // // static typing is better mostly 
+// dynamic is good for learning than switch to type script for type protection 
+
+// typeof quirks ( e.g, typeof null === 'object)
+
+// typeof 12
+// 'number'
+// typeof "harsh"
+// 'string'
+// typeof null
+// 'object'
+// typeof NaN
+// 'number'
+// quirks 
+// NaN === NaN
+// false
+// 0.1+0.2
+// 0.30000000000000004
+// [] +[]
+// ''
+// 1 + "1"
+// '11'
+// '' +""
+// ''
+// 1 == "1"
+// true
+// 1 === "1"
+// false
+
+
+// typeof NaN;
+// console.log(typeof NaN);
+
 
