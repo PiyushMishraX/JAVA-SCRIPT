@@ -202,7 +202,17 @@
 // 5 * "harsh" = NaN  //falied number operation so type is number
 
 
-let x;
-console.log(x);
-let y= null;
-console.log(y);
+// undefined vs null
+// undefined is by deafult 
+// null is assigned by use for no vlaue
+// let x;
+// console.log(x);
+// let y= null;
+// console.log(y);
+
+
+
+// '5' + 1 = '51'
+// in js for opeartion + , number coverts to string
+// '5' - 1 = 4 
+// for any operator other than + the js conerts string to number
