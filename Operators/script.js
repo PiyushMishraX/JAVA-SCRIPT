@@ -259,3 +259,11 @@
             
             
             
+// confusing topics operators
+
+// !! ""    false
+//  "hello" true
+// !!0   fasle
+// !!1  true
+
+// pre and post increment

@@ -168,7 +168,7 @@
 // If(12){}
 
 // flasy (FALSE vlaues) --
-// 0 fase "" null  undefined NaN document.all
+// 0 false "" null  undefined NaN document.all
 // check true false ( use !! ) -- !!0 --> flase
 
 
