@@ -79,5 +79,14 @@
 // let a = Number.MAX_SAFE_INTEGER
 // // limit of integers being safe
 
-let a = 9007199254740991n;
-// a + 12n
+// let a = 9007199254740991n; <-- bigInt
+// // a + 12n
+
+
+
+
+
+// REFERENCE data type
+
+// let a = [1,2,3];
+// let b =  a;
