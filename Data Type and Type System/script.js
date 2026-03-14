@@ -90,3 +90,13 @@
 
 // let a = [1,2,3];
 // let b =  a;
+
+
+// // object
+
+// let a = {
+//     name: "harsh",
+// }
+// let b = a;
+
+// b.name = "bro";
