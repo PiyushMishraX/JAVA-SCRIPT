@@ -145,3 +145,97 @@
 //     if(i%2 !== 0)
 //     console.log(i);
 // }
+
+// let i = 1;
+// while( i<=15){
+//     if(i%2 !==0 ){
+//         console.log(i);
+//     }
+//     i++;
+// }
+
+
+//  do other questions too these alone are not enough do more too - tougher 
+
+
+// q5
+// for (let i = 1; i<=10 ; i++){
+//     // console.log(i * 5);
+//      console.log(`5 * ${i} = ${5*i}` );
+//      // ${val} val -> dynamic value
+// }
+
+
+// / q6
+
+// let sum =0;
+// for(let i =1; i<=100; i++){
+//     sum+=i;
+// sum = sum +i;
+// }
+// console.log(sum);
+
+// for(let i = 1; i<51;i++) {
+//     if(i%3 === 0){
+//         console.log(i);
+//     }
+// }
+
+
+
+// q8
+
+
+// let val = prompt("give a number");
+
+// // entering 20 gives -> "20" + 1 = "201"
+// for(let i =1; i<val+1; i++){
+//     console.log(i);
+// }
+
+
+// // fix 1
+// let val = prompt("give a number");
+
+// // entering 20 gives -> "20" + 1 = "201"
+// for(let i =1; i<=val; i++){
+//     console.log(i);
+// }
+
+// // / fix 2
+// let val = Number( prompt("give a number"));
+
+// // entering 20 gives -> "20" + 1 = "201"
+// for(let i =1; i<val+1; i++){
+//     console.log(i);
+// }
+
+// let val = prompt("give a number");
+// for(let i =1; i<=val; i++){
+//     if(i%2 ===0){
+//         console.log(`${i} is even`);
+//     }
+//     else{
+//         console.log(`${i} is odd`);
+
+//     }
+// }
+
+
+
+// q9 
+
+// let count =0;
+// for(let i = 1; i <101; i++){
+//     if(i%3 === 0 && i%5 === 0){
+// console.log(i);
+//         count++;
+//     }
+// }
+// console.log(count);
+
+
+
+
+
+
