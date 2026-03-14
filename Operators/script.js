@@ -66,4 +66,24 @@
 // a%=3; // a = a% 3 -> 1
 
 
-//
+// logical
+// && || !
+
+// true && true -> true
+// false && true -> true
+// true && false -> false
+// false && flase -> false
+
+// 12>13 && 13>10 -> false && true -> false
+
+// ||
+// 12>13 || 13>10 -> false && true -> true
+
+// !
+// !false -> true
+
+// !!12 -> !flase -> true // ! not nature of value // !! real nature of value
+
+
+
+// 
