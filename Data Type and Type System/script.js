@@ -64,10 +64,20 @@
 // let u2 = Symbol("uid");
 // // they are unique
 
-let obj = {
-    uid:1
+// let obj = {
+//     uid:1
 
-}
-let u1 = Symbol("uid");
-obj[u1] = "001";
+// }
+// let u1 = Symbol("uid");
+// obj[u1] = "001";
 
+// // create uniques no override
+
+
+// bigInt
+
+// let a = Number.MAX_SAFE_INTEGER
+// // limit of integers being safe
+
+let a = 9007199254740991n;
+// a + 12n
