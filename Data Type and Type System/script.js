@@ -149,3 +149,15 @@
 // console.log(typeof NaN);
 
 
+
+// Type coercion ( == vs === )
+// Type coercion -> consept jismein ael type automatically convert hojaayega
+
+// "5" + 1 // 1 -> "1"
+// '51' // concate
+// // + -> ad or concatination
+// // if any operand string hoaya to concate hoga
+
+// "5" - 1 // "5" -> 5
+// 4 
+// // - -> sirf minus bus karta hai 
