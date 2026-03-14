@@ -86,4 +86,23 @@
 
 
 
-// 
+// Unary operatos
+// + - ! typeof ++ --
+// +"5" -> 5
+// +"Harsh" -> NaN
+
+
+// -a = -a
+
+// !12 -> value/ type of truthy falsy inverted
+
+// typeof 12 -> 'number'
+
+// let a =12;
+// ++a = 14;  increase/ perform operation than print// pre increment
+// a++ = 12(print); a=14  print than increase/ perform operation .. post increment
+
+// let a = 12;
+// --a = 10(print);
+// a-- = 12(print ) a = 10
+
