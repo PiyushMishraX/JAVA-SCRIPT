@@ -116,3 +116,30 @@
 
 
 
+// typeof and instanceof
+
+// typeof value
+
+// wrong value -
+// typeof null -> 'object'
+// typeof [] -> 'object'
+// typeof NaN -> 'number'
+
+// let a = [];
+// typeof a -> 'object' // wrong , quirk , issue
+
+// a instanceof Array -> true
+
+// let b = {};
+// b instanceof {}; -> true
+// b instanceof Array;  -> false
+
+
+// variable instanceof ___  -> check if variable is born from ___
+
+// let a =12;
+// a instanceof Number -> flase
+// instanceof works with reference values better ot with  primitive vlaues 
+// [] {} ()
+// typeof works with primitve values better used with them mostly  
+
