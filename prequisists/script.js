@@ -1,1 +1,1 @@
-// 
+// as a string values 

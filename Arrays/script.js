@@ -320,3 +320,18 @@
 
 
 
+// common confusions 
+
+// splice vs slice
+// splice change og array - removes from it
+// slice se copy with needed values array created
+
+
+// ~map vs forEach -> foreach no return ( no new array)  --> map can create new array with returened vallues
+
+// ~big blunder wiht .sort
+// [ 100,20,3].sort();  // [ 100,20,3] -> "100", "20" , "3" ( wrong) (.sort covert( nummeric) to string , better for direct string sorting) ->  give compare function 
+
+
+// [ 100,20,3].sort((a,b)=>  -b);
+// arr.sort((a,b)=>  a-b);
