@@ -90,12 +90,50 @@ let arr = [11,62,3,4,25];
 
 
 
-// Reduce
+// // Reduce
 
-// reducing array to single value
+// // reducing array to single value
 
-let ans = arr.reduce(function(accumulator , val){
-    return accumulator + val;
-}, 0);
-// , 0 ) -> value of accumator -> it remembers its changed value unlike val which changes to array element values
-console.log(ans);
+// let ans = arr.reduce(function(accumulator , val){
+//     return accumulator + val;
+// }, 0);
+// // , 0 ) -> value of accumator -> it remembers its changed value unlike val which changes to array element values
+// console.log(ans);
+
+
+
+// find
+
+// return val if found ( only first vlaue mostly )
+
+// let va = arr.find(function(val){
+//     return val === 11;
+// });
+// console.log(va);
+
+// let arr1 = [
+//     {id: 1 , key: 1},
+//     { id:2 , key: 2},
+//     { id: 3, key: 1},
+// ];
+
+// let va = arr1.find(function(val){
+//     return val.key === 1;
+// });
+// console.log(va);
+
+
+
+// find the one that satisfies condition - if any
+// let any = arr.some(function(val){
+//     return val > 85;
+// });
+// console.log(any);
+
+
+let eve = arr.every(function(val){
+    return val > 1.5;
+});
+console.log(eve);
+
+
