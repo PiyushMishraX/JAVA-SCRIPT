@@ -85,3 +85,17 @@ let arr = [11,62,3,4,25];
 //     // only return vlaues when true
 // });
 // console.log(new_arr);
+
+// console.log(new_arr);
+
+
+
+// Reduce
+
+// reducing array to single value
+
+let ans = arr.reduce(function(accumulator , val){
+    return accumulator + val;
+}, 0);
+// , 0 ) -> value of accumator -> it remembers its changed value unlike val which changes to array element values
+console.log(ans);
