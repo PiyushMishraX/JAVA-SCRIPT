@@ -146,9 +146,9 @@
 // let abcd = function (){
 // }
 
-function abcd(val) {
-  val();
-}
+// function abcd(val) {
+//   val();
+// }
 
 // arguments mein fucntion de sakte hai -> no name of that function
 // abcd(function(){
@@ -205,11 +205,34 @@ function abcd(val) {
 
 // closure -> a function which returns another function and the returned function alwways uses any valriable of parent fnc
 
-function abcd(){
-    let a =12;
-    return function() {
-        console.log(a);
-    }
-}
+// function abcd(){
+//     let a =12;
+//     return function() {
+//         console.log(a);
+//     }
+// }
 
-console.log(abcd()());
+// console.log(abcd()());
+
+
+
+
+// Lexical scoping
+
+// function abcd(){
+//     let a = 12;
+//     function defg(){
+//         let b =13;
+//         function ghij(){
+//             let c = 14; // can't use outside ghij
+//         }
+//     }
+// }
+
+
+
+// IIFE - immedietly invoked function expression
+
+(function() {
+
+})();
