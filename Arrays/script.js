@@ -13,3 +13,35 @@
 // let arr = [1,2,3,4];
 // arr[2] = 12;
 // console.log(arr);
+
+
+
+let arr = [1,2,3,4,5];
+// arr.push(7000);
+
+// arr.pop();
+
+// arr.shift(); // remove first
+
+// arr.unshift(0);
+
+// arr.splice(2,2);
+
+// let new_arr = arr.slice(0,3);
+
+
+
+// arr.reverse();
+
+// arr = [2,4,1,5,3];
+// let sr = arr.sort(function(a,b){
+// //    return a-b; // ascending
+//    return b-a; // descending
+// });
+// console.log(sr);
+
+
+
+// console.log(arr);
+
+// console.log(new_arr);
