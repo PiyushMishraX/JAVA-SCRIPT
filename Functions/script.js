@@ -179,3 +179,37 @@ function abcd(val) {
 // }
 // // abcd();
 // abcd()(); //-> () run the abcd and second () run fucntion 
+
+
+
+
+
+// pure vs impure functions
+
+// a fnc jo baahr ki vlaue naa badle hai wo hai pure function
+
+// let a =12;
+// function abcd() {
+//     console.log("hey");
+// } // pure
+
+
+// function plus(){
+//     a++;
+// } // im,pure
+
+// // aisa function jo bahar ki balue badal de wo impure fnc
+
+
+
+
+// closure -> a function which returns another function and the returned function alwways uses any valriable of parent fnc
+
+function abcd(){
+    let a =12;
+    return function() {
+        console.log(a);
+    }
+}
+
+console.log(abcd()());
