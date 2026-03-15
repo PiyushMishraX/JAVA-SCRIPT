@@ -140,3 +140,30 @@
 // }
 // // ABCD(1,2,3,4,5,6,7); // 
 // abcd(1,2,3,4,5,6,7); // -> (4) [4, 5, 6, 7]
+
+
+
+// return- > jaha se aaye ho eahi bhej denge
+
+// function abcd (v){
+//     return 12 + v;
+// }
+
+
+
+
+// let val = abcd(3);
+// console.log(val);
+// // console.log(abcd());
+// // abcd();
+
+
+
+// early return -> learned in control flow
+// function early(){
+//     return 12;
+//     return 13;
+// }
+// console.log(early());
+
+
