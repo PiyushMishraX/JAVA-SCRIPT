@@ -473,3 +473,17 @@
 
 // // console.log(bmi(70 , 1.78));
 // console.log(bmi(70 , 1.76).toFixed(4));
+
+
+// // reusable discount calculator
+// function discountCalculator(discount){
+//     return function( price){
+//         return price - (price* (discount/ 100));
+//     }
+// }
+
+// let ten_disocunter = discountCalculator(10);
+// console.log(ten_disocunter(200));
+
+// let twenty_disocunter = discountCalculator(20);
+// console.log(twenty_disocunter(200));
