@@ -26,7 +26,19 @@
 // dance();
 // dance();
 // dance();
+// dance();
+// dance();
 
+// use case 1 of fn - to not run code immideatiely
+
+
+// dance();
+// dance();
+// dance();
+// dance();
+// dance();
+
+// case 2 to - to reuse code an drerun code
 
 
 
@@ -36,7 +48,7 @@
 
 
 // CREATE function
-// method 1 - function declaratio
+// method 1 - function declaration
 // function fn(){
 //     console.log("happy new year");
 // }
@@ -54,6 +66,28 @@
 //     console.log("hello");
 // };
 // fnc();
+
+
+
+// parameter and arguments
+
+// function dance(v1){
+//     // console.log(" horse dancw");
+//     console.log(`${v1} dances`);
+// }
+
+// dance("Horse");
+// dance("brain");
+// dance("bro");
+
+
+function add(v1,v2)// parameters
+{
+    console.log(v1+v2);
+}
+
+add(1,2); // 1,2 arguments
+
 
 
 
