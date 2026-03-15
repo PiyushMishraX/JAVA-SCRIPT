@@ -233,6 +233,24 @@
 
 // IIFE - immedietly invoked function expression
 
-(function() {
+// (function() {
+//     console.log("hey");
+// })();
 
-})();
+
+
+
+// hoisting difference in function declaration and expression -
+
+// abcd(); // -- > run
+// function abcd() {
+//     console.log("hey");
+// }
+
+// abcd(); // -- > error
+// let  abcd = function() {
+//     console.log("hey");
+// }
+
+
+
