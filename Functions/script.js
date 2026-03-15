@@ -4,8 +4,7 @@
 // agar code likh diyta to wo turant chal jaata hai
 
 // console.log("hey");
-// //  
-
+// //
 
 // console.log("dance");
 // console.log("dance");
@@ -31,7 +30,6 @@
 
 // use case 1 of fn - to not run code immideatiely
 
-
 // dance();
 // dance();
 // dance();
@@ -39,13 +37,6 @@
 // dance();
 
 // case 2 to - to reuse code an drerun code
-
-
-
-
-
-
-
 
 // CREATE function
 // method 1 - function declaration
@@ -60,14 +51,11 @@
 // }
 // fnc();
 
-
 // fat arrow function
 // let fnc = () =>{
 //     console.log("hello");
 // };
 // fnc();
-
-
 
 // parameter and arguments
 
@@ -80,14 +68,12 @@
 // dance("brain");
 // dance("bro");
 
-
 // function add(v1,v2)// parameters
 // {
 //     console.log(v1+v2);
 // }
 
 // add(1,2); // 1,2 arguments
-
 
 // default , rest and spread parameters
 
@@ -97,7 +83,6 @@
 // }
 
 // add();
-
 
 // function add (v1,v2){
 //     console.log(v1 + v2);
@@ -119,8 +104,6 @@
 
 // // gives deafult vlaues to top too or the fn(); searches best possible function declaration
 
-
-
 // REST ( AND SPREAD)  parameter
 
 // function abcd (...val) {
@@ -132,16 +115,12 @@
 // ... -> yahi rest yahi spread
 // agar ... function ke parameter  space me lage t wo rest operator hai and agar wo arrays and objects mein lage to wo spread opearor hai
 
-
-
 // function abcd (a,b,c,...val) {
 //  console.log(val);
 //  console.log(a,b,c,val)
 // }
-// // ABCD(1,2,3,4,5,6,7); // 
+// // ABCD(1,2,3,4,5,6,7); //
 // abcd(1,2,3,4,5,6,7); // -> (4) [4, 5, 6, 7]
-
-
 
 // return- > jaha se aaye ho eahi bhej denge
 
@@ -149,15 +128,10 @@
 //     return 12 + v;
 // }
 
-
-
-
 // let val = abcd(3);
 // console.log(val);
 // // console.log(abcd());
 // // abcd();
-
-
 
 // early return -> learned in control flow
 // function early(){
@@ -166,24 +140,42 @@
 // }
 // console.log(early());
 
-
-// First class function -> ( conceptual -> basically ) - >  functions can be treated like vlaues 
+// First class function -> ( conceptual -> basically ) - >  functions can be treated like vlaues
 
 // jaha values waha function ho sakte hhai
 // let abcd = function (){
 // }
 
 function abcd(val) {
-    val();
+  val();
 }
 
-// arguments mein fucntion de sakte hai -> no name of that function  
+// arguments mein fucntion de sakte hai -> no name of that function
 // abcd(function(){
 //  console.log("hey");
 // })
-
 
 // function hey(){
 //     console.log("hey");
 // }
 // abcd(hey()); -> not possible
+
+// heigher order fncs -> ( also conceptual ) hof is a fucntion which returns a function or accepts a fucntion as paramter
+// ya to function accept kare or return a function -- read notes to understnd more and revision
+
+// function abcd(val) {
+//   val();
+// }
+// abcd(function () {
+  
+// });
+
+// or
+
+// function abcd() {
+//   return function () {
+//     console.log("htllo");
+//   }
+// }
+// // abcd();
+// abcd()(); //-> () run the abcd and second () run fucntion 
