@@ -11,7 +11,7 @@
 // + - * / % **
 
 // 1+2 = 3
-// "ha" + "rsh" = "harsh"
+// "ha" + "rsh" = "piyush"
 
 // 12 -2, 12*2 , 12/6
 
@@ -89,7 +89,7 @@
 // Unary operatos
 // + - ! typeof ++ --
 // +"5" -> 5
-// +"Harsh" -> NaN
+// +"Piyush" -> NaN
 
 
 // -a = -a

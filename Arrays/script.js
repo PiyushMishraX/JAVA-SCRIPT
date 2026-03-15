@@ -289,7 +289,7 @@
 
 // 15 - destructure to get first and last name
 
-// let fullName = [ "Harsh" , "Sharma"];
+// let fullName = [ "Piyush" , "Mishra"];
 // let [ firstName , lastName] = fullName;
 // // destructures and saves 
 

@@ -73,7 +73,7 @@
 
 // Q1
 // console.group(nm);
-// var nm = "Harsh";
+// var nm = "Piyush";
 
 // q2
 // console.log(age);
@@ -103,8 +103,8 @@
 // console.log(a);
 // console.log(b);
 
-// const person = { name : "Harsh"};
-// person.name = "sharma"; // update kar sakte hai -- object property can be  changed 
+// const person = { name : "Piyush"};
+// person.name = "mishra"; // update kar sakte hai -- object property can be  changed 
 // person = {}; // reassign nahi kat sakte hai 
 
 // Object.freeze

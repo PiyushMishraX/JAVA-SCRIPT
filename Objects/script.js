@@ -1,7 +1,7 @@
 // on=bject -> explain everything abount an objecct
 
 // let obj = {
-//     name: "harsh",
+//     name: "piyush",
 //     age: 26,
 //     khaana: "daal chawal",
 // };
@@ -22,7 +22,7 @@
 // //nesting
 
 // const user = {
-//     name : "Harsh",
+//     name : "piyush",
 //     address: {
 //         city: "Bhaopal",
 //         pin: 462001,
@@ -54,7 +54,7 @@
 
 
 // let obj = {
-//     name: "harsh",
+//     name: "piyush",
 //     age: 26,
 //     email: "test@test.com",
 // };
@@ -79,7 +79,7 @@
 // objct keys
 
 // let obj = {
-//     name: "harsh",
+//     name: "piyush",
 //     age: 26,
 //     email: "test@test.com",
 // };
@@ -88,14 +88,14 @@
 // arr of keys of object
 
 // Object.entries(obj);
-// (3) [Array(2), Array(2), Array(2)]0: (2) ['name', 'harsh']1: (2) ['age', 26]2: (2) ['email', 'test@test.com']length: 3[[Prototype]]: Array(0)
+// (3) [Array(2), Array(2), Array(2)]0: (2) ['name', 'piyush']1: (2) ['age', 26]2: (2) ['email', 'test@test.com']length: 3[[Prototype]]: Array(0)
 // array of arrays
 
 
 // copying object
 
 // let obj = {
-//     name: "harsh",
+//     name: "piyush",
 //     age: 26,
 //     email: "test@test.com",
 // };
@@ -113,7 +113,7 @@
 // deep cloning
 
 // let obj = {
-//     name: "harsh",
+//     name: "piyush",
 //     age: 26,
 //     email: "test@test.com",
 //     address: {
@@ -131,9 +131,9 @@
 
 
 // JSON.stringify(obj) // -> obj totally changes to string
-// '{"name":"harsh","age":26,"email":"test@test.com","address":{"city":"bhopal"}}'
-// JSON.parse('{"name":"harsh","age":26,"email":"test@test.com","address":{"city":"bhopal"}}')
-// {name: 'harsh', age: 26, email: 'test@test.com', address: {…}}
+// '{"name":"piyush","age":26,"email":"test@test.com","address":{"city":"bhopal"}}'
+// JSON.parse('{"name":"piyush","age":26,"email":"test@test.com","address":{"city":"bhopal"}}')
+// {name: 'piyush', age: 26, email: 'test@test.com', address: {…}}
 
 // then untring it , the real copy is made
 
@@ -147,7 +147,7 @@
 
 // //  Optional chaining
 // let obj = {
-//     name: "harsh",
+//     name: "piyush",
 //     age: 26,
 //     email: "test@test.com",
 //     addresses: {
@@ -166,15 +166,15 @@
 // let role = "admin";
 
 // let obj = {
-//     name: "harsh",
+//     name: "piyush",
 //     age: 26,
 //     email: "test@test.com",
 //     addresses: {
 //     // address: {
 //         city: "bhopal",
 //     },
-//     [role]: "harsh",
-//     // admin: "harsh";
+//     [role]: "piyush",
+//     // admin: "piyush";
 // };
 
 
@@ -183,7 +183,7 @@
 // create object for a student with name , age and is Enrolled.
 
 // let obj = {
-//     name: "harsh",
+//     name: "piyush",
 //     age: 26,
 //     isEnrolled: true;
 // }
@@ -202,7 +202,7 @@
 // Access the value of " first-name" from this object
 
 // const user = {
-//     "first-name" : "harsh",
+//     "first-name" : "piyush",
 // };
 // // user.first-name; -? wrong 
 // user["first-name"];
@@ -270,4 +270,103 @@
 
 
 // destructure "first-name " as variable called first name 
+// const user = {
+//     "first-name" : "piyush",
+// }
 
+// can't have - in name have to create string or property name
+// let {first-name}
+// let {{fist-name}}
+// let { "first-name" } = user;
+// let { "first-name": firstName} = user;
+// firstName
+// firstName = 'piyush'
+
+
+
+
+// use for-in to log all keys in thsi object:
+// const course = {
+//     title: "JavaScript",
+//     duration: "4 weeks",
+// };
+
+// for(let key in course){
+//     console.log(key);
+// }
+
+
+
+// use Object.entried to print all key-value paris as 
+// const course = {
+//     title: "JavaScript",
+//     duration: "4 weeks",
+// };
+
+// Object.entries(course).forEach(function (val){
+//     // console.log(val);
+//     console.log(val[0] + ": " + val[1]);
+// });
+
+
+
+// copy this object using spread operator
+// const original = { a: 1 , b:2};
+// const copy = { ...original};
+
+
+
+// // problem with this
+// const obj1 = { info: { score: 80}};
+// // const clone = { ...obj1};
+// // clone.info.score = 100;
+// // console.log(obj1.info.score);
+// // // only refernced passed no deep cloning in above
+
+// // deep cloning --
+// const clone1 = JSON.parse(JSON.stringify(obj1));
+// clone1.info.score = 200;
+// console.log(obj1.info.score);
+
+// const newobj = JSON.parse(JSON.stringify(obj1));
+// newobj.info.score = 200;
+// console.log(obj1.info.score);
+
+
+
+// rewrite safely using optional chaining
+
+// const person = {};
+// console.log(person.profile.name); // X
+
+// const person = {};
+// console.log(person?.profile?.name); 
+
+
+// use a variable to dynamically assign a property
+
+// // const key = "roll";
+// const key = "role";
+
+// let obj  = {
+//     name : "piyush",
+//     [key]: "admin",
+// };
+
+
+
+// object flattening - for now understan as deep copy printing
+
+// const nestedObj = {
+//   a: 1,
+//   b: {
+//     c: 2,
+//     d: {
+//       e: 3,
+//       f: [4, 5]
+//     }
+//   }
+// };
+
+// console.log(flattenObject(nestedObj));
+// // Output: { a: 1, 'b.c': 2, 'b.d.e': 3, 'b.d.f.0': 4, 'b.d.f.1': 5 }   

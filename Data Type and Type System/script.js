@@ -1,7 +1,7 @@
 // data types
 // data ka type
 
-// 12 harsh true [] {} () undefined NaN Symbol bigInt
+// 12 piyush true [] {} () undefined NaN Symbol bigInt
 
 // primitve -> aisi saari values jinko copy katme par tumhe ek real copy mil jaaye
 // string , nmber , boolean , null , undefined , symbol , bigInt
@@ -39,7 +39,7 @@
 
 // null matlab jaan boojh kar ke koi value nahi di
 // let seleststudent = null;
-// let selectstudent = "Harsh"
+// let selectstudent = "Piyush"
 
 // undeifned
 // koi value nahi di to by deafult value jo m=value mili
@@ -95,7 +95,7 @@
 // // object
 
 // let a = {
-//     name: "harsh",
+//     name: "piyush",
 // }
 // let b = a;
 
@@ -122,7 +122,7 @@
 
 // typeof 12
 // 'number'
-// typeof "harsh"
+// typeof "piyush"
 // 'string'
 // typeof null
 // 'object'
@@ -199,7 +199,7 @@
 
 // why 
 // typeof NaN === 'number' // true  
-// 5 * "harsh" = NaN  //falied number operation so type is number
+// 5 * "piyush" = NaN  //falied number operation so type is number
 
 
 // undefined vs null
