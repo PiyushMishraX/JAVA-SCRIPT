@@ -162,6 +162,160 @@
 
 
 
+// questions
+
+// 1 - create arr 3 frouits print second
+
+// let fruit = ["apple", "banana", " guava"];
+// console.log(fruit[1]);
+
+
+// 2-
+
+// let fruit = ["apple", "banana", " guava"];
+// fruit.push("mango");
+// fruit.unshift("pineapple");
+// console.log(fruit);
+
+// 3-
+// let fruit = ["apple", "banana"];
+// fruit.pop();
+// fruit.push("kiwi");
+// console.log(fruit);
+
+
+
+
+// 4 - difference in .push and .unshift
+// unshifft add at start
+
+// 5 - remove the last item from array using a mehtod
+
+// let numbers = [1,2,3];
+// numbers.pop();
+
+
+// insert " red " and " blue " at index 1
+
+// let colors = ["Green", "yellow"];
+// colors.splice(1,0);
+// colors.splice(1,0,"red", "blue");
+
+
+// extract only middle 3 from it
+
+// let items = [1,2,3,4,5,6];
+// let new_arr = items.slice(1, 4);
+// console.log(new_arr);
+
+
+// sort alphabatically and reverse it
+
+// let names = ["zara", "arjun" , "mira" , "bhaiva"];
+// // names.sort();
+// names.sort().reverse();
+
+
+
+// use .map to square each number
+
+// let arr = [1,2,3,4];
+// let new_arr = arr.map(function(val){
+//     return val**2;
+//     //return val* val;
+// })
+// console.log(new_arr);
+
+
+// 10 - use .fileter  to keep numbers  greater than 10
+
+// let arr = [ 5, 12 , 8, 20 ,3];
+
+// let new_arr = arr.filter((val) =>{
+//     return val>10;
+// });
+// console.log(new_arr);
+
+
+// 11 - reduce for addition of array
+
+// let arr = [ 10,20,30];
+
+// let added = arr.reduce((acc ,val) =>{
+//     return acc + val;
+// },0);
+// console.log(added);
+
+
+
+
+//  .find() to get he first number less than 10
+
+
+// let arr = [ 12,15,3,8];
+
+// let new_arr = arr.find((val) =>{
+//     return val<10;
+// });
+// console.log(new_arr);
+
+
+// console.log(( arr.filter((val) =>{ return val<10; })));
+
+
+
+
+// 13 - use .some( ) to check any std scored below 33
+
+// let arr = [ 45, 60, 28 ,90];
+
+// let ans = arr.some(function(val) {
+//     return val < 35;
+// });
+// console.log(ans);
+
+
+
+
+// use .every() to check if all numbers are even :
+
+// let arr = [ 2,4,6,,8,10];
+
+// let ans = arr.every(function(val){
+//     return val%2 == 0;
+// });
+// console.log(ans);
+
+
+// 15 - destructure to get first and last name
+
+// let fullName = [ "Harsh" , "Sharma"];
+// let [ firstName , lastName] = fullName;
+// // destructures and saves 
+
+
+// 16-  merge two arrays usng spread operator
+
+// let a = [ 1,2];
+// let b = [3,4];
+
+// let c = [...a, ...b];
+// console.log(c);
+
+
+
+
+// 17 - add india in start using spread
+
+// let countries = ["usa", "uk"];
+// countries = ["India", ...countries];
+// console.log(countries);
+
+
+
+// 18 - clone properly without refference
+// let arr = [ 1,2,3];
+// let arr2 = [ ...arr];
 
 
 
