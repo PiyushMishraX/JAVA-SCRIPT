@@ -458,3 +458,18 @@
 //     console.log("Hi");
 // };
 
+
+
+
+//  PRACTICE TASKS
+
+// 1 - write bmi calculator
+
+// function bmi(weight ,  height){
+//     // height in meter  , weight in kg
+//     // return weight / ( height * height);
+//     return weight / ( height ** 2);
+// }
+
+// // console.log(bmi(70 , 1.78));
+// console.log(bmi(70 , 1.76).toFixed(4));
