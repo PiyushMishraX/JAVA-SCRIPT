@@ -81,15 +81,41 @@
 // dance("bro");
 
 
-function add(v1,v2)// parameters
-{
-    console.log(v1+v2);
-}
+// function add(v1,v2)// parameters
+// {
+//     console.log(v1+v2);
+// }
 
-add(1,2); // 1,2 arguments
-
-
+// add(1,2); // 1,2 arguments
 
 
+// default , rest and spread parameters
 
+// function add (v1,v2){
+//     console.log(v1,v2);
+//     // deafult value undefined , undefined
+// }
+
+// add();
+
+
+// function add (v1,v2){
+//     console.log(v1 + v2);
+//     // undefined + undefined = NaN (adding two non nummbers )
+// }
+// add();
+
+// function add1 (v1 ,v2 ){
+//     console.log(v1 + v2);
+//     // defalut 0 , 3
+// }
+// add1();
+
+// function add1 (v1 = 0,v2 = 3){
+//     console.log(v1 + v2);
+//     // defalut 0 , 3
+// }
+// add1();
+
+// // gives deafult vlaues to top too or the fn(); searches best possible function declaration
 
