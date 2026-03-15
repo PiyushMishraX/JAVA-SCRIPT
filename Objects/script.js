@@ -161,18 +161,113 @@
 
 
 
-// Computed properties
+// // Computed properties
 
-let role = "admin";
+// let role = "admin";
 
-let obj = {
-    name: "harsh",
-    age: 26,
-    email: "test@test.com",
-    addresses: {
-    // address: {
-        city: "bhopal",
-    },
-    [role]: "harsh",
-    // admin: "harsh";
-};
+// let obj = {
+//     name: "harsh",
+//     age: 26,
+//     email: "test@test.com",
+//     addresses: {
+//     // address: {
+//         city: "bhopal",
+//     },
+//     [role]: "harsh",
+//     // admin: "harsh";
+// };
+
+
+/// QUESTIONS ---
+
+// create object for a student with name , age and is Enrolled.
+
+// let obj = {
+//     name: "harsh",
+//     age: 26,
+//     isEnrolled: true;
+// }
+
+
+// can a objec key can be a number or bollean ? try 
+
+// const obj = {
+//     true: "yes",
+//     42: "answer",
+// };
+// console.log(obj[true]);
+// console.log(obj[42]);
+
+
+// Access the value of " first-name" from this object
+
+// const user = {
+//     "first-name" : "harsh",
+// };
+// // user.first-name; -? wrong 
+// user["first-name"];
+
+
+// given a dynamic key let "age " how wil you access user[key] ?
+// let key = "age";
+// const user = {
+//     age: 26,
+// };
+// user[key];
+
+
+
+// from object below, print latiitude
+
+// // can not name location
+// let locations = {
+    
+//         city: "bhopal",
+//     coordinates:{
+//         lat: 23.2,
+//         lng: 77.4,
+//     },
+// };
+
+// locations.coordinates.lat;
+
+
+
+
+// what will happen if coordinates is issing , how to prevent errors
+
+// // optional chaining
+// let locations = {
+    
+//         city: "bhopal",
+//     coordinatess:{
+//         lat: 23.2,
+//         lng: 77.4,
+//     },
+// };
+
+// locations?.coordinates?.lat;
+// // locations?.coordinates.lat; -> tries to find lat from undefined so error 
+// // error Cannot read properties of undefined (reading 'lat') 
+
+
+
+
+//q 7 
+// destructure the city and lat from the location object above
+// let locations = {
+    
+//         city: "bhopal",
+//     coordinates:{
+//         lat: 23.2,
+//         lng: 77.4,
+//     },
+// };
+
+// let {city} = locations;
+// let {lat} = locations.coordinates; // coopies from destructuring
+
+
+
+// destructure "first-name " as variable called first name 
+
