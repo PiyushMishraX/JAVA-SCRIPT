@@ -370,3 +370,24 @@
 
 // console.log(flattenObject(nestedObj));
 // // Output: { a: 1, 'b.c': 2, 'b.d.e': 3, 'b.d.f.0': 4, 'b.d.f.1': 5 }   
+
+
+
+
+// CONFUSING points
+
+// deep copy vs shallow copy
+
+// const a = { score: 90};
+// const b = a;
+// b.score = 50;
+// console.log(a.score); // changed to 50 which is worng
+
+// const a = { score: 90};
+// const b = {...a};
+// b.score = 50;
+// console.log(a.score);
+
+
+// but don't work with nestd objects so we use 
+// JSON.parse(JSON.stringify(obj))
