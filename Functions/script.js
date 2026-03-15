@@ -254,3 +254,207 @@
 
 
 
+
+
+
+// q1 : difference b/w fucntion decalration and expression in terms of hoisting
+// hoist an dnot hoist
+
+
+// // q2  log of this - ( output )
+// greet();
+// function greet(){
+//     console.log("helo");
+// }
+
+
+// q3 convert to arrow
+
+// function multipy( a,b ){
+//     return a*b;
+// }
+
+// let multipy = ( a,b )=>{
+//     return a*b;
+// }; //  do not forget ; in the end
+
+
+// q4 : identify paramter and arguments
+
+// q 5: how many parameter are in function and how many arguments passed
+
+// // q 6 : predect op
+// function sayHi(name = "guest"){
+//     console.log("hi",name);
+// }
+// sayHi();
+
+// q7 what ... mean in parameters
+// all arguments ( extra) in ... as array
+
+
+// q8 : use rest parameter to accept any number of scores and return athe toatl
+
+// function getScore(...scores){
+//     // console.log(scores);
+//     let total = 0;
+//     scores.forEach(function(val){
+//         total = total + val;
+//     })
+//     // console.log(total);
+//     return total;
+// }
+// console.log(getScore(10,12,14,18));
+
+
+
+
+// q 9 fix using early return
+
+// function checkAge(age){
+//     if(age<18){
+//         console.log("Too young");
+//     } else {
+//         console.log("Allowed");
+//     }           
+// }
+
+// function checkAge(age){
+//     if(age<18) return ("Too young"); //return "Too young";
+//     return ("Allowed");
+//     // return "Allowed";
+// }           
+
+// console.log(checkAge(19));
+
+
+// q10 return value of this 
+// function f() {
+//     return;
+// }
+// console.log(f()); // -> undefined
+
+
+
+//  what doe sit mean when we say "functions are first-class citizens"?
+// first class functions
+
+// can you assign a funciton to a variable and the call it  ? show how .
+
+// let a = fucntion () {
+
+// }
+// a();
+
+
+// pass a fucntion into another fucntion and execute it inside .
+
+// function abcd(val) {
+//     val();
+// }
+
+// abcd(function() {
+//     console.log("hey");
+// });
+
+
+// q 14 what is higher order function
+// function abcd(){
+//     return function() {
+
+//     };
+// }
+
+// function abcd(val){
+//     val();
+// }
+// abcd( function(){
+
+// });
+
+
+// q 15 identify hof
+// [1,2,3].map(function(x) {
+//     return x*2;
+// }); // map-> hof accepting a function
+
+// q16 pure , impure fncs
+// let total = 0;
+// function addTotal(num) {
+//     total += num;
+// }
+
+
+// q 17 covert to pure fn
+
+// let total = 0;
+// function addTotal(num){
+//     let newTotal =total;
+//     newTotal += num;
+// }
+
+
+
+// q18 closure -> fn returns an fn and use parents variable
+// function abcd(){
+//     let vla =0 ;
+//     return function (){
+//         console.log(val);
+//     };
+// }
+
+// // q 19 - log op
+// function outer() {
+//     let count = 0;
+//     return function() { // -> counter
+//         count++;
+//         console.log(count);
+//     };
+// }
+// const counter = outer();
+// counter();
+// counter();
+// 1 1 -> no -> counter = function that returned 
+// no error it fn scoped
+// 1 2
+
+
+// q20 -> convert this mnormal fucntion to iife
+// function init(){
+//     console.log("initalized");
+// }
+// (function init(){
+//     console.log("initalized");
+// })();
+
+
+// q 21  what is the use iife? name one real -world use case . -> to create private variable
+
+// let sher = ( function(){
+//     let score = 0;
+//     return{
+//         getScore: function(){
+//             console.log(score);
+//         },
+//         setScore: function(val){
+//             score = val;
+//         },
+//     };
+// })();
+
+
+
+// q 22 -> output error
+// greet();
+// // fn expression gives error in var too - but deffierent
+// var greet = function() {
+//     console.log("Hi");
+// };
+
+
+// q23 -> output
+// greet();
+// function greet() {
+//     console.log("Hi");
+// };
+
