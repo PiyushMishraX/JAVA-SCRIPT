@@ -539,3 +539,33 @@
 // }) ();
 
 // // console.log(password);
+
+
+
+
+
+
+// ONCFUSIONS 
+
+// regular vs fat arrow fn
+// problem in object crating , for fat arrow fn
+// use fat arrow in function creation
+
+// const obj = {
+//     value: 42;
+//     regular: function() { return this.value },
+//     arrow: ( ) => this.value // this keyword looses value
+// };
+
+
+
+// function hoisting TDZ
+
+// greet();
+// function greet (){}
+
+// greet(); // error
+// const greet = () => {};
+
+
+// closure vs hof -- nearky similar  but closure always uses a variable  from parent fns, while in hof it is not important
