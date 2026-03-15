@@ -518,3 +518,24 @@
 
 
 
+// create a pure fn to transform a value
+
+// function double(val){
+//     return val*2;
+// }
+
+// console.log(double(5));
+// // always check code beore running
+
+
+
+
+
+// use IIFE to isolate variable
+
+// ( function(){
+//     const password = "secret password";
+//      console.log(password);
+// }) ();
+
+// // console.log(password);
