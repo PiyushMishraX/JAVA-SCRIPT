@@ -167,3 +167,23 @@
 // console.log(early());
 
 
+// First class function -> ( conceptual -> basically ) - >  functions can be treated like vlaues 
+
+// jaha values waha function ho sakte hhai
+// let abcd = function (){
+// }
+
+function abcd(val) {
+    val();
+}
+
+// arguments mein fucntion de sakte hai -> no name of that function  
+// abcd(function(){
+//  console.log("hey");
+// })
+
+
+// function hey(){
+//     console.log("hey");
+// }
+// abcd(hey()); -> not possible
