@@ -487,3 +487,34 @@
 
 // let twenty_disocunter = discountCalculator(20);
 // console.log(twenty_disocunter(200));
+
+
+
+
+
+// // counter
+// function counter(){
+//     let count = 0;
+//     return function(){
+//         count ++;
+//         return count;
+//     }
+// }
+// let c = counter(); // crate new independent count for c
+// console.log(c()); 
+// console.log(c()); 
+// console.log(c()); 
+// console.log(c()); 
+// console.log(c()); 
+
+// let d = counter(); // crate new independent count for c
+// console.log(d());
+
+
+// console.log(c());
+// solve some more questions of topics such as closure using chat gpt
+
+
+
+
+
