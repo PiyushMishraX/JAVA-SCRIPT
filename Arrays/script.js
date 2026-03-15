@@ -64,15 +64,24 @@ let arr = [11,62,3,4,25];
 // ,map dikhte hi saath man mein ek blank array bana lo -> or returned values input karte jao
 
 
-let new_arr = arr.map(function(val){
-    // return 12;
-    // no return -> undefined
-    // return;
+// let new_arr = arr.map(function(val){
+//     // return 12;
+//     // no return -> undefined
+//     // return;
 
-    if(val>10) return val;
-});
+//     if(val>10) return val;
+// });
 
-console.log(new_arr);
+// console.log(new_arr);
 
-// jab bhi koi aisa koi case dikh jaaye jaha par ek array se naya array banega and wo naya array kuchh values ko  rakhega tab map lagega
+// // jab bhi koi aisa koi case dikh jaaye jaha par ek array se naya array banega and wo naya array kuchh values ko  rakhega tab map lagega
 
+
+// filter
+
+// let new_arr = arr.filter(function(val){
+//     // return true; 
+//     if(val > 4) return true;
+//     // only return vlaues when true
+// });
+// console.log(new_arr);
