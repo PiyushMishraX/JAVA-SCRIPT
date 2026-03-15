@@ -119,3 +119,24 @@
 
 // // gives deafult vlaues to top too or the fn(); searches best possible function declaration
 
+
+
+// REST ( AND SPREAD)  parameter
+
+// function abcd (...val) {
+//  console.log(val);
+// }
+// abcd(1,2,3,4,5,6,7); // -> (7) [1, 2, 3, 4, 5, 6, 7]
+
+// jab arguments kai saare ho to humein utne hi parameter banane padenge , issey bachne ke liye , hum rest ka use karte hai ...
+// ... -> yahi rest yahi spread
+// agar ... function ke parameter  space me lage t wo rest operator hai and agar wo arrays and objects mein lage to wo spread opearor hai
+
+
+
+// function abcd (a,b,c,...val) {
+//  console.log(val);
+//  console.log(a,b,c,val)
+// }
+// // ABCD(1,2,3,4,5,6,7); // 
+// abcd(1,2,3,4,5,6,7); // -> (4) [4, 5, 6, 7]
