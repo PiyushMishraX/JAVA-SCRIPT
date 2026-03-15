@@ -19,6 +19,7 @@ let a = 12; // declaration
 const a =12;
 
 
+
 // var score = 10;
 // var score = 20;
 
