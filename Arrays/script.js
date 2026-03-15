@@ -49,7 +49,9 @@
 
 
 
-let arr = [11,62,3,4,25];
+// let arr = [11,62,3,4,25];
+
+
 // arr.forEach(function(val){
 //     console.log(val);
 // });
@@ -131,9 +133,36 @@ let arr = [11,62,3,4,25];
 // console.log(any);
 
 
-let eve = arr.every(function(val){
-    return val > 1.5;
-});
-console.log(eve);
+// let eve = arr.every(function(val){
+//     return val > 1.5;
+// });
+// console.log(eve);
+
+
+
+
+// destructuring and spread operator
+
+
+// let [a,b] = arr; // first two are copie din a ,b
+
+//  let [a,b,,c] = arr; // saves 0, 1 ,3
+
+// // it is destructuring
+
+
+// sppread operator
+
+// let arr = [ 1,2,3,4,5,6,7,8,9];
+// // let arr2 = arr ; // not copied  just references passed
+
+// let arr2 = [...arr];
+// // spreads all values of arr and [] -> enclose them 
+// arr2.pop();
+
+
+
+
+
 
 
