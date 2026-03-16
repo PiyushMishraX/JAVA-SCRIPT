@@ -107,3 +107,22 @@
 // a.removeAttribute("href");
 // console.log(a.getAttribute("href"));
 
+
+// Dynamic DOM manipulation 
+
+// let h1 = document.createElement("h1");
+// h1.textContent = "hello ji";
+// document.body.append(h1); // after script
+// document.body.prepend(h1); // before script 
+
+
+
+// create element 
+// append/ prepend karo jaha bhi element chahiye waha
+
+let h1  = document.createElement("h1"); // blank h1
+// console.log(h1);
+// h1.textContent = "hello ji kaise ho";
+h1.textContent = "go home eat food";
+// document.querySelector("body").append(h1);
+document.querySelector("body").prepend(h1);
