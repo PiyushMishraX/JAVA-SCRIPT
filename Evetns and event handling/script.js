@@ -37,15 +37,52 @@
 
 // remove event listener
 
-let p = document.querySelector("p");
+// let p = document.querySelector("p");
 
-// we have to use same function so give it a name 
+// // we have to use same function so give it a name 
 
-function dblclick(){
-    p.style.color = "yellow";
-}
+// function dblclick(){
+//     p.style.color = "yellow";
+// }
 
-p.addEventListener("dblclick", dblclick );
+// p.addEventListener("dblclick", dblclick );
 
-// same as added one
-p.removeEventListener("dblclick", dblclick);
+// // same as added one
+// p.removeEventListener("dblclick", dblclick);
+
+
+
+// events
+
+// let p = document.querySelector("p");
+//  p.addEventListener("click", function(){
+//     p.style.color = "red";
+// });
+
+
+// let inp = document.querySelector("input");
+// // inp.addEventListener("input", function(data){
+// //     // console.log("typed");
+// //     console.log(data);
+// // });
+
+// inp.addEventListener("input", function(evt){ // evt = deatils
+//     // console.log("typed");
+//     console.log(evt.data);
+// });
+
+
+// let inp = document.querySelector("input");
+// inp.addEventListener("input", function(dets){
+//     // console.log("typed");
+//     if(dets.data !== null){
+//         console.log(dets.data);
+//     }
+//     // console.log(dts.data);
+//  });   
+
+
+
+
+
+
