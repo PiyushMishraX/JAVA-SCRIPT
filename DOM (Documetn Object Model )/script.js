@@ -270,10 +270,40 @@
 
 
 
+// add title to a div dynamically
+
+// let div = document.querySelector("div");
+
+// div.setAttribute("title", "some info");
+
+
+
+
+// remove the disable attribute from a button
+// let btn = document.querySelector("button");
+// btn.removeAttribute("disabled");
 
 
 
 
 
+// Dynamic DOM -- questions
 
 
+// What does createElement() do? what's returned
+// create an element such as h1 and return h1 node
+
+// let h1 = document.createElement("h1");
+// console.log(h1);
+
+
+
+
+// differnece in appendCHild() and prepend()
+// input at last and input at first 
+
+
+// can you removea n element using removeCHild()
+
+// let elementNode = document.querySelector("h1");
+// document.querySelector("div").removeChild(elementNode);
