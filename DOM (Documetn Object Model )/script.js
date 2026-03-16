@@ -307,3 +307,16 @@
 
 // let elementNode = document.querySelector("h1");
 // document.querySelector("div").removeChild(elementNode);
+
+
+
+// q 15 - how do you backgroud color og an element
+
+// Element.style.backgroundColor = "red";
+
+
+// q16 - what is difference between .classList.add() and .classList.toogle();
+/// adds cladd and tthe other  add if not present or removes if present
+
+
+
