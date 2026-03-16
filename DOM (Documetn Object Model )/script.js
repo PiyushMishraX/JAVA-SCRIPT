@@ -165,22 +165,93 @@
 
 // classList
 
-let h1  = document.querySelector("h1");
+// let h1  = document.querySelector("h1");
 
- console.dir(h1);
-
-
- // add classList add method
-
-//  h1.classList.add("hu"); // instead of writing all properties in js create calss in css and add it to element
-
-// remve class
-
-// h1.classList.remove("abcd");
+//  console.dir(h1);
 
 
-// toggle class
-h1.classList.toggle("abcd"); // if present them remove , if not present then add
+//  // add classList add method
+
+// //  h1.classList.add("hu"); // instead of writing all properties in js create calss in css and add it to element
+
+// // remve class
+
+// // h1.classList.remove("abcd");
+
+
+// // toggle class
+// h1.classList.toggle("abcd"); // if present them remove , if not present then add
+
+
+
+
+
+// QUESTION
+
+// what is  DOM ? how does it represen the HTML structure 
+// as tree and node
+
+
+
+// name the tyes of nodes in dom tree - elemnt text comment  nodes
+
+
+// 3-  differencnce in element and text node
+//  <p>dfgdgfg </p>
+// content == text tag = elemtn 
+// element can have children nodes 
+// text can't have childs
+
+
+// inspect html in browser and identify each node
+    //  <div>
+    //     Hello <span>World</span>
+    //  </div>
+
+
+    // differnece in     getElementbyId and .queryselectur
+    // only id , but id , tag class attribute universal
+    // 
+    // document.getElementById("id");
+    // document.querySelector("#id"); // need # . etc
+
+
+    /// what does getelementsby classname return? is it array
+// it returns a HTMLCollection list which looks like array but is not
+// let cl = document.getElementsByClassName("color");
+// console.dir(cl);
+
+
+
+
+
+
+// use quesry selector all to select all buttons with class ".buy-now".
+
+// let buynow = document.querySelectorAll(".buy-now");
+// console.dir(buynow);
+
+
+
+
+
+// tasks 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
