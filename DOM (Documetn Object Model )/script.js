@@ -320,3 +320,16 @@
 
 
 
+
+
+// COMMON CONFUSIONS
+//  innerText vs textContent vs innerHTML
+// textContent is faster than innerTect
+// by innerHTML we can put html , unlike other two putting text only
+
+// .classList vs style property
+// we can change css propery using two type 
+// element.style.color = "red";
+// or create a class in css and put through classlIst
+// element.classList.add("class_name");
+// class list is more prefeerred and faster to write for reusing too

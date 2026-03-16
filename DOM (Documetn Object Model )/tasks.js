@@ -117,4 +117,18 @@
 
 // task 11
 
-//
+// toggle a class active on a button when clicked ( hint use classList.toggle())
+// click part is in event listener
+
+
+//task 12
+// set the font size all p to 18px using .style
+
+// let p1 = document.querySelector("p");
+// let p = document.querySelectorAll("p");
+
+// p.forEach(function(elem){
+//     elem.style.fontSize = "18px"
+// })
+
+
