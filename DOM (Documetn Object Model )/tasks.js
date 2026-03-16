@@ -51,3 +51,10 @@
 
 
 
+// task 4
+
+// select a link and update href
+
+// let a = document.querySelector("a");
+// a.href = "https://facebook.com";
+
