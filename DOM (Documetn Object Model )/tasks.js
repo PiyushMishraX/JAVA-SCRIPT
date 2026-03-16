@@ -8,3 +8,32 @@
 
 // let head = document.querySelector("#heading");
 // head.textContent = "Welcome to sheriyans !";
+
+
+
+// select all <li> elemetns and print their text using a loop
+
+// let li = document.querySelector("li");
+// console.dir(li.innerText);
+
+// let ul = document.querySelector("ul");
+// console.dir(ul.innerText);
+
+
+
+// let lis = document.querySelectorAll("li");
+// console.dir(lis);
+
+// // lis.forEach(function(val){
+// //     console.log(val.textContent);
+// //     // li -> text
+// // });
+
+// for(let i =0 ; i<lis.length ; i ++){
+//     console.log(lis[i].textContent);
+// }
+
+
+
+
+// li.onbeforematch(())
