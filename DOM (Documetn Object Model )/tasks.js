@@ -34,6 +34,20 @@
 // }
 
 
-
-
 // li.onbeforematch(())
+
+
+
+
+
+// task 3
+// select a paragraph and replac eits content with:
+// /*<b>Updated</b> by JavaScript */
+
+
+// let para = document.querySelector("p");
+// para.innerHTML = "<b>Updated</b> by JavaScript";
+
+
+
+

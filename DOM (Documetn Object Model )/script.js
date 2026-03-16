@@ -235,10 +235,21 @@
 
 
 
-// tasks 
+// difference between innerText, textCOntent and innerHTML?
+// nearly same changes text of html tag innerText, textCOntent
+// print tags instead of workinh
+
+
+// inner HTML in  it tags work and we srtie html in it
 
 
 
+// when should you use textCOntent instead of innerTeaxt
+// text content is new anad fast - it can change hidden content too  
+// irrespective of display none
+// <li> <span display none > hidden  </spane> </li>
+
+// innerText only work for visible content
 
 
 
