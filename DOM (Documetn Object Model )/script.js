@@ -140,3 +140,48 @@
 // // document.querySelector("div").appendChild(h1);
 // // document.querySelector("div").append(h1);
 // document.querySelector("div").prepend(h1);
+
+
+
+
+
+// ---- ---- STYLE UPDATE --- ----
+
+// via .style and classList ( add , remove , toggle )
+
+// js se css change
+
+// let h1  = document.querySelector("h1");
+
+//  console.dir(h1);
+// //  h1.style.color = "red";
+// //  h1.style.backgroundColor = "yellow";
+// // h1.style.fontFamily="'Gilroy', sans-serif";
+// // h1.style.textTransform = "Capitalize";
+
+//  console.dir(h1);
+
+
+
+// classList
+
+let h1  = document.querySelector("h1");
+
+ console.dir(h1);
+
+
+ // add classList add method
+
+//  h1.classList.add("hu"); // instead of writing all properties in js create calss in css and add it to element
+
+// remve class
+
+// h1.classList.remove("abcd");
+
+
+// toggle class
+h1.classList.toggle("abcd"); // if present them remove , if not present then add
+
+
+
+
