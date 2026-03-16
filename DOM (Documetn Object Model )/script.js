@@ -120,9 +120,23 @@
 // create element 
 // append/ prepend karo jaha bhi element chahiye waha
 
-let h1  = document.createElement("h1"); // blank h1
-// console.log(h1);
-// h1.textContent = "hello ji kaise ho";
-h1.textContent = "go home eat food";
-// document.querySelector("body").append(h1);
-document.querySelector("body").prepend(h1);
+// let h1  = document.createElement("h1"); // blank h1
+// // console.log(h1);
+// // h1.textContent = "hello ji kaise ho";
+// h1.textContent = "go home eat food";
+// // document.querySelector("body").append(h1);
+// document.querySelector("body").prepend(h1);
+
+
+// use google to know more propetires use ai etc
+
+
+// let h1 = document.querySelector("h1");
+// h1.remove();
+
+// let h1 = document.createElement("h1");
+// h1.textContent = "i come form outside";
+
+// // document.querySelector("div").appendChild(h1);
+// // document.querySelector("div").append(h1);
+// document.querySelector("div").prepend(h1);
