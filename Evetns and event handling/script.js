@@ -83,6 +83,18 @@
 
 
 
+// chagne event tab chalta hai jab koi input select ya textarea me koi change ho jaye
+
+
+let sel = document.querySelector("select");
+
+let  device = document.querySelector("#device");
+
+sel.addEventListener("change" , function(dets){
+    // console.log(dets);/// details 
+    console.log(dets.target.value); // returns target value
+    device.textContent = "Device Selected"
+});
 
 
 
