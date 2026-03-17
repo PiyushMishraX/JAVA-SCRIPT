@@ -10,3 +10,17 @@
 // },1000);
 
 
+// let tm =setTimeout(function(){
+//     console.log("hey");
+// },1000);
+// clearTimeout(tm);
+// no output after 3 seconds
+
+// let tmi = setInterval(()=>{
+//    console.log("kutti");   
+// },1000);
+// clearInterval(tmi);
+
+
+
+
