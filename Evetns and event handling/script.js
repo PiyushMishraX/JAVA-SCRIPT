@@ -290,19 +290,41 @@
 
 
 
-let form = document.querySelector("form");
-let inputs = document.querySelectorAll("input");
+// let form = document.querySelector("form");
+// let inputs = document.querySelectorAll("input");
 
-form.addEventListener("submit", function(dets){
-    // form.preventdefault(); not htis but --
-    dets.preventDefault(); // method to prevent reloading - dafault of  form submission
+// form.addEventListener("submit", function(dets){
+//     // form.preventdefault(); not htis but --
+//     dets.preventDefault(); // method to prevent reloading - dafault of  form submission
 
-// type
-//    inputs.forEach(function(inp){
-//         // if(inp.type !== "submit")
-//         // inp.value = "";
-//         console.log(inp);
-//     });
+// // type
+// //    inputs.forEach(function(inp){
+// //         // if(inp.type !== "submit")
+// //         // inp.value = "";
+// //         console.log(inp);
+// //     });
 
+// });
+
+
+
+
+// Event Bubbling and Capturing
+
+// Event Bubbling
+
+// jispe event aayega agar usapr listener nahi hai to , hamaara event uske parent par listener dhundega , aur aisa karte karte upar ki taraf move karega
+
+// main div 
+//     nav div 
+//         links
+//         buttons
+// no event listener on button , but clicked on it it then the event checked on parent
+// checked until found
+
+
+let nav = document.querySelector("#nav");
+nav.addEventListener("click" , function(){
+    alert("clicked");
 });
-
+// button ( no) -> #nav(yes) -> alert
