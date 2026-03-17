@@ -421,3 +421,24 @@
 
 // event delatgation
 // Event delegation is a JavaScript technique where a single event listener is attached to a parent element to manage events for all of its descendant elements, leveraging the concept of event bubbling. This approach reduces the number of event listeners, which improves performance and simplifies code, especially for dynamic content
+
+
+
+
+
+//          CONFUSING TOPICS 
+
+
+// click vs listener - click is event and function is listener 
+// we can say complele is listener but basically cam say function is listener which reacts
+
+
+
+
+// Capturing vs Bubbling 
+// bubbing 
+// event goes to top ( to parent ) if listerner is present or not 
+// capturing - first capturing phase runs but is by deafult off- so first bubbling happens
+// if marksed true  then the true parents runs then child then the parents ( not captures - bubbled)
+
+// bubbling is used mostly 

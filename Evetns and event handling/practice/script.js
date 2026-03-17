@@ -22,27 +22,27 @@
 // });
 
 
-// deligated todo lst already created line-through in taks
+// // deligated todo lst already created line-through in taks
 
-let form = document.querySelector("form");
-let ul = document.querySelector("ul");
-let inp = document.querySelector("input");
+// let form = document.querySelector("form");
+// let ul = document.querySelector("ul");
+// let inp = document.querySelector("input");
 
-form.addEventListener("submit",function(event){
-    event.preventDefault();
-    let li = document.createElement("li");
-    li.textContent = inp.value;
-    ul.appendChild(li);
-    inp.value ='';
-    console.dir(ul);
-});
+// form.addEventListener("submit",function(event){
+//     event.preventDefault();
+//     let li = document.createElement("li");
+//     li.textContent = inp.value;
+//     ul.appendChild(li);
+//     inp.value ='';
+//     console.dir(ul);
+// });
 
-ul.addEventListener("click", function(dets){
-    dets.target.classList.toggle("lt");
-    // console.log(dets);
-    console.dir(dets);
-    if(this.children.length >= 5){
-        // ul.remove(dets.target);
-        dets.target.remove();
-    }
-});
+// ul.addEventListener("click", function(dets){
+//     dets.target.classList.toggle("lt");
+//     // console.log(dets);
+//     console.dir(dets);
+//     if(this.children.length >= 5){
+//         // ul.remove(dets.target);
+//         dets.target.remove();
+//     }
+// });
