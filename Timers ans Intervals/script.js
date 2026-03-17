@@ -38,3 +38,13 @@
 // },1000);
 
 // counter from 9 to 0
+
+
+
+
+// confusing topics
+
+// settimeout vs setinterval
+// for thing to do one time after certain time and a task to do multiple times after a time interval( can be dynamc interval thorugh variables )
+
+
