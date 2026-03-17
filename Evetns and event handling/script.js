@@ -323,8 +323,21 @@
 // checked until found
 
 
-let nav = document.querySelector("#nav");
-nav.addEventListener("click" , function(){
-    alert("clicked");
-});
-// button ( no) -> #nav(yes) -> alert
+// let nav = document.querySelector("#nav");
+// nav.addEventListener("click" , function(){
+//     alert("clicked");
+// });
+// // button ( no) -> #nav(yes) -> alert
+
+
+
+// line through
+// let ul = document.querySelector("ul");
+
+// ul.addEventListener("click", function(dets){
+//     // console.log(dets.target);
+//     // alert("clicked");
+//     // dets.target.style.textDecoration = "line-through";
+//     // dets.target.classList.add("lt");
+//     dets.target.classList.toggle("lt");
+// });
