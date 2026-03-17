@@ -241,13 +241,34 @@
 
 // block move
 
-let abcd = document.querySelector("#abcd"); // # for id do not forget 
-window.addEventListener("mousemove",function(event){
-    // console.log(event.clientX,event.clientY);
+// let abcd = document.querySelector("#abcd"); // # for id do not forget 
+// window.addEventListener("mousemove",function(event){
+//     // console.log(event.clientX,event.clientY);
 
-    // abcd.style.top = event.clientY + "px"; // + cahnges all to string value
-    // abcd.style.top = " 20 px"; // + cahnges all to string value
-    abcd.style.top = event.clientY + "px";
-    abcd.style.left = event.clientX + "px";
+//     // abcd.style.top = event.clientY + "px"; // + cahnges all to string value
+//     // abcd.style.top = " 20 px"; // + cahnges all to string value
+//     abcd.style.top = event.clientY + "px";
+//     abcd.style.left = event.clientX + "px";
 
-});
+// });
+
+
+
+
+// key up - works when key released unlink keydown working when key is pressed
+
+// document.addEventListener('keydown', (event) => {
+//   console.log(`Key pressed: ${event.key}`);
+// });
+
+// document.addEventListener('keyup', (event) => {
+//   console.log(`Key released: ${event.key}`);
+// });
+
+// window.addEventListener('keydown', (event) => {
+//   console.log(`Key pressed: ${event.key}`);
+// });
+
+// window.addEventListener('keyup', (event) => {
+//   console.log(`Key released: ${event.key}`);
+// });
