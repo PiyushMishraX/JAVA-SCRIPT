@@ -58,4 +58,17 @@
 
 
 
+// local storage stores only strings and convert others to string too
+// localStorage.setItem("friends", ["akash" , "sumit" , "amit"]);
+// localStorage.setItem("friends", {one :"akash" ,two: "sumit" });
+
+
+// storing the othres in localStorage
+// using JSON.stringify
+// localStorage.setItem("friends", JSON.stringify(["akash" , "sumit" , "amit"])); // stringify the array
+
+
+// JSON.parse('["akash","sumit","amit"]');
+
+// JSON.parse(localStorage.getItem("friends"))
 
