@@ -22,8 +22,9 @@
 // Update item - set item hi updata karta hai
 // localStorage.setItem("name" , "piyush mishra");
 
-localStorage.clear();
-//
+// localStorage.clear();
+//  remove all key-value pairs stored in the browser's 
+// instead one by one  using .remove it removes all 
 
 
 
@@ -35,3 +36,26 @@ localStorage.clear();
 // let v1 = sessionStorage.getItem("name");
 // sessionStorage.removeItem("name");
 // sessionStorage.setItem("name", "piyush mishra");
+
+
+
+
+// Cookies --
+// browser mein chota data store karne ke liye cookies ka istemall hota hai
+
+// ~4kb 
+// local and session storage - ~5Mb
+
+// cookies mein jo bhi data store karoge wo data page reload par autmatically server par jaayega -- ex. language preernces color theme etc
+// document.cookie = "email = piyush@test.com" 
+// deleting cookie cookies and data  it is thorugh browser featur 
+// see cookies thorugh extensions
+
+// document.cookie = "age=26";
+
+// document.cookie; // to see cookies
+
+
+
+
+
