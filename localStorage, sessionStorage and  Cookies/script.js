@@ -72,3 +72,46 @@
 
 // JSON.parse(localStorage.getItem("friends"))
 
+
+
+
+
+
+
+
+// COnfusions
+// why only strings stored in localStorage 
+//  the developer that developed localStorage api created it store only strings
+// arrays and objects can be saved using json . stringify and josn.parse gives to originals
+
+
+
+// understanding cookies 
+// sving data of login  tokens etc in local storage of user which do not delete unless user deletes it 
+// / it make sure user stay logged in
+// cookie can be expired after some times too
+// temporary cookie
+
+
+// temp cookie
+
+// 1
+// // Sets a cookie named "session" valid for 3600 seconds (1 hour)
+// document.cookie = "session=active; max-age=3600; path=/";
+
+// 2 - Clean Utility Functions
+
+// // Set cookie: name, value, minutes
+// const setCookie = (name, val, mins) => {
+//   document.cookie = `${name}=${val}; max-age=${mins * 60}; path=/`;
+// };
+
+// // Get cookie by name
+// const getCookie = (name) => {
+//   const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+//   return match ? match[2] : null;
+// };
+
+// // Usage: Set a 'theme' cookie for 30 minutes
+// setCookie('theme', 'dark', 30);
+// // max-age is in seconds convert nimns to secs usign mins * secs
