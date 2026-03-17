@@ -25,7 +25,7 @@
     <!-- taking inputs -->
 
     <form >
-        <input type="text" placeholder="name" id="name">
+        <input type="text" placeholder="name" id="name" required minlength="3" maxlength="20">
         <div id="hide">
             <br>
             <!-- <small hidden>Your name should be grater than two characters</small> -->
@@ -43,6 +43,8 @@
         <input type="submit">
     </form>
 
+    <!--  required minlength  maxlength-->
+      <!--  max and in can be bypassed using html removing and then submission so we have to use javascirpt we can bypass js too so we use in backend avlaidation and database validation multiple checks  -->
     
     
     <script src="script.js"></script>
