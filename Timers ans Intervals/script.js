@@ -25,14 +25,16 @@
 
 // create counter 10 to 0
 
-let count = 10;
+// let count = 10;
 
-let interval = setInterval( function(){
-    if(count >= 1 ){
-        count--;
-        console.log(count);
-    }
-    else{
-        clearInterval(interval);
-    }
-},1000);
+// let interval = setInterval( function(){
+//     if(count >= 1 ){
+//         count--;
+//         console.log(count);
+//     }
+//     else{
+//         clearInterval(interval);
+//     }
+// },1000);
+
+// counter from 9 to 0
