@@ -86,15 +86,64 @@
 // chagne event tab chalta hai jab koi input select ya textarea me koi change ho jaye
 
 
-let sel = document.querySelector("select");
+// let sel = document.querySelector("select");
 
-let  device = document.querySelector("#device");
+// let  device = document.querySelector("#device");
 
-sel.addEventListener("change" , function(dets){
-    // console.log(dets);/// details 
-    console.log(dets.target.value); // returns target value
-    device.textContent = "Device Selected"
-});
+// sel.addEventListener("change" , function(dets){
+//     // console.log(dets);/// details 
+//     console.log(dets.target.value);// returns target value
+//     device.textContent = `${dets.target.value} Device selecteed`; // css - text tramsform = capitalize
+// });
+
+
+
+// whatever typed  come in screen
+
+// window event listner
+
+// let h1 = document.querySelector("h1");
+
+// window.addEventListener("keydown", function(dets){
+//     console.log(dets.key);
+//     // h1.textContent = "dets.key";
+//     // if(dets.key !== "Control"  && dets.key !=="Backspace" && dets.key !== "Shift" && dets.key !== "CapsLock" &&  dets.key !== "Tab" )
+//     if(dets.key === " "){
+//         h1.textContent = "SPC";
+//     }
+//     else{
+//         h1.textContent = `${dets.key}`;
+//     }
+// });
+
+
+
+
+// let btn  = document.querySelector("#btn");
+// let fileinp = document.querySelector("#fileinp")
+
+// btn.addEventListener("click", function(){
+//     fileinp.click();
+//     // filoeinp pe click paa ardiya agar btn mai click kiya to
+
+// });
+
+// fileinp.addEventListener("change", function(dets){
+//     // console.log(dets.target.files[0].name);
+//     // btn.textContent = `${dets.target.files[0].name}`;
+//     // optional channing for when an input cancelled so no error occur
+//     // if(dets.target.files){
+//     //     btn.textContent = `${dets.target.files[0].name}`;
+//     // }
+
+//     // btn.textContent = `${dets.target?.files[0]?.name}`;
+
+//     const file = dets.target.files[0];
+//     // console.log(file);
+//     if(file){
+//     btn.textContent = file.name;
+//     }
+// });
 
 
 
