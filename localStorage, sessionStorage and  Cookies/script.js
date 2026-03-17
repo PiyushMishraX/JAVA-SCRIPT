@@ -13,3 +13,5 @@
 // store
 localStorage.setItem("name" , "piyush"); // name naam , piyush value
 
+//fetch
+let val = localStorage.getItem("name");
