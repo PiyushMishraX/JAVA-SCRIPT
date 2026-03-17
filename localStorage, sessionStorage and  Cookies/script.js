@@ -5,8 +5,8 @@
 
 
 // local Storage -> browser ke data base se baat
-// store kese kare
-// data fetch kaise kare
+// store kese kare - setItem
+// data fetch kaise kare - gettem
 // remove kaise kare 
 // update kaise kar
 
@@ -15,3 +15,6 @@ localStorage.setItem("name" , "piyush"); // name naam , piyush value
 
 //fetch
 let val = localStorage.getItem("name");
+
+// remove
+localStorage.removeItem("name");
