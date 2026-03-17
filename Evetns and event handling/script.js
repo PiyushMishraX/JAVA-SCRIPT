@@ -390,31 +390,34 @@
 // pahle capture phase chalta hai phir fir bubblin gphase
 // a ( not on) -> b ( not on) -> c ( not on) -> btn(not on) - > bubbling phase start ( which is one by deafalut for all)
 
-let a = document.querySelector("#a");
-let b = document.querySelector("#b");
-let c = document.querySelector("#c");
-let btn = document.querySelector("button");
+// let a = document.querySelector("#a");
+// let b = document.querySelector("#b");
+// let c = document.querySelector("#c");
+// let btn = document.querySelector("button");
 
-a.addEventListener(
-    "click" , 
-    function(){
-    console.log("a clicked");
-    } ,
-true); // write ,true after function }
-// a-> a run -> b( no) -> c (no ) -> btn(no) -> bubbling -> btn run -> b run -> c run -> a(true ) -> leave a 
-// whichever trueruns at first and other runs after that
+// a.addEventListener(
+//     "click" , 
+//     function(){
+//     console.log("a clicked");
+//     } ,
+// true); // write ,true after function }
+// // a-> a run -> b( no) -> c (no ) -> btn(no) -> bubbling -> btn run -> b run -> c run -> a(true ) -> leave a 
+// // whichever trueruns at first and other runs after that
 
-btn.addEventListener("click" , function(){
-    console.log("button clicked");
-});
+// btn.addEventListener("click" , function(){
+//     console.log("button clicked");
+// });
 
-b.addEventListener("click" , function(){
-    console.log("b clicked");
-});
+// b.addEventListener("click" , function(){
+//     console.log("b clicked");
+// });
+// // c.addEventListener("click" , function(){
+// //     console.log("c clicked");
+// // });
 // c.addEventListener("click" , function(){
 //     console.log("c clicked");
-// });
-c.addEventListener("click" , function(){
-    console.log("c clicked");
-},true);
-// a -> c -> btn -> b -> end
+// },true);
+// // a -> c -> btn -> b -> end
+
+// event delatgation
+// Event delegation is a JavaScript technique where a single event listener is attached to a parent element to manage events for all of its descendant elements, leveraging the concept of event bubbling. This approach reduces the number of event listeners, which improves performance and simplifies code, especially for dynamic content
