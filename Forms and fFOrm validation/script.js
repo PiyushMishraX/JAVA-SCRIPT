@@ -50,3 +50,11 @@
 //     let ans = usernameRegex.test("a.a");
 //     console.log(ans);
 // });
+
+
+
+// common confusions -- 
+
+// value vs textContet
+// value is to get value of input ( used in inputs)
+// textContent is to get text from a tag or to set text in tags
