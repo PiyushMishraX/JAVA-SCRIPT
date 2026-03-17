@@ -341,3 +341,38 @@
 //     // dets.target.classList.add("lt");
 //     dets.target.classList.toggle("lt");
 // });
+
+
+// bubbling mai event ho ya na ho sab ka listener chalega  kahi rukta nahi hai sab ka event chalta hai
+
+//  Event Capturing
+// event capturing is opposite of bubbling
+// pattern upar se niche jayega
+
+let a = document.querySelector("#a");
+let b = document.querySelector("#b");
+let c = document.querySelector("#c");
+let btn = document.querySelector("button");
+
+
+//bubbling other more tag-> body -> html sab ka chalega event
+btn.addEventListener("click" , function(){
+    console.log("button clicked");
+});
+
+b.addEventListener("click" , function(){
+    console.log("b clicked");
+});
+c.addEventListener("click" , function(){
+    console.log("c clicked");
+});
+a.addEventListener("click" , function(){
+    console.log("a clicked");
+});
+
+
+
+
+
+
+
