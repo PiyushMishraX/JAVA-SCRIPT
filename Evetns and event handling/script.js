@@ -272,3 +272,37 @@
 // window.addEventListener('keyup', (event) => {
 //   console.log(`Key released: ${event.key}`);
 // });
+
+
+
+
+// EVENT  OBJECT - target , type , preventDeafult
+
+// what is event object -
+// let abcd = document.querySelector("#abcd");
+
+// abcd.addEventListener("click" ,function(dets){ // dets = event object which have all details
+//     console.log(dets);
+// });
+
+
+
+
+
+
+let form = document.querySelector("form");
+let inputs = document.querySelectorAll("input");
+
+form.addEventListener("submit", function(dets){
+    // form.preventdefault(); not htis but --
+    dets.preventDefault(); // method to prevent reloading - dafault of  form submission
+
+// type
+//    inputs.forEach(function(inp){
+//         // if(inp.type !== "submit")
+//         // inp.value = "";
+//         console.log(inp);
+//     });
+
+});
+

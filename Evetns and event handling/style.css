@@ -2,37 +2,35 @@
          background-color: black; 
         color: white;
       } */
-      /* h3{
+/* h3{
         text-transform: capitalize;
       } */
 
-      * {
-        margin: 0;
-        padding: 0;
-        font-family:
-          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-        box-sizing: border-box;
-        background-color: #222;
-
-      }
-      html,
-      body {
-        width: 100%;
-        height: 100%;
-      }
-      #main {
-        padding: 30px;
-        /* display: flex;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+  background-color: #222;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  padding: 30px;
+  /* display: flex;
         align-items: center;
         justify-content: center; */
-        width: 100%;
-        height: 100%;
-        background-color: #222;
-      }
-      /* input {
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+}
+/* input {
         display: none;
       } */
-      /* h1{
+/* h1{
       color: #555;
       font-size: 10rem;
       font-weight: 600;
@@ -40,7 +38,7 @@
       letter-spacing: 0rem;
     } */
 
-     /* #btn {
+/* #btn {
          padding: 12px 22px;
         background-color: rgb(41, 143, 114);
         color: white;
@@ -59,7 +57,7 @@
         border-radius: 3px;
       } */
 
-      /* .card{
+/* .card{
         color: white;
         max-width: 200px;
         margin-top: 40px;
@@ -89,11 +87,16 @@
         margin-top: 10px;
       } */
 
+/* #abcd1{
+        width: 400px;
+        height: 400px;
+        background-color: red;
+      } */
 
-      /* body {
+/* body {
         overflow: hidden;
       } */
-      /* #abcd {
+/* #abcd {
         position: absolute; / top andleft only works in postion absolute /
         / transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.2s; /
         / stop page expanding  apply in main div for now add in body /
