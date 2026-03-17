@@ -152,61 +152,80 @@
 
 
 
-// creating card from form
+// // creating card from form
 
-let form = document.querySelector("form");
+// let form = document.querySelector("form");
 
-let inputs = document.querySelectorAll("input");
+// let inputs = document.querySelectorAll("input");
 
-let main = document.querySelector("#main"); // # for id
+// let main = document.querySelector("#main"); // # for id
  
 
-form.addEventListener("submit", function(dets){
-    dets.preventDefault(); // stop submission stops
+// form.addEventListener("submit", function(dets){
+//     dets.preventDefault(); // stop submission stops
 
-    // console.log(
-    //     inputs[0].value,
-    //     inputs[1].value,
-    //     inputs[2].value,
-    //     inputs[2].value
-    // );
+//     // console.log(
+//     //     inputs[0].value,
+//     //     inputs[1].value,
+//     //     inputs[2].value,
+//     //     inputs[2].value
+//     // );
 
-    let card = document.createElement("div");
-    card.classList.add("card");
+//     let card = document.createElement("div");
+//     card.classList.add("card");
     
-    let profile = document.createElement("div");
-    profile.classList.add("profile");
+//     let profile = document.createElement("div");
+//     profile.classList.add("profile");
 
-    // card.appendChild(profile);
-    // console.log(card);
+//     // card.appendChild(profile);
+//     // console.log(card);
 
-    let img = document.createElement("img");
-    // img.classList.add("");
-    img.setAttribute(
-        "src" , 
-        inputs[0].value
-    );
+//     let img = document.createElement("img");
+//     // img.classList.add("");
+//     img.setAttribute(
+//         "src" , 
+//         inputs[0].value
+//     );
 
-    let h3 = document.createElement("h3");
-    h3.textContent = inputs[1].value;
-    let h5 = document.createElement("h5");
-    h5.textContent = inputs[2].value;
-    let p = document.createElement("p");
-    p.textContent = inputs[3].value;
-
-
-    profile.appendChild(img);
-    card.appendChild(profile);
-
-    card.appendChild(h3);
-    card.appendChild(h5);
-    card.appendChild(p);
+//     let h3 = document.createElement("h3");
+//     h3.textContent = inputs[1].value;
+//     let h5 = document.createElement("h5");
+//     h5.textContent = inputs[2].value;
+//     let p = document.createElement("p");
+//     p.textContent = inputs[3].value;
 
 
-     main.appendChild(card);
+//     profile.appendChild(img);
+//     card.appendChild(profile);
 
-    inputs.forEach(function(inp){
-        if(inp.type !== "submit")
-        inp.value = "";
-    });
+//     card.appendChild(h3);
+//     card.appendChild(h5);
+//     card.appendChild(p);
+
+
+//      main.appendChild(card);
+
+//     inputs.forEach(function(inp){
+//         if(inp.type !== "submit")
+//         inp.value = "";
+//     });
+// });
+
+
+
+
+
+
+
+ 
+// mouse over and mose move 
+
+// mouseover and mouseout
+let abcd1 = document.querySelector("#abcd1");
+
+abcd1.addEventListener("mouseover", function(){
+    abcd1.style.backgroundColor =  "yellow";
+});
+abcd1.addEventListener("mouseout", function(){
+    abcd1.style.backgroundColor =  "red";
 });
