@@ -220,12 +220,34 @@
  
 // mouse over and mose move 
 
-// mouseover and mouseout
-let abcd1 = document.querySelector("#abcd1");
+// // mouseover and mouseout
+// let abcd1 = document.querySelector("#abcd1");
 
-abcd1.addEventListener("mouseover", function(){
-    abcd1.style.backgroundColor =  "yellow";
-});
-abcd1.addEventListener("mouseout", function(){
-    abcd1.style.backgroundColor =  "red";
+// abcd1.addEventListener("mouseover", function(){
+//     abcd1.style.backgroundColor =  "yellow";
+// });
+// abcd1.addEventListener("mouseout", function(){
+//     abcd1.style.backgroundColor =  "red";
+// });
+
+
+
+// mouse move
+
+// window.addEventListener("mouseover", function(event){
+//     console.log(event);
+// })
+
+
+// block move
+
+let abcd = document.querySelector("#abcd"); // # for id do not forget 
+window.addEventListener("mousemove",function(event){
+    // console.log(event.clientX,event.clientY);
+
+    // abcd.style.top = event.clientY + "px"; // + cahnges all to string value
+    // abcd.style.top = " 20 px"; // + cahnges all to string value
+    abcd.style.top = event.clientY + "px";
+    abcd.style.left = event.clientX + "px";
+
 });
