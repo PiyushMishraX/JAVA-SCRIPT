@@ -349,13 +349,61 @@
 // event capturing is opposite of bubbling
 // pattern upar se niche jayega
 
+// let a = document.querySelector("#a");
+// let b = document.querySelector("#b");
+// let c = document.querySelector("#c");
+// let btn = document.querySelector("button");
+
+
+//bubbling other more tag-> body -> html sab ka chalega event
+// btn.addEventListener("click" , function(){
+//     console.log("button clicked");
+// });
+
+// b.addEventListener("click" , function(){
+//     console.log("b clicked");
+// });
+// c.addEventListener("click" , function(){
+//     console.log("c clicked");
+// });
+// a.addEventListener("click" , function(){
+//     console.log("a clicked");
+// });
+
+
+
+// capturing
+
+// jab bhi click karte ho ya event raise karte ho to apka jo event  flow hai / propogation do phases mai chalta hai
+
+// phse 1 : event top level elemetns se niches ki taraf aayega // parent -> child -. child
+// phase 2: event raised element se parent ki taraf jaayega
+
+// aur pahle phase 1 hoti hai
+
+
+
+// capture phase on kardo to phase 1 pehle dih jayega 
+// phase 1 hi pahle hoti hai par vo by deafult off rahti hai, agar usey on kar de  to pehle phase 1 ka answer milega
+
+
+// pahle capture phase chalta hai phir fir bubblin gphase
+// a ( not on) -> b ( not on) -> c ( not on) -> btn(not on) - > bubbling phase start ( which is one by deafalut for all)
+
 let a = document.querySelector("#a");
 let b = document.querySelector("#b");
 let c = document.querySelector("#c");
 let btn = document.querySelector("button");
 
+a.addEventListener(
+    "click" , 
+    function(){
+    console.log("a clicked");
+    } ,
+true); // write ,true after function }
+// a-> a run -> b( no) -> c (no ) -> btn(no) -> bubbling -> btn run -> b run -> c run -> a(true ) -> leave a 
+// whichever trueruns at first and other runs after that
 
-//bubbling other more tag-> body -> html sab ka chalega event
 btn.addEventListener("click" , function(){
     console.log("button clicked");
 });
@@ -363,16 +411,10 @@ btn.addEventListener("click" , function(){
 b.addEventListener("click" , function(){
     console.log("b clicked");
 });
+// c.addEventListener("click" , function(){
+//     console.log("c clicked");
+// });
 c.addEventListener("click" , function(){
     console.log("c clicked");
-});
-a.addEventListener("click" , function(){
-    console.log("a clicked");
-});
-
-
-
-
-
-
-
+},true);
+// a -> c -> btn -> b -> end
