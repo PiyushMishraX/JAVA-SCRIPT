@@ -25,7 +25,9 @@
     <!-- taking inputs -->
 
     <form >
-        <input type="text" placeholder="name" id="name" required minlength="3" maxlength="20">
+        <!-- <input type="text" placeholder="name" id="name" required minlength="3" maxlength="20"> -->
+        <!-- <input type="text" placeholder="name" id="name" pattern="[a-z]{3,8}" required > -->
+        <input type="text" placeholder="name" id="name"  >
         <div id="hide">
             <br>
             <!-- <small hidden>Your name should be grater than two characters</small> -->
@@ -33,7 +35,7 @@
         </div>
         <br><br>
         <input type="email" placeholder="email"><br><br>
-        <input type="password" placeholder="password"><br><br>
+        <input type="password" placeholder="password" ><br><br>
         <select >
             <option value="male">male</option>
             <option value="female">female</option>
@@ -45,7 +47,8 @@
 
     <!--  required minlength  maxlength-->
       <!--  max and in can be bypassed using html removing and then submission so we have to use javascirpt we can bypass js too so we use in backend avlaidation and database validation multiple checks  -->
-    
+    <!-- pattern attribut -->
+
     
     <script src="script.js"></script>
 </body>
