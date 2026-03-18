@@ -15,11 +15,11 @@
 // block scope - { } braces mai hi use ho sakti hai
 
 
-function abcd() {
-    var a = 12; // var - funhciton scoped 
-}
+// function abcd() {
+//     var a = 12; // var - funhciton scoped 
+// }
 
-var a =12; // global scope
+// var a =12; // global scope
 
 // agar code  kisti { } ke andar nahi hai to code global scoped hai
 // dunction + {} => function scoped 
@@ -32,6 +32,32 @@ var a =12; // global scope
 // MEMORY PHASE AND EXECUTION PHASE 
 
 
+// hypothetcical ( concept ) - code and variables is in a box where it runs
+// function abcd(){
+//     var a =12;
+//     let b = 13;
+//     let c =14;
+
+//     // .. code 
+    
+// }
+
+// thoda abstract hai - dikhta nahi hai - chupa hua ha
+
+
+
+
+
+// LEXICAL SCOPE & DYNAMIC SCOPE
+
+// lexical scoping - > ki aap kaha par physically available hai ye puri areeke se depend ka=arta hai ki app kya access kar payoge
+
+function abcd(){
+    let a = 12; // lexical pos is abced line 55 to 61
+    function defg(){
+        console.log(a);
+    }
+}
 
 
 
