@@ -115,3 +115,5 @@
 // // Usage: Set a 'theme' cookie for 30 minutes
 // setCookie('theme', 'dark', 30);
 // // max-age is in seconds convert nimns to secs usign mins * secs
+
+// code change = localStorage deletion  can say that
