@@ -186,7 +186,7 @@ upBtn.addEventListener("click", function () {
   if (lastChild) {
     stack.insertBefore(lastChild, stack.firstElementChild);
     // update
-    updateStack();
+
   }
 });
 
@@ -195,6 +195,5 @@ downBtn.addEventListener("click", function () {
   if (firstChild) {
     stack.appendChild(firstChild);
     // update
-    updateStack();
   }
 });
