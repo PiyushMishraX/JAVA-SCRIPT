@@ -87,4 +87,15 @@ form.addEventListener("submit", function (evt) {
     alert("Please select a category");
     return;
   } 
+
+    // store info locally
+    saveToLocalStorage({
+    imageUrl,
+    fullName,
+    purpose,
+    homeTown,
+    selected,
+  });
+
+
 });
