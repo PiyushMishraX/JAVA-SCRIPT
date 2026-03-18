@@ -6,23 +6,21 @@ let closeForm = document.querySelector(".closeForm");
 const form = document.querySelector("form");
 
 const imageUrlInput = form.querySelector(
-  "input[placeholder='https://example.com/photo.jpg']"
+  "input[placeholder='https://example.com/photo.jpg']",
 );
 const fullNameInput = form.querySelector(
-  "input[placeholder='Enter full name']"
+  "input[placeholder='Enter full name']",
 );
 const homeTownInput = form.querySelector(
-  "input[placeholder='Enter home town']"
+  "input[placeholder='Enter home town']",
 );
 const purposeInput = form.querySelector(
-  "input[placeholder='e.g., Quick appointment note']"
+  "input[placeholder='e.g., Quick appointment note']",
 );
 
 const categoryRadios = form.querySelectorAll("input[name='category']");
 
 const submitButton = form.querySelector(".submit-btn");
-
-
 
 // functionality
 
@@ -34,7 +32,7 @@ closeForm.addEventListener("click", function () {
   formContainer.style.display = "none";
 });
 
-// form validation reuired in html 
+// form validation reuired in html
 
 function saveToLocalStorage(obj) {
   if (localStorage.getItem("tasks") === null) {
@@ -86,10 +84,10 @@ form.addEventListener("submit", function (evt) {
   if (!selected) {
     alert("Please select a category");
     return;
-  } 
+  }
 
-    // store info locally
-    saveToLocalStorage({
+  // store info locally
+  saveToLocalStorage({
     imageUrl,
     fullName,
     purpose,
@@ -97,5 +95,8 @@ form.addEventListener("submit", function (evt) {
     selected,
   });
 
-
+  // reset , hide form and show the cards
+  form.reset();
+  formContainer.style.display = "none";
+  showCards();
 });
