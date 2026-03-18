@@ -100,3 +100,78 @@ form.addEventListener("submit", function (evt) {
   formContainer.style.display = "none";
   showCards();
 });
+
+
+function showCards() {
+  stack.innerHTML = "";
+
+  let allTasks = JSON.parse(localStorage.getItem("tasks"));
+
+  allTasks.forEach(function (task) {
+    // Create card container
+    const card = document.createElement("div");
+    card.classList.add("card");
+
+    // Avatar image
+    const avatar = document.createElement("img");
+    avatar.src = task.imageUrl;
+    avatar.alt = "profile";
+    avatar.classList.add("avatar");
+    card.appendChild(avatar);
+
+    // Name
+    const name = document.createElement("h2");
+    name.textContent = task.fullName;
+    card.appendChild(name);
+
+    // Info: Home town
+    const hometownInfo = document.createElement("div");
+    hometownInfo.classList.add("info");
+
+    const hometownLabel = document.createElement("span");
+    hometownLabel.textContent = "Home town";
+    const hometownValue = document.createElement("span");
+    hometownValue.textContent = task.homeTown;
+
+    hometownInfo.appendChild(hometownLabel);
+    hometownInfo.appendChild(hometownValue);
+    card.appendChild(hometownInfo);
+
+    // Info: Bookings
+    const bookingsInfo = document.createElement("div");
+    bookingsInfo.classList.add("info");
+
+    const bookingsLabel = document.createElement("span");
+    bookingsLabel.textContent = "Purpose";
+    const bookingsValue = document.createElement("span");
+    bookingsValue.textContent = task.purpose;
+
+    bookingsInfo.appendChild(bookingsLabel);
+    bookingsInfo.appendChild(bookingsValue);
+    card.appendChild(bookingsInfo);
+
+    // Buttons container
+    const buttonsDiv = document.createElement("div");
+    buttonsDiv.classList.add("buttons");
+
+    // Call button
+    const callBtn = document.createElement("button");
+    callBtn.classList.add("call");
+    callBtn.innerHTML = '<i class="ri-phone-line"></i> Call';
+
+    // Message button
+    const msgBtn = document.createElement("button");
+    msgBtn.classList.add("msg");
+    msgBtn.textContent = "Message";
+
+    // Append buttons
+    buttonsDiv.appendChild(callBtn);
+    buttonsDiv.appendChild(msgBtn);
+
+    // Append buttonsDiv to card
+    card.appendChild(buttonsDiv);
+
+    // Finally, add the card to the DOM (for example, inside a container)
+    document.querySelector(".stack").appendChild(card); // or any container of your choice
+  });
+}
