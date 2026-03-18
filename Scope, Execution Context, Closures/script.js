@@ -76,3 +76,18 @@ function abcd(){
 // }
 // defg();
 
+// closure
+// closures definition and how variables are preserved 
+
+// closures hote hai function jo ki kisi parent function ke andar ho aur andar wala function return ho raha ho and returning function use c=kare parent function ka koi variable
+
+function abcd(){
+    let a = 12;
+    return function (){
+    console.log(a); // closure 
+    }
+}
+
+// fayde nuksaan 
+// private variables 
+// global pollution stopping 
