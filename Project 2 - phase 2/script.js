@@ -48,4 +48,35 @@ form.addEventListener("submit", function (evt) {
     }
   });
 
+  let selected = false;
+  categoryRadios.forEach(function (cat) {
+    if (cat.checked) {
+      selected = cat.value;
+    }
+  });
+
+  if (imageUrl === "") {
+    alert("Please enter an Image URL.");
+    return;
+  }
+
+  if (fullName === "") {
+    alert("Please enter your Full Name.");
+    return;
+  }
+
+  if (homeTown === "") {
+    alert("Please enter your Home Town.");
+    return;
+  }
+
+  if (purpose === "") {
+    alert("Please enter the Purpose.");
+    return;
+  }
+
+  if (!selected) {
+    alert("Please select a category");
+    return;
+  } 
 });
