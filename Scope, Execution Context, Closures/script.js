@@ -58,8 +58,21 @@ function abcd(){
         console.log(a);
     }
 }
+// js mai lexical scoping follow karte hai 
 
+// Dynamic scoping -> js mai follw nahi karte dynamic scopin g
+// kaha se call kar rahe ho uspe depend karega ki kya value milegi
 
+// let a = 12;
 
+// function abcd(){
+//     console.log(a);
+// }
 
+// function defg(){
+//     let a = 13;
+//     abcd(); // dynamic mai a = 13 lexical a = 12
+//     // kaha se calll kiya depend nahi karta kaha created hai karta hai
+// }
+// defg();
 
