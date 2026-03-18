@@ -3,6 +3,10 @@ let addNote = document.querySelector("#add-note");
 let formContainer = document.querySelector(".form-container");
 let closeForm = document.querySelector(".closeForm");
 
+const stack = document.querySelector(".stack");
+const upBtn = document.querySelector("#upBtn");
+const downBtn = document.querySelector("#downBtn");
+
 const form = document.querySelector("form");
 
 const imageUrlInput = form.querySelector(
@@ -24,16 +28,6 @@ const submitButton = form.querySelector(".submit-btn");
 
 // functionality
 
-addNote.addEventListener("click", function () {
-  formContainer.style.display = "initial";
-});
-
-closeForm.addEventListener("click", function () {
-  formContainer.style.display = "none";
-});
-
-// form validation reuired in html
-
 function saveToLocalStorage(obj) {
   if (localStorage.getItem("tasks") === null) {
     let oldTasks = [];
@@ -46,6 +40,17 @@ function saveToLocalStorage(obj) {
     localStorage.setItem("tasks", JSON.stringify(oldTasks));
   }
 }
+
+addNote.addEventListener("click", function () {
+  formContainer.style.display = "initial";
+});
+
+closeForm.addEventListener("click", function () {
+  formContainer.style.display = "none";
+});
+
+// form validation reuired in html
+
 
 form.addEventListener("submit", function (evt) {
   evt.preventDefault();
@@ -181,6 +186,27 @@ showCards();
 
 /// arrow working --
 
+
+
+function updateStack() {
+    const cards = document.querySelectorAll(".stack .card");
+    // let card = cards[0];
+    for (let i = 0; i < 3; i++) {
+        let card = cards[i];
+        
+        
+        // card.style.zIndex = 3 - i;
+        // card.style.transform = `translateY(${i * 10}px) scale(${1 - i * 0.02})`;
+        // card.style.opacity = `${1 - i * 0.02}`;
+        
+        if (card) {
+            card.style.zIndex = 3 - i;
+            card.style.transform = `translateY(${i * 10}px) scale(${1 - i * 0.02})`;
+            card.style.opacity = `${1 - i * 0.02}`;
+        }
+    }
+};
+
 upBtn.addEventListener("click", function () {
   let lastChild = stack.lastElementChild;
   if (lastChild) {
@@ -200,22 +226,3 @@ downBtn.addEventListener("click", function () {
   }
 });
 
-
-function updateStack() {
-  const cards = document.querySelectorAll(".stack .card");
-  // let card = cards[0];
-  for (let i = 0; i < 3; i++) {
-    let card = cards[i];
-
-  
-    // card.style.zIndex = 3 - i;
-    // card.style.transform = `translateY(${i * 10}px) scale(${1 - i * 0.02})`;
-    // card.style.opacity = `${1 - i * 0.02}`;
-
-    if (card) {
-      card.style.zIndex = 3 - i;
-      card.style.transform = `translateY(${i * 10}px) scale(${1 - i * 0.02})`;
-      card.style.opacity = `${1 - i * 0.02}`;
-    }
-  }
-}
