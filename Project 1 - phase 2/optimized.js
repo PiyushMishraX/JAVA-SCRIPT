@@ -76,14 +76,35 @@ function showUsers(arr) {
 }
 
 inp.addEventListener("input", (e) => {
-    const searchTerm = e.target.value.toLowerCase();
-    const filteredUsers = users.filter(user => 
-        user.name.toLowerCase().startsWith(searchTerm)
+    const val = e.target.value.toLowerCase().trim();
+    
+    const newUsers = users.filter(user => 
+        user.name.toLowerCase().includes(val)
     );
-    showUsers(filteredUsers);
+
+    // Check if the array has any items
+    if (newUsers.length > 0) {
+        showUsers(newUsers);
+    } else {
+        // Show the "No User Found" state directly
+        renderEmptyState();
+    }
 });
+
+function renderEmptyState() {
+    cardsContainer.innerHTML = `
+        <div class="no-results">
+            <h2 style="color: #666; text-align: center; width: 100%;">
+                Nahi mila! (No user found)
+            </h2>
+        </div>
+    `;
+}
 
 showUsers(users);
 
 
 // add debounce to impreove overall performance looks like it is reduced nut actually is increased
+
+// url--
+// github.com/asynchronousJavascriptor/js-become-dev
