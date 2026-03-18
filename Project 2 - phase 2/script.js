@@ -186,14 +186,36 @@ upBtn.addEventListener("click", function () {
   if (lastChild) {
     stack.insertBefore(lastChild, stack.firstElementChild);
     // update
-
+    updateStack();
   }
 });
 
 downBtn.addEventListener("click", function () {
   const firstChild = stack.firstElementChild;
   if (firstChild) {
+    // first goes to last and second comes to first
     stack.appendChild(firstChild);
     // update
+    updateStack();
   }
 });
+
+
+function updateStack() {
+  const cards = document.querySelectorAll(".stack .card");
+  // let card = cards[0];
+  for (let i = 0; i < 3; i++) {
+    let card = cards[i];
+
+  
+    // card.style.zIndex = 3 - i;
+    // card.style.transform = `translateY(${i * 10}px) scale(${1 - i * 0.02})`;
+    // card.style.opacity = `${1 - i * 0.02}`;
+
+    if (card) {
+      card.style.zIndex = 3 - i;
+      card.style.transform = `translateY(${i * 10}px) scale(${1 - i * 0.02})`;
+      card.style.opacity = `${1 - i * 0.02}`;
+    }
+  }
+}
