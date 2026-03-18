@@ -12,4 +12,20 @@
 
 // fucntion scope -- function ke andar use ho sakti hai
 // global scoped -- poore code mai kahi bhi use ho skati hai
-// block scope { } braces mai hi use ho sakti hai
+// block scope - { } braces mai hi use ho sakti hai
+
+
+function abcd() {
+    var a = 12; // var - funhciton scoped 
+}
+
+var a =12; // global scope
+
+// agar code  kisti { } ke andar nahi hai to code global scoped hai
+// dunction + {} => function scoped 
+// only { } =>> bloack scoped
+
+
+
+
+
