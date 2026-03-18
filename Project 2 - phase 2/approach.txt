@@ -3,7 +3,7 @@
 //buttons ko handle karna hai
 //  filters ko handle karna hai
 
-sabse pehle note add hoga so js mai add not select kiya
+sabse pehle note add hoga so js mai add note select kiya
 
 if add note button clicked show the form ( event listner)
 
