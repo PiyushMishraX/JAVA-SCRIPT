@@ -20,6 +20,8 @@ const purposeInput = form.querySelector(
 
 const categoryRadios = form.querySelectorAll("input[name='category']");
 
+const submitButton = form.querySelector(".submit-btn");
+
 
 
 // functionality
@@ -34,19 +36,25 @@ closeForm.addEventListener("click", function () {
 
 // form validation reuired in html 
 
+function saveToLocalStorage(obj) {
+  if (localStorage.getItem("tasks") === null) {
+    let oldTasks = [];
+    oldTasks.push(obj);
+    localStorage.setItem("tasks", JSON.stringify(oldTasks));
+  } else {
+    let oldTasks = localStorage.getItem("tasks");
+    oldTasks = JSON.parse(oldTasks);
+    oldTasks.push(obj);
+    localStorage.setItem("tasks", JSON.stringify(oldTasks));
+  }
+}
+
 form.addEventListener("submit", function (evt) {
   evt.preventDefault();
   const imageUrl = imageUrlInput.value.trim();
   const fullName = fullNameInput.value.trim();
   const homeTown = homeTownInput.value.trim();
   const purpose = purposeInput.value.trim();
-
-  let selected = false;
-  categoryRadios.forEach(function (cat) {
-    if (cat.checked) {
-      selected = cat.value;
-    }
-  });
 
   let selected = false;
   categoryRadios.forEach(function (cat) {
