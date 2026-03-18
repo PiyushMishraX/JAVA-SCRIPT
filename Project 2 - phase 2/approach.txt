@@ -1,0 +1,141 @@
+// newe cards create karne hai, data localStorage mai save karna hai
+// localStorage se hi cards ko show karna hai
+//buttons ko handle karna hai
+//  filters ko handle karna hai
+
+sabse pehle note add hoga so js mai add not select kiya
+
+if add note button clicked show the form ( event listner)
+
+form-container ka display initalagar 
+close click hoga to form close ( close form )
+close form -> clicked -> display none
+
+form validation ( step by step) -
+required in all 
+
+// or select full form and input in ai 
+// prompt - make js query selector for all the fields
+input in js
+
+comment - all variable and doc selection
+and code start here
+
+all variables added 
+
+now add checks validation
+makeValidation 
+run it wwhen form submit (use event .prvent dedefault )
+
+then -
+image url input not empty ( not only spaces to) 
+value.trim removes spaces at satrt and end 
+check if value.trim !++ "" ( if black string then )
+check for all  inputs
+
+check for radio buttons too if any is tur then run
+category radios is node list ( constianing all inputs )
+console.dir check true tthen everthying good
+
+
+create a balck array task and input vlaues in it in localStorage
+function save to local localStorage 
+except object
+oldtask = []
+purana local stoage data nikalo
+agar null to oldtask.push(pnj)
+json string old task 
+and save localStorage.setItems(oldTasks) ,
+save tasks, json string old task  
+
+else 
+oldtask = localStorage task .
+oldtask = parse oldtask.
+oldtask push object
+son string old task 
+local stoorage set item task saved
+
+
+
+
+
+now form if submitted 
+save to local stoage{
+    imageurl,
+    full name ,
+    home town,
+    slectdd
+}
+
+remove all input text values
+// give me the code which resets all the inputs values after form submission 
+or formreset()
+formcontainer.style.display = "none" form hides
+
+
+// showing the real cards
+// input card div in ai 
+// prompt - make the docuemtn create element structure for this markup
+
+show cards function input the code{
+    all taks= pased ( taks)
+
+    alltask .for each ( task ){
+        code    
+    }
+} 
+
+
+
+// CLICKING ARROWS to see other cards
+stack = .stack
+downbtn = #downBtn
+
+add listener for both buttons
+seet latenst eleemnt in stac
+
+see last element child 
+
+if(lastchild){
+    first childstack.inserbefore(lastchild, stack.frstleementchild)
+    // update
+}
+
+
+down button 
+
+cfirsfind first child 
+if(firstchild) {
+    stack.appendChild(firstchild)
+    update
+}
+
+
+
+updae stack {
+    casrs = .stack .cards
+
+    cards.foreach (card,index){
+        card.syle.zindex = 3 -index;
+        card.style.transform = 'translateY(${index * 10 }px) scale(${1 - index * 0.02})`
+        card.style.opacity = ` { 1 - index = 0.02}
+    }
+}
+
+
+refresh automatically so new value shows no refresh -
+
+stack.innerHTML = ""
+and add showCards after submission
+
+
+updte stack is runing for all we don't wan that 
+
+so use 
+for ( i = 0 ; i<3 ; i++){
+    code of for each 
+}
+
+
+
+

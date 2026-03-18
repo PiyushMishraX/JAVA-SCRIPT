@@ -177,13 +177,41 @@ function showCards() {
 }
 showCards();
 
+// function updateStack() {
+//   const cards = document.querySelectorAll(".stack .card");
+//   // let card = cards[0];
+//   for (let i = 0; i < 3; i++) {
+//     let card = cards[i];
+
+  
+//     // card.style.zIndex = 3 - i;
+//     // card.style.transform = `translateY(${i * 10}px) scale(${1 - i * 0.02})`;
+//     // card.style.opacity = `${1 - i * 0.02}`;
+
+//     if (card) {
+//       card.style.zIndex = 3 - i;
+//       card.style.transform = `translateY(${i * 10}px) scale(${1 - i * 0.02})`;
+//       card.style.opacity = `${1 - i * 0.02}`;
+//     }
+//   }
+// }
+
+
 function updateStack() {
   const cards = document.querySelectorAll(".stack .card");
 
-  for (let i = 0; i < 3; i++) {
+  // First, hide all cards to reset the state
+  cards.forEach(card => card.style.display = "none");
+
+  // Loop only through the first 3 cards (or fewer if total cards < 3)
+  const limit = Math.min(cards.length, 3);
+  
+  for (let i = 0; i < limit; i++) {
+    const card = cards[i];
+    card.style.display = "block";
     card.style.zIndex = 3 - i;
-    card.style.transform = `translateY(${i * 10}px) scale(${1 - i * 0.02})`;
-    card.style.opacity = `${1 - i * 0.02}`;
+    card.style.transform = `translateY(${i * 10}px) scale(${1 - (i * 0.02)})`;
+    card.style.opacity = `${1 - (i * 0.1)}`;
   }
 }
 
@@ -203,3 +231,6 @@ downBtn.addEventListener("click", function () {
     updateStack();
   }
 });
+
+
+// if you can deliver and appoach the code than you are good to go
