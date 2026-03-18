@@ -174,4 +174,27 @@ function showCards() {
     // Finally, add the card to the DOM (for example, inside a container)
     document.querySelector(".stack").appendChild(card); // or any container of your choice
   });
-}
+};
+
+showCards();
+
+
+/// arrow working --
+
+upBtn.addEventListener("click", function () {
+  let lastChild = stack.lastElementChild;
+  if (lastChild) {
+    stack.insertBefore(lastChild, stack.firstElementChild);
+    // update
+    updateStack();
+  }
+});
+
+downBtn.addEventListener("click", function () {
+  const firstChild = stack.firstElementChild;
+  if (firstChild) {
+    stack.appendChild(firstChild);
+    // update
+    updateStack();
+  }
+});
