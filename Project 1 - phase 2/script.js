@@ -57,4 +57,53 @@ const users = [
 
 
 // saare users show karana
-// filter karna har
+// filter karna har bar input karne pe
+// show karna filtered uses
+
+
+const container = document.querySelector('#container'); // Make sure you have a container in your HTML
+
+function showUsers(arr){
+    // not writing users because it wil show everthing even when filtrs use
+    arr.forEach(function(user){
+        // 1. Create the main card div
+    const card = document.createElement('div');
+    card.classList.add('card');
+
+    // 2. Create the background image
+    const img = document.createElement('img');
+    img.src = user.pic;
+    img.classList.add('bg-img');
+    img.alt = user.name;
+
+    // 3. Create the blurred layer
+    const blurredLayer = document.createElement('div');
+    blurredLayer.classList.add('blurred-layer');
+
+    // 4. Create the content wrapper
+    const content = document.createElement('div');
+    content.classList.add('content');
+
+    // 5. Create and set the Name (h3)
+    const h3 = document.createElement('h3');
+    h3.textContent = user.name;
+
+    // 6. Create and set the Bio (p)
+    const p = document.createElement('p');
+    p.textContent = user.bio;
+
+    // --- Assembly ---
+    content.appendChild(h3);
+    content.appendChild(p);
+
+    card.appendChild(img);
+    card.appendChild(blurredLayer);
+    card.appendChild(content);
+
+    // Add the finished card to your page
+    container.appendChild(card);
+    });
+}
+
+showUsers(users);
+// showUsers("piyush")
