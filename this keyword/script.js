@@ -71,15 +71,46 @@ abcd();
 // class ke andar this ki value blank obj hoti hai jab new ke ssath call karte ho
 
 
+// let obj = {
+//     name: "Piyush",
+//     sayName: () => { 
+//         // arrow se this value loose kar dega 
+//         // this window ke barabar ho jayega
+//          console.log(this); // window
+//          console.log(this.name);   // ye blank ho jayega
+
+//     },
+// };
+// obj.sayName();
+// // es5 ( normal ) function ( old / standard) se obj hi rahega this // arrow es6 ka hai
+
+
+// this inside the function inside a method
 let obj = {
     name: "Piyush",
-    sayName: () => { 
-        // arrow se this value loose kar dega 
-        // this window ke barabar ho jayega
-         console.log(this); // window
-         console.log(this.name);   // ye blank ho jayega
-
-    },
+      age: 20,
+      sayName: function(){
+        console.log(this); // obj
+       function defg() {
+        console.log(this); // method
+       }
+       defg();
+      }    
 };
 obj.sayName();
-// es5 ( normal ) function ( old / standard) se obj hi rahega this // arrow es6 ka hai
+
+// prevention
+let obj1 = {
+    name: "Piyush",
+      age: 20,
+      sayName: function(){
+        console.log(this); // obj
+       let defg =() => {
+        console.log(this); // obj
+       }
+        defg();
+
+      }    
+};
+obj1.sayName();
+// andar wale mai hamesha fat arrow function banao
