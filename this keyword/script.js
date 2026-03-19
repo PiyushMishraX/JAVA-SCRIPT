@@ -16,9 +16,16 @@ function abcd() {
 
 // method
 let obj = {
-    name: "harsh",
+    name: "Piyush",
     sayName: function(){ // fn in obj cann't be created using arrow , fn keyword se banta hai bas
-        console.log(this); // obj ke andar jo fn ho wo method hai
+         // obj ke andar jo fn ho wo method hai
+
+         console.log(this); // this changes 
+         console.log(this.name);  
+
     },
 };
+obj.sayName();
+// in method this ki value obj hoti hai
+// this = obj 
 
