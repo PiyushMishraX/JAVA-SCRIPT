@@ -4,16 +4,16 @@
 
 
 // global scope mai this
-console.log(this); // window // window baad maine padhenge 
+// console.log(this); // window // window baad maine padhenge 
 // window hai pradhan mantri - supreme
 
 
 // function scope mai
 // window again
-function abcd() {
-    console.log(this);
-}
-abcd();
+// function abcd() {
+//     console.log(this);
+// }
+// abcd();
 
 // method
 // let obj = {
@@ -86,33 +86,33 @@ abcd();
 
 
 // this inside the function inside a method
-let obj = {
-    name: "Piyush",
-      age: 20,
-      sayName: function(){
-        console.log(this); // obj
-       function defg() {
-        console.log(this); // method
-       }
-       defg();
-      }    
-};
-obj.sayName();
+// let obj = {
+//     name: "Piyush",
+//       age: 20,
+//       sayName: function(){
+//         console.log(this); // obj
+//        function defg() {
+//         console.log(this); // method
+//        }
+//        defg();
+//       }    
+// };
+// obj.sayName();
 
 // prevention
-let obj1 = {
-    name: "Piyush",
-      age: 20,
-      sayName: function(){
-        console.log(this); // obj
-       let defg =() => {
-        console.log(this); // obj
-       }
-        defg();
+// let obj1 = {
+//     name: "Piyush",
+//       age: 20,
+//       sayName: function(){
+//         console.log(this); // obj
+//        let defg =() => {
+//         console.log(this); // obj
+//        }
+//         defg();
 
-      }    
-};
-obj1.sayName();
+//       }    
+// };
+// obj1.sayName();
 // andar wale mai hamesha fat arrow function banao
 
 // summary
@@ -125,6 +125,32 @@ obj1.sayName();
 // event handler - element 
 // class - blank object
 
-// reason - arrow fn
+// reason - arrow fn // arrow function and lexical this
+// jaha arrow fn likha hai usase fark padta hai
 // arrow fn this ki value parent se lete hai 
 // agar method mai arrow k=lagaye to wo obj ki this value let e hai jo ki global mai hai ( window)
+
+
+
+
+// Manual binding - bind , call ,apply
+
+// this call apply and bind - learned as package
+
+// cfujnction ko call kate wakt set kar sakte hai ki uske this ki value kya hogi
+
+let obj = {
+    name: "Piyush",
+    age: 20,
+
+};
+
+function abcd() {
+    console.log(this);
+    console.log(this.age);
+}
+// abcd(); // abhi this = window
+
+// setting this 
+// abcd.call(obj);// abcd called and obj ko this bana diya
+// call function hi hoga obj nahi
