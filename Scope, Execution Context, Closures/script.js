@@ -140,29 +140,31 @@ function abcd(){
 
 // encapsulation
 
-function clickLimiter(){
-    let click = 0;
-    return function(){
-        if(click < 5){
+// function clickLimiter(){
+//     let click = 0;
+//     return function(){
+//         if(click < 5){
 
-            click ++;
-            console.log( `clicked : ${click} times`);
-        }
-        else{
-            // console.log("LIMKIT EXCEEDED, TRY AFTER SOME TIMES");
-            console.error("LIMKIT EXCEEDED, TRY AFTER SOME TIMES.");
-        }
-    }
-}
+//             click ++;
+//             console.log( `clicked : ${click} times`);
+//         }
+//         else{
+//             // console.log("LIMKIT EXCEEDED, TRY AFTER SOME TIMES");
+//             console.error("LIMKIT EXCEEDED, TRY AFTER SOME TIMES.");
+//         }
+//     }
+// }
 
-// click = 0; // private variable hai bahar se change nahi hogi  // alah se global variable banega na ki click change hoga
+// // click = 0; // private variable hai bahar se change nahi hogi  // alah se global variable banega na ki click change hoga
 
-// inner logic hde just acces givrn thorugh - fnc
+// // inner logic hde just acces givrn thorugh - fnc
 
-let fnc  = clickLimiter();
-fnc();
-fnc();
-fnc();
-fnc();
-fnc();
-fnc();
+// let fnc  = clickLimiter();
+// fnc();
+// fnc();
+// fnc();
+// fnc();
+// fnc();
+// fnc();
+
+
