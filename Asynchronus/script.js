@@ -41,16 +41,42 @@
 
 // code mei ye library mei likha hota hai apni pass use chalate hai  bas
 function profileLekarAao(username, cb){
+    console.log("Fetching profile data ...");
     setTimeout(() => {
         console.log(`profile petch of ${username}`);
-        cb({username, age:20 , email: "a@a.a"}); //callback
+        cb({_id:12122, username, age:20 , email: "a@a.a"}); //callback
     }, 2000);
 }
 
+function saarePostLeakarAao(id, cb){
+    console.log("Fetching all posts ...");
+    setTimeout(() => {
+        cb({_id: id , posts: [ "hey", "hello", "good morning"]})
+    }, 3000);
+}
+function savedPostsNIkaalo(id , cb){
+    console.log("Fetching saved posts ...")
+    setTimeout(() => {
+       cb({_id: id , saved: [1,2,3,3,4,45,4,323]})     
+    }, 3000
+);
+}
 
 
-// ham ye chalate hai
-profileLekarAao("piyush", function(profileData){
-    console.log(profileData);
+// ham ye chalate hai // jaise axios.get mai axios kisi library ka fn hai aur ham use use karte hai call back se
+// profileLekarAao("piyush", function(profileData){
+//     console.log(profileData);
+// });
+
+// this nested calback is called callback hell , ek callabck ke andar aur callback 
+// it is not written now or in real we use async and await it can be legacy codes
+
+profileLekarAao("piyush", function(data){
+    console.log(data);
+    saarePostLeakarAao(data._id, function(posts){
+        console.log(posts);
+        savedPostsNIkaalo(data._id, function(saved){ 
+            console.log(saved);
+        })
+    });
 });
-
