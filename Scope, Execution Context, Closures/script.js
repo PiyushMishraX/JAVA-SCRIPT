@@ -116,3 +116,23 @@ function abcd(){
 // uses - private counters , encapsulation
 
 
+
+// function countforMe() {
+//     let c = 0;
+//     return function (params) {
+//         c++;
+//         console.log(c);
+//     };
+// }
+// let fnc = countforMe(); // closures mai pehli baar chalane par function milte hai
+// fnc();// 1
+// fnc();
+// fnc();
+
+// let fnc2 = countforMe(); // c kki nayi copy new block
+// fnc2(); // 1
+// fnc2();
+// fnc2();
+// fnc2();
+// fnc2();
+
