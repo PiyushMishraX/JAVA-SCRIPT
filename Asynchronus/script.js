@@ -16,24 +16,41 @@
 
 // callback pattern and call back hell
 
-function kuchDerBaadChalunga(fnc) {
+// function kuchDerBaadChalunga(fnc) {
+// //   setTimeout(
+// //     () => {
+// //       console.log(val);  val =fnc
+// //     },
+// //     Math.floor(Math.random() * 10) * 1000,
+// //   );
+//   // math.random = a value bw 0 adn 1 , [0,1)
+
 //   setTimeout(
-//     () => {
-//       console.log(val);  val =fnc
-//     },
+//     fnc,
 //     Math.floor(Math.random() * 10) * 1000,
 //   );
-  // math.random = a value bw 0 adn 1 , [0,1)
-
-  setTimeout(
-    fnc,
-    Math.floor(Math.random() * 10) * 1000,
-  );
-}
+// }
 // kuchDerBaadChalunga(12);
-kuchDerBaadChalunga(function(){
-    console.log("hey");
-}); // this function is callback
+// kuchDerBaadChalunga(function(){
+//     console.log("hey");
+// }); // this function is callback
 
 // ek fn ko agar app ek aur fn bhej de raho ho parameter mein , to wo parameter wala fn kehlaata hai callback
+
+
+
+// code mei ye library mei likha hota hai apni pass use chalate hai  bas
+function profileLekarAao(username, cb){
+    setTimeout(() => {
+        console.log(`profile petch of ${username}`);
+        cb({username, age:20 , email: "a@a.a"}); //callback
+    }, 2000);
+}
+
+
+
+// ham ye chalate hai
+profileLekarAao("piyush", function(profileData){
+    console.log(profileData);
+});
 
