@@ -124,3 +124,7 @@ obj1.sayName();
 // arrow function inside es5 method - object
 // event handler - element 
 // class - blank object
+
+// reason - arrow fn
+// arrow fn this ki value parent se lete hai 
+// agar method mai arrow k=lagaye to wo obj ki this value let e hai jo ki global mai hai ( window)
