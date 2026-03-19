@@ -114,3 +114,13 @@ let obj1 = {
 };
 obj1.sayName();
 // andar wale mai hamesha fat arrow function banao
+
+// summary
+// global - window
+// function = window
+// mehtod with es5 fn - object
+// method with es6 arrow fn - window
+// es5 function inside es5 method - window
+// arrow function inside es5 method - object
+// event handler - element 
+// class - blank object
