@@ -3,5 +3,15 @@
 
 
 
+// global scope mai this
+console.log(this); // window // window baad maine padhenge 
+// window hai pradhan mantri - supreme
+
+
+// function scope mai
+// window again
+function abcd() {
+    console.log(this);
+}
 
 
