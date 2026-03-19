@@ -53,3 +53,19 @@ document.querySelector("h1")
     
 });
 
+
+// in class
+
+class Abcd{
+    // first letter capital
+    constructor(){
+        console.log("heyhey");
+        this.a = 12;
+    }
+}
+
+let val = new Abcd(); // blank object , Abcd chala , uska constructor chala aur jaha jaha this likha hai waha waha blank obj aagaya 
+// fir uske andar a ban gaya
+// val i s instance of Abcd
+
+// class ke andar this ki value blank obj hoti hai jab new ke ssath call karte ho
