@@ -36,8 +36,20 @@ let obj = {
       age: 20,
       sayName: function(){
         console.log(this);
-        console.log(this.age);
+        // console.log(this.age);
         // this ki value object method ke andar poore obj ko deenote karta hai
       }    
 };
 obj.sayName();
+
+
+// event handler (this)
+
+document.querySelector("h1")
+.addEventListener("click", function () {
+    // alert();
+    console.log(this);// this wahi hoga jisme event listener laga hai and this mai uski poori details aa jayengi jaise function drets mai aa jati hai
+    console.log((this.style.color = "red"));
+    
+});
+
