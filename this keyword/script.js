@@ -160,3 +160,8 @@ function abcd(a,b,c) {
     // console.log(this.age);
 }
 abcd.call(obj, 1,2,3);
+
+abcd.apply(obj,[ 1,2,3]); // only two values send value to se t s this and an array of argumetns
+
+let fnc  = abcd.bind(obj, 1,2,3); //. call jaisa khud nahi chalta naya fn deta hai// abcd ki nayi copy banata hai and this ki value fnc mai deaflut mai set kar dega
+fnc();
