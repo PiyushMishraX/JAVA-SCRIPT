@@ -145,12 +145,18 @@ let obj = {
 
 };
 
-function abcd() {
-    console.log(this);
-    console.log(this.age);
-}
+// function abcd() {
+//     console.log(this);
+//     console.log(this.age);
+// }
 // abcd(); // abhi this = window
 
 // setting this 
 // abcd.call(obj);// abcd called and obj ko this bana diya
 // call function hi hoga obj nahi
+
+function abcd(a,b,c) {
+    console.log(this,a,b,c);
+    // console.log(this.age);
+}
+abcd.call(obj, 1,2,3);
