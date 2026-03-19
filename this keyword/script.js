@@ -139,11 +139,11 @@
 
 // cfujnction ko call kate wakt set kar sakte hai ki uske this ki value kya hogi
 
-let obj = {
-    name: "Piyush",
-    age: 20,
+// let obj = {
+//     name: "Piyush",
+//     age: 20,
 
-};
+// };
 
 // function abcd() {
 //     console.log(this);
@@ -155,13 +155,13 @@ let obj = {
 // abcd.call(obj);// abcd called and obj ko this bana diya
 // call function hi hoga obj nahi
 
-function abcd(a,b,c) {
-    console.log(this,a,b,c);
-    // console.log(this.age);
-}
-abcd.call(obj, 1,2,3);
+// function abcd(a,b,c) {
+//     console.log(this,a,b,c);
+//     // console.log(this.age);
+// }
+// abcd.call(obj, 1,2,3);
 
-abcd.apply(obj,[ 1,2,3]); // only two values send value to se t s this and an array of argumetns
+// abcd.apply(obj,[ 1,2,3]); // only two values send value to se t s this and an array of argumetns
 
-let fnc  = abcd.bind(obj, 1,2,3); //. call jaisa khud nahi chalta naya fn deta hai// abcd ki nayi copy banata hai and this ki value fnc mai deaflut mai set kar dega
-fnc();
+// let fnc  = abcd.bind(obj, 1,2,3); //. call jaisa khud nahi chalta naya fn deta hai// abcd ki nayi copy banata hai and this ki value fnc mai deaflut mai set kar dega
+// fnc();
