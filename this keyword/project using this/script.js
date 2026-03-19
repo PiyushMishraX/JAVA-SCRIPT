@@ -40,6 +40,7 @@ const userManager = {
   },
   addUser: function () {
     this.users.push({
+      username: username.value,
       role: role.value,
       bio: bio.value,
       photo: photo.value,
@@ -48,6 +49,7 @@ const userManager = {
     this.renderUi();
   },
   renderUi: function () {
+    document.querySelector("#userGrid").innerHTML = "";
     this.users.forEach(function (user) {
       // 1. Create the main container
       const card = document.createElement("div");
@@ -56,8 +58,7 @@ const userManager = {
 
       // 2. Create the Profile Image
       const img = document.createElement("img");
-      img.src =
-        user.photo;
+      img.src = user.photo;
       img.alt = user.username;
       img.className =
         "w-24 h-24 rounded-full object-cover border-4 border-zinc-700 mb-4";
@@ -75,8 +76,7 @@ const userManager = {
       // 5. Create the Bio/Description
       const bio = document.createElement("p");
       bio.className = "text-zinc-500 text-sm leading-relaxed";
-      bio.textContent =
-        user.bio;
+      bio.textContent = user.bio;
 
       // 6. Assembly: Append children to the main container
       card.appendChild(img);
@@ -85,9 +85,11 @@ const userManager = {
       card.appendChild(bio);
 
       // 7. Append the final card to the body (or a specific container)
+      //   document.querySelector("#userGrid").innerHTML = ""; // not in for each
       document.querySelector("#userGrid").appendChild(card);
     });
   },
+
   removeUser: function () {},
 };
 
