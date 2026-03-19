@@ -27,4 +27,3 @@ console.log(arabiataCoffee);
 let a = {};
 let b1 = Object.create(a); // shareed memory baani
 
-let b2 = {...a}; // hard copy baani  shared nahi so valeus ek change and take more memoty too
