@@ -4,6 +4,9 @@ let role = document.querySelector("#role");
 let bio = document.querySelector("#bio");
 let photo = document.querySelector("#photo");
 
+let grid = document.querySelector("#userGrid");
+// let items = document.querySelectorAll(".newElement") // items do not update in it , this is empty
+
 const userManager = {
   users: [], // users
   init: function () {
@@ -16,6 +19,7 @@ const userManager = {
 
     form.addEventListener("submit", this.submitForm.bind(this)); //this ki value yaha pe obj hai // kyuki ye this submitForm method mai jaaye to this obj ho jaayega // first his = form
   },
+
   // submitForm: function(e){
   //     e.preventDefault();
   //     // console.log(this); // ab submit form mai this ki value hamesha obj hogi
@@ -54,7 +58,7 @@ const userManager = {
       // 1. Create the main container
       const card = document.createElement("div");
       card.className =
-        "bg-zinc-900 border border-zinc-800 p-6 rounded-2xl flex flex-col items-center text-center";
+        "newElement bg-zinc-900 border border-zinc-800 p-6 rounded-2xl flex flex-col items-center text-center";
 
       // 2. Create the Profile Image
       const img = document.createElement("img");
@@ -86,13 +90,43 @@ const userManager = {
 
       // 7. Append the final card to the body (or a specific container)
       //   document.querySelector("#userGrid").innerHTML = ""; // not in for each
-      document.querySelector("#userGrid").appendChild(card);
+    //   document.querySelector("#userGrid").appendChild(card);
+      grid.appendChild(card);
     });
+    this.removeUser();
   },
 
-  removeUser: function () {},
+// value of this in a es 5 fn in a loop = windows . give error 
+// so we will use es6 
+// in the methods this = object
+//   removeUser: function () {
+//     let items = document.querySelectorAll(".newElement")
+//         items.forEach(function (item){
+//             item.addEventListener("click", function(){
+//                 item.remove();
+//                 // grid.removeChild(item);
+//                 userManager.renderUi();
+//             })
+//         })
+//   },
+
+  removeUser: function () {
+    let items = document.querySelectorAll(".newElement");
+
+    items.forEach((item, index) => {
+      item.addEventListener("click", () => {
+        let a = this.users.splice(index, 1); // deleting 1 item starting from indec clicked 
+        console.log(a);
+        console.log(this.users);
+        this.renderUi();
+      });
+    });
+  },
 };
 
 userManager.init();
+// setInterval(() => {
+//     userManager.removeUser();
+// }, 0);
 
 // notes copy me likho usko padh padh ke code likho do tin baar approach sikh jaoge
