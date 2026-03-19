@@ -104,6 +104,7 @@ form.addEventListener("submit", function (evt) {
   form.reset();
   formContainer.style.display = "none";
   showCards();
+  window.location.reset();
 });
 
 
@@ -205,6 +206,7 @@ function updateStack() {
             card.style.opacity = `${1 - i * 0.02}`;
         }
     }
+  
 };
 
 upBtn.addEventListener("click", function () {
