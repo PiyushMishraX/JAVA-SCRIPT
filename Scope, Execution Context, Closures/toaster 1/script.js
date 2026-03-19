@@ -3,7 +3,7 @@ function createToaster(config){
     return function(str){
         let div = document.createElement("div");
         div.textContent = str;
-        div.className = `inline-block ${config.theme === "dark" ? "bg-gray-800 text-white" : "bg-gray-100 text-black"}  px-6 py-3 rounded shadows-lg pointer-events-none`;
+        div.className = `inline-block ${config.theme === "dark" ? "bg-gray-800 text-white" : "bg-gray-100 text-black"}  px-6 py-3 rounded shadows-lg pointer-events-none text-center`;
 
         document.querySelector(".parent").appendChild(div);
 
@@ -28,6 +28,8 @@ let toaster = createToaster({
 
 toaster("Download Done");
 setTimeout(() => {
-    
-    toaster("Download 2 done");
+    toaster("Piyush accepted your message");
 }, 2000);
+setTimeout(() => {
+    toaster("Mishra ji sent yyou a message");
+}, 1500);
