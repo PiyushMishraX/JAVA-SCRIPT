@@ -82,3 +82,4 @@ let obj = {
     },
 };
 obj.sayName();
+// es5 ( normal ) function ( old / standard) se obj hi rahega this // arrow es6 ka hai
