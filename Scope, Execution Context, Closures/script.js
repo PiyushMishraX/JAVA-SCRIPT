@@ -81,13 +81,38 @@ function abcd(){
 
 // closures hote hai function jo ki kisi parent function ke andar ho aur andar wala function return ho raha ho and returning function use c=kare parent function ka koi variable
 
-function abcd(){
-    let a = 12;
-    return function (){
-    console.log(a); // closure 
-    }
-}
+// function abcd(){
+//     let a = 12;
+//     return function (){
+//     console.log(a); // closure 
+//     }
+// }
 
 // fayde nuksaan 
 // private variables 
 // global pollution stopping 
+
+
+// how variables are preserved
+
+// function abcd(){
+//     let a = 12;
+//     return function (){
+//     console.log(a); // closure 
+//     }
+// }
+// let fnc = abcd();
+// fnc();
+// memory sheet mai abcd aaya memory space mai
+// a ka space bana 
+// ek fn return hua 
+// abcd khatam ho gaya 
+// a bhi hat gaya 
+// par fnc fir bhi print kar gaya kaise null ya undefined hona tha
+// par fn khatam to variables bhi khatam
+
+
+// ye sach hai fn ke khatam hone par apka fn and uske variables khatam ho jata hai par jab bhi closure banata to apke fn aur uske variable ka ek backlink ( kahi save - ek effiicient copy ) banaya jata hai uska naam hota [[environment]]
+// uses - private counters , encapsulation
+
+
