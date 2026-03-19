@@ -14,4 +14,11 @@ function abcd() {
     console.log(this);
 }
 
+// method
+let obj = {
+    name: "harsh",
+    sayName: function(){ // fn in obj cann't be created using arrow , fn keyword se banta hai bas
+        console.log(this); // obj ke andar jo fn ho wo method hai
+    },
+};
 
