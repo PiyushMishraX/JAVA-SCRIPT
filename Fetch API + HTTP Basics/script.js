@@ -98,3 +98,7 @@
         )
     });
  })
+
+ // error handling with response ok and try-catch 
+ // basic REST principle 
+ // backend and project section
