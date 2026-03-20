@@ -141,3 +141,6 @@
 
 
 // Observe3r pattern 
+
+//patterns kpo reuse kar sakte hai 
+// aisa code banana ek software engineer ko aur student ko alag karta hai
