@@ -71,3 +71,34 @@
 
 // debounce -> ek dealy baataoge  tum utna delay jab bhi aayega action ka reaction milega
 // throttle -> interval par chalunga, action agar hota raha and aapne ek interval batyaa tio utne invertal me aapka event chaalega
+
+
+let input = document.querySelector("input");
+
+function debounce(fnc, delay) {
+  let timer;
+  return function (...args) {
+    clearTimeout(timer); 
+    timer = setTimeout(() => {
+      fnc(...args);
+    }, delay);
+  }; 
+}
+
+function throttle(fnc, delay){
+    let timer = 0; // time
+    return function(...args){
+        let now = Date.now();
+        if(now - timer >= delay){
+            timer = now;
+            fnc(...args);
+        }
+    }
+}
+
+input.addEventListener(
+  "input",
+  throttle(function (dets ) {
+    console.log("ran");
+  }, 1000),
+); 
