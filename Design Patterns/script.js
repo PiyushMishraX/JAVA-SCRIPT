@@ -83,3 +83,15 @@ let Bank = (function () {
 Bank.check();
 
 // revealing module pattern mai naam bhi change kardete hai ki jo return karke bheja hai uska naam bhi set karlo
+
+
+// Factory function pattern 
+// Ek function banate ho jo objects create karta hai ( factory = object banane ki machine)
+
+// Factory funstion ek pattern aisa design pattern hai jisme hum ek simple function likhte hain jo naye objects banakar return karta hai, bina class ya new keyword use kiya.
+
+// is pattern ka main idea hai -> object creation ko ek function ke through control karna .
+
+// Har baar jab tum factory cfunction call kate ho , tumhe ek naya object milta hai jisme apne methods aur ( agar chaho to) private data ho sakta hai.
+
+// Yeh pattern specially useful hai jab tumhe ek hi type ke bohot saare objects chahiye, jaise users , products , tasks , etc.
