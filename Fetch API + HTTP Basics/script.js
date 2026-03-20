@@ -41,9 +41,9 @@
 // });
 
 // using implicit  return
-fetch("https://randomuser.me/api/")
-.then((raw)=>  raw.json()) // implicit return
-.then((data)=> console.log(data.results[0].name.first));
+// fetch("https://randomuser.me/api/")
+// .then((raw)=>  raw.json()) // implicit return
+// .then((data)=> console.log(data.results[0].name.first));
 
 
 // not like that
@@ -54,3 +54,9 @@ fetch("https://randomuser.me/api/")
 // .catch((err)=> {
 //     console.log(err);
 // });
+
+
+// multiple user 
+fetch("https://randomuser.me/api/?results=5")
+.then((raw)=>  raw.json()) // implicit return
+.then((data)=> console.log(data));
