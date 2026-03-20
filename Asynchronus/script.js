@@ -89,7 +89,7 @@
 
 // aap ek promies banate hai jo ki do states mei se ek state mei ja sakta ha and ya to woo resolve hoga ya to wo reject hoga , ab wo kya hoga ye to waqt b atayega par humein dono ke liye code likhana pata hai
 
-// let pr = new Promise(function (res,rej) {
+// let pr = new Promise(function (res,rej) { // function (resolve,reject) {
 //     setTimeout(() => {
 //         // res("Piyush");
 //         let rn = Math.floor(Math.random()*10);
@@ -128,7 +128,7 @@ let pr = new Promise(function (res,rej) {
 
 // better way to handle resolve reject
 
-async function abcd(){
+async function abcd(){ // function ke same async likho  fir await likho resolve hua to val try mai aaya await mai issue aaya to rej ka code catch mai aaya aur chala
     // let val = await pr; // await matlab wait karo jabtak uska res rej ka pura result nahi aata
 
     try{
@@ -139,4 +139,5 @@ async function abcd(){
     }
 }
 
-abcd();
+abcd(); // async await se jab tak result nahi aata tab tak fn rukta hai fir resolve value agar ho to ry mai jaati angar error aaye to wo catcah mai jata hai , cach mai reject value jaati and chalati hai ( only when try do not work )
+
