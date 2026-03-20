@@ -129,9 +129,14 @@ let pr = new Promise(function (res,rej) {
 // better way to handle resolve reject
 
 async function abcd(){
-    let val = await pr; // await matlab wait karo jabtak uska res rej ka pura result nahi aata
+    // let val = await pr; // await matlab wait karo jabtak uska res rej ka pura result nahi aata
 
-    
+    try{
+        let val = await pr;  // resolve mai bas ye chala
+        console.log(val);
+    } catch (err){ // rejected err mai aayega 
+        console.log(err);
+    }
 }
 
 abcd();
