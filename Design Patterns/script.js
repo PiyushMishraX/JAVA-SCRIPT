@@ -16,8 +16,47 @@
 //   let bankbalance = 12000; // canot be excessed directly private variablE
 // })();
 
+// let Bank = (function () {
+//   let bankbalance = 12000; // bahar kuch access nahi hoga
+
+//   function checkBalance(val) {
+//     console.log(bankbalance);
+//   }
+
+//   function setBalanace(val) {
+//     bankbalance = val;
+//   }
+
+//   function withdraw(val) {
+//     if (val <= bankbalance) {
+//       bankbalance -= val;
+//       console.log(bankbalance);
+//     }
+//   }
+
+//   //   return 12;
+//   return { // jo bahar se access karan ha bas usse bahar bhejo
+//     checkBalance, // bholo mat fn bhi value jais e use ho sakta hai
+//     setBalanace,
+//     withdraw,
+//   };
+// })();
+
+// // Bank.checkBalance(); // cann't read when not returned 
+
+// Bank.checkBalance();
+// Bank.withdraw(11000);
+// Bank.setBalanace(10000);
+// Bank.checkBalance();
+
+// moodule pattern mai jop bhi banayege iife ke andar banayenge wo private ho jaayega aur iife ke andar se object return karana hota hai 
+
+
+
+// Revealing module pattern
+
 let Bank = (function () {
-  let bankbalance = 12000; // bahar kuch access nahi hoga
+  let bankbalance = 12000; 
 
   function checkBalance(val) {
     console.log(bankbalance);
@@ -34,19 +73,13 @@ let Bank = (function () {
     }
   }
 
-  //   return 12;
-  return {
-    checkBalance, // bholo mat fn bhi value jais e use ho sakta hai
-    setBalanace,
-    withdraw,
+  return { 
+    check: checkBalance,
+    set: setBalanace,
+    draw: withdraw,
   };
 })();
 
-// Bank.checkBalance(); // cann't read when not returned 
+Bank.check();
 
-Bank.checkBalance();
-Bank.withdraw(11000);
-Bank.setBalanace(10000);
-Bank.checkBalance();
-
-// moodule pattern mai jop bhi banayege iife ke andar banayenge wo private ho jaayega aur iife ke andar se object return karana hota hai 
+// revealing module pattern mai naam bhi change kardete hai ki jo return karke bheja hai uska naam bhi set karlo
