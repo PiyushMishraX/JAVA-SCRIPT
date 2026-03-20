@@ -55,32 +55,32 @@
 
 // Revealing module pattern
 
-let Bank = (function () {
-  let bankbalance = 12000; 
+// let Bank = (function () {
+//   let bankbalance = 12000; 
 
-  function checkBalance(val) {
-    console.log(bankbalance);
-  }
+//   function checkBalance(val) {
+//     console.log(bankbalance);
+//   }
 
-  function setBalanace(val) {
-    bankbalance = val;
-  }
+//   function setBalanace(val) {
+//     bankbalance = val;
+//   }
 
-  function withdraw(val) {
-    if (val <= bankbalance) {
-      bankbalance -= val;
-      console.log(bankbalance);
-    }
-  }
+//   function withdraw(val) {
+//     if (val <= bankbalance) {
+//       bankbalance -= val;
+//       console.log(bankbalance);
+//     }
+//   }
 
-  return { 
-    check: checkBalance,
-    set: setBalanace,
-    draw: withdraw,
-  };
-})();
+//   return { 
+//     check: checkBalance,
+//     set: setBalanace,
+//     draw: withdraw,
+//   };
+// })();
 
-Bank.check();
+// Bank.check();
 
 // revealing module pattern mai naam bhi change kardete hai ki jo return karke bheja hai uska naam bhi set karlo
 
@@ -95,3 +95,27 @@ Bank.check();
 // Har baar jab tum factory cfunction call kate ho , tumhe ek naya object milta hai jisme apne methods aur ( agar chaho to) private data ho sakta hai.
 
 // Yeh pattern specially useful hai jab tumhe ek hi type ke bohot saare objects chahiye, jaise users , products , tasks , etc.
+
+
+function createproduct(nam ,price) {
+    let stock =10;
+
+    return{
+        name,
+        price,
+        buy(qty){
+            if(qty <= stock){
+                stock -= qty;
+                console.log(`booked - ${stock} pieces left.`);
+            }else{
+                // console.error(" WE don't have this many pieces ");
+                console.error(`We only have ${stock} pieces left`);
+            }
+        },
+        refill(qty){
+            stock += qty;
+            console.log(`refilled - ${stock} pieces now.`);
+        },
+    }
+}
+
