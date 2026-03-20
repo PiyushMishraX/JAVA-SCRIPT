@@ -9,13 +9,15 @@ class YoutubeChannel {
 
     subscribe(user){
         this.subscribers.push(user);
-        user.update(`You have subscribed the channel.`);
+        user.update(`${user.name}, have subscribed the channel.`);
     }
     unsubscribe(user){
-        this.subscribers.filter(sub=> sub !== user); // jo user hatana hai usme false aana chahiye return mai so job tak user sub ke barabar nahi hai un sabko subscriber mei add kardo job user aaye to false aa jayega 
-        user.update(`You have subscribed the channel.`);
+        this.subscribers = this.subscribers.filter(sub=> sub !== user); // jo user hatana hai usme false aana chahiye return mai so job tak user sub ke barabar nahi hai un sabko subscriber mei add kardo job user aaye to false aa jayega 
+        user.update(`${user.name}, have un-subscribed the channel.`);
     }
-    notify(){}
+    notify(message){
+        this.subscribers.forEach(sub => sub.update(message));
+    }
 }
 
 class User {
@@ -24,7 +26,7 @@ class User {
     }
 
     update(data){
-        console.log(data);
+        console.log(`${this.name}, ${data}`);
     }
 
 }
@@ -32,5 +34,11 @@ class User {
 let channel = new YoutubeChannel();
 
 let user1 = new User("piyush");
-
 channel.subscribe(user1);
+
+let user2 = new User("Amit");
+channel.subscribe(user2);
+
+// channel.unsubscribe(user1);
+
+channel.notify("new video is live on the channel...");
