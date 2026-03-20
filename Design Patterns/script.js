@@ -100,9 +100,13 @@
 function createproduct(nam ,price) {
     let stock =10;
 
+    // bina classes or contructor ke object 
     return{
         name,
         price,
+        checkStock(){
+            console.log(`${stock}`);
+        },
         buy(qty){
             if(qty <= stock){
                 stock -= qty;
@@ -121,4 +125,12 @@ function createproduct(nam ,price) {
 
 let iphone = createproduct("iphone", 70000); // ye object ban gaya return se
 
-iphone.buy(100);
+iphone.buy(10);
+iphone.checkStock();
+// fucntion ek facotry jaise kaam karta hai naye naye objects banane ke liye
+
+let kitkat = createproduct("kitkat" , 10);
+
+kitkat.buy(5);
+
+iphone.checkStock();
