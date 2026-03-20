@@ -6,6 +6,8 @@
 
 // deboucing - koi action kar rahe and aap ye nahi chahate har action pe kuchh h , jab bhi mere actons ke bech mein koi specific gap aa jaye to fir action ka reaction perform ho
 
+
+
 // document.querySelector("input")
 // .addEventListener("input", function(){
 //     console.log("hey"); // har input pe reaction ,mila
@@ -40,6 +42,8 @@
 // function debounce(fnc, delay) {
 //   //  console.log("debouce shuru mai chala gaya reading ke time hi  problem"); //  ewebsite load hone par hi chal gaya
 
+
+
 //   // isse bachane ke liye andar ek aur fn laga diya return mai
 
 //   let timer;
@@ -73,32 +77,43 @@
 // throttle -> interval par chalunga, action agar hota raha and aapne ek interval batyaa tio utne invertal me aapka event chaalega
 
 
-let input = document.querySelector("input");
+// let input = document.querySelector("input");
 
-function debounce(fnc, delay) {
-  let timer;
-  return function (...args) {
-    clearTimeout(timer); 
-    timer = setTimeout(() => {
-      fnc(...args);
-    }, delay);
-  }; 
-}
+// function debounce(fnc, delay) {
+//   let timer;
+//   return function (...args) {
+//     clearTimeout(timer); 
+//     timer = setTimeout(() => {
+//       fnc(...args);
+//     }, delay);
+//   }; 
+// }
 
-function throttle(fnc, delay){
-    let timer = 0; // time
-    return function(...args){
-        let now = Date.now();
-        if(now - timer >= delay){
-            timer = now;
-            fnc(...args);
-        }
-    }
-}
+// function throttle(fnc, delay){
+//     let timer = 0; // time
+//     return function(...args){
+//         let now = Date.now();
+//         if(now - timer >= delay){
+//             timer = now;
+//             fnc(...args);
+//         }
+//     };
+// }
 
-input.addEventListener(
-  "input",
-  throttle(function (dets ) {
-    console.log("ran");
-  }, 1000),
-); 
+// input.addEventListener(
+//   "input",
+//   throttle(function (dets ) {
+//     console.log("ran");
+//   }, 1000),
+// ); 
+
+
+// throttle first ime readin gmai chal gaya , fir returened function niche aaya 
+
+
+
+
+
+
+// Lazy loading images -- jitna area dikhana hai view mai utni load karo aur fir jab scroll ho tab unhe load karo bas
+// intersection observer ke madad se lazy loading 
