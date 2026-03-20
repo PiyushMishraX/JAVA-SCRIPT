@@ -89,21 +89,49 @@
 
 // aap ek promies banate hai jo ki do states mei se ek state mei ja sakta ha and ya to woo resolve hoga ya to wo reject hoga , ab wo kya hoga ye to waqt b atayega par humein dono ke liye code likhana pata hai
 
+// let pr = new Promise(function (res,rej) {
+//     setTimeout(() => {
+//         // res("Piyush");
+//         let rn = Math.floor(Math.random()*10);
+//         // if(rn > 5) res("resolved with " ,  rn); // comma nahi + kyuki ye console nahi hai
+//         if(rn > 5) res("resolved with " +  rn); // then ke fun mei rn jayega
+//         else rej("rejected with "+ rn); // value caatch mei jayegi  
+//     }, 3000); // 3 sec tak pending state fir resolve
+// });
+
+// pr
+// .then(function (val) {
+//     console.log(val);
+// }) //agar resolve
+// .catch(function(val){
+//     console.log(val);
+// }) // reolve reject
+
+// pr states - pending fullfilled with    resolve, with reject  rejected
+
+
+
+
+// async / await syntax , error handling with try-catch
+
+
+
+// async / await save .then .catch syntaxx writing
+
 let pr = new Promise(function (res,rej) {
     setTimeout(() => {
-        // res("Piyush");
         let rn = Math.floor(Math.random()*10);
-        if(rn > 5) res("resolved with " +  rn); // then ke fun mei rn jayega
-        else rej("rejected with "+ rn); // value caatch mei jayegi  
-    }, 3000); // 3 sec tak pending state fir resolve
+        if(rn > 5) res("resolved with " +  rn);
+        else rej("rejected with "+ rn); 
+    }, 3000); 
 });
 
-pr
-.then(function (val) {
-    console.log(val);
-}) //agar resolve
-.catch(function(val){
-    console.log(val);
-}) // reolve reject
+// better way to handle resolve reject
 
-// pr states - pending fullfilled with    resolve, with rejectrejected
+async function abcd(){
+    let val = await pr; // await matlab wait karo jabtak uska res rej ka pura result nahi aata
+
+    
+}
+
+abcd();
