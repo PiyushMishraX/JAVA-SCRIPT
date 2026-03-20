@@ -80,3 +80,11 @@ profileLekarAao("piyush", function(data){
         })
     });
 });
+
+
+
+// promises - improve callback hell
+
+// prommises
+
+// aap ek promies banate hai jo ki do states mei se ek state mei ja sakta ha and ya to woo resolve hoga ya to wo reject hoga , ab wo kya hoga ye to waqt b atayega par humein dono ke liye code likhana pata hai
