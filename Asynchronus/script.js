@@ -40,27 +40,27 @@
 
 
 // code mei ye library mei likha hota hai apni pass use chalate hai  bas
-function profileLekarAao(username, cb){
-    console.log("Fetching profile data ...");
-    setTimeout(() => {
-        console.log(`profile petch of ${username}`);
-        cb({_id:12122, username, age:20 , email: "a@a.a"}); //callback
-    }, 2000);
-}
+// function profileLekarAao(username, cb){
+//     console.log("Fetching profile data ...");
+//     setTimeout(() => {
+//         console.log(`profile petch of ${username}`);
+//         cb({_id:12122, username, age:20 , email: "a@a.a"}); //callback
+//     }, 2000);
+// }
 
-function saarePostLeakarAao(id, cb){
-    console.log("Fetching all posts ...");
-    setTimeout(() => {
-        cb({_id: id , posts: [ "hey", "hello", "good morning"]})
-    }, 3000);
-}
-function savedPostsNIkaalo(id , cb){
-    console.log("Fetching saved posts ...")
-    setTimeout(() => {
-       cb({_id: id , saved: [1,2,3,3,4,45,4,323]})     
-    }, 3000
-);
-}
+// function saarePostLeakarAao(id, cb){
+//     console.log("Fetching all posts ...");
+//     setTimeout(() => {
+//         cb({_id: id , posts: [ "hey", "hello", "good morning"]})
+//     }, 3000);
+// }
+// function savedPostsNIkaalo(id , cb){
+//     console.log("Fetching saved posts ...")
+//     setTimeout(() => {
+//        cb({_id: id , saved: [1,2,3,3,4,45,4,323]})     
+//     }, 3000
+// );
+// }
 
 
 // ham ye chalate hai // jaise axios.get mai axios kisi library ka fn hai aur ham use use karte hai call back se
@@ -71,15 +71,15 @@ function savedPostsNIkaalo(id , cb){
 // this nested calback is called callback hell , ek callabck ke andar aur callback 
 // it is not written now or in real we use async and await it can be legacy codes
 
-profileLekarAao("piyush", function(data){
-    console.log(data);
-    saarePostLeakarAao(data._id, function(posts){
-        console.log(posts);
-        savedPostsNIkaalo(data._id, function(saved){ 
-            console.log(saved);
-        })
-    });
-});
+// profileLekarAao("piyush", function(data){
+//     console.log(data);
+//     saarePostLeakarAao(data._id, function(posts){
+//         console.log(posts);
+//         savedPostsNIkaalo(data._id, function(saved){ 
+//             console.log(saved);
+//         })
+//     });
+// });
 
 
 
@@ -88,3 +88,22 @@ profileLekarAao("piyush", function(data){
 // prommises
 
 // aap ek promies banate hai jo ki do states mei se ek state mei ja sakta ha and ya to woo resolve hoga ya to wo reject hoga , ab wo kya hoga ye to waqt b atayega par humein dono ke liye code likhana pata hai
+
+let pr = new Promise(function (res,rej) {
+    setTimeout(() => {
+        // res("Piyush");
+        let rn = Math.floor(Math.random()*10);
+        if(rn > 5) res(rn);
+        else rej(rn);
+    }, 3000); // 3 sec tak pending state fir resolve
+});
+
+pr
+.then(function (val) {
+    console.log(val);
+}) //agar resolve
+.catch(function(val){
+    console.log(val);
+}) // reolve reject
+
+// pr states - pending fullfilled with    resolve, with rejectrejected
