@@ -119,3 +119,6 @@ function createproduct(nam ,price) {
     }
 }
 
+let iphone = createproduct("iphone", 70000); // ye object ban gaya return se
+
+iphone.buy(100);
