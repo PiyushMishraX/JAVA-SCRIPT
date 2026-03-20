@@ -26,16 +26,31 @@
 // data in body as redeable stream so con't read it 
 // raw data hidden coomputed , can't be readed
 
+// fetch("https://randomuser.me/api/")
+// .then((rawdata)=> { 
+//     return rawdata.json();
+// })
+// .then((data)=>{
+//     // console.log(data);
+//     // console.log(data.results);
+//     // console.log(data.results[0].name);
+//     console.log(data.results[0].name.first);
+// })
+// .catch((err)=> {
+//     console.log(err);
+// });
+
+// using implicit  return
 fetch("https://randomuser.me/api/")
-.then((rawdata)=> { 
-    return rawdata.json();
-})
-.then((data)=>{
-    // console.log(data);
-    // console.log(data.results);
-    // console.log(data.results[0].name);
-    console.log(data.results[0].name.first);
-})
-.catch((err)=> {
-    console.log(err);
-});
+.then((raw)=>  raw.json()) // implicit return
+.then((data)=> console.log(data.results[0].name.first));
+
+
+// not like that
+// fetch("https://randomuser.me/api/")
+// .then((rawdata)=> { 
+//     console.log(rawdata.json()); // nonot like that 
+// })
+// .catch((err)=> {
+//     console.log(err);
+// });
