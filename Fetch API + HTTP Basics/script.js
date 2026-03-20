@@ -57,6 +57,36 @@
 
 
 // multiple user 
-fetch("https://randomuser.me/api/?results=5")
-.then((raw)=>  raw.json()) // implicit return
-.then((data)=> console.log(data));
+// fetch("https://randomuser.me/api/?results=5")
+// .then((raw)=>  raw.json()) // implicit return
+// .then((data)=> console.log(data));
+
+// get ,  post abhi sikh nahi sakte - kyuki backend mei heavily dependent hai
+// headers also back related hai
+
+// status codes -
+// 1 Informational responses (100 – 199)
+// 2 Successful responses (200 – 299) // suucess data bhejna ya retrive mei
+// 3 Redirection messages (300 – 399)
+// 4 Client error responses (400 – 499)
+// 5 Server error responses (500 – 599)
+
+// sttus codes - data propely aaya ki nahi kya status hai 
+
+// json parsing
+// raw.json()
+
+
+// form submission via fetch // form manually submit karana
+ let form = document.querySelector("form");
+
+ form.addEventListener("click" , function(evt){
+    evt.preventDefault(); // ab submit nahi hoga
+
+    // fetch se manually send ho jaayega
+    fetch("url", {
+        method: "POST",
+        // data sending use body only in json format
+        body: JSON.stringify()
+    });
+ })
