@@ -16,3 +16,37 @@
 //   let bankbalance = 12000; // canot be excessed directly private variablE
 // })();
 
+let Bank = (function () {
+  let bankbalance = 12000; // bahar kuch access nahi hoga
+
+  function checkBalance(val) {
+    console.log(bankbalance);
+  }
+
+  function setBalanace(val) {
+    bankbalance = val;
+  }
+
+  function withdraw(val) {
+    if (val <= bankbalance) {
+      bankbalance -= val;
+      console.log(bankbalance);
+    }
+  }
+
+  //   return 12;
+  return {
+    checkBalance, // bholo mat fn bhi value jais e use ho sakta hai
+    setBalanace,
+    withdraw,
+  };
+})();
+
+// Bank.checkBalance(); // cann't read when not returned 
+
+Bank.checkBalance();
+Bank.withdraw(11000);
+Bank.setBalanace(10000);
+Bank.checkBalance();
+
+// moodule pattern mai jop bhi banayege iife ke andar banayenge wo private ho jaayega aur iife ke andar se object return karana hota hai 
