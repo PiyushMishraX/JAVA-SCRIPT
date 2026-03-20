@@ -93,8 +93,8 @@ let pr = new Promise(function (res,rej) {
     setTimeout(() => {
         // res("Piyush");
         let rn = Math.floor(Math.random()*10);
-        if(rn > 5) res(rn);
-        else rej(rn);
+        if(rn > 5) res("resolved with " +  rn); // then ke fun mei rn jayega
+        else rej("rejected with "+ rn); // value caatch mei jayegi  
     }, 3000); // 3 sec tak pending state fir resolve
 });
 
