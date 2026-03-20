@@ -79,14 +79,22 @@
 
 // form submission via fetch // form manually submit karana
  let form = document.querySelector("form");
+ let name = document.querySelector("#name");
+ let email = document.querySelector("#email");
+ let password = document.querySelector("#password");
+
 
  form.addEventListener("click" , function(evt){
     evt.preventDefault(); // ab submit nahi hoga
 
     // fetch se manually send ho jaayega
-    fetch("url", {
+    fetch("url", { // url jisme data bhejna hai
         method: "POST",
         // data sending use body only in json format
-        body: JSON.stringify()
+        body: JSON.stringify(
+            name,
+            email,
+            password
+        )
     });
  })
