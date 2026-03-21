@@ -31,3 +31,8 @@
 
 
 // for css if we want to change multiple properties so create a class add them in it and attach the class
+
+
+// Reflow occurs when the browser recalculates the layout of elements on the page, such as their positions, sizes, or dimensions.  This happens due to changes like modifying width, height, margin, padding, font-size, or adding/removing DOM elements. Reflow is expensive because it may require recalculating the entire layout tree and affects the document flow. 
+
+// Repaint (or redraw) happens when an element’s visual properties change without affecting layout—such as color, background-color, border-color, visibility, box-shadow, or opacity.  Repaint is less costly than reflow but still impacts performance since the browser must redraw affected pixels. 
