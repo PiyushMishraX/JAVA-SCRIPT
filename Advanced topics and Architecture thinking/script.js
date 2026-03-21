@@ -5,7 +5,7 @@
 // dom ka uui ka code and logic ka code alag likhna chahiye
 // custom utilitits
 
-// deep clone - 45 mins sheriyans
+// deep clone
 // how js works in browser
 
 
@@ -85,7 +85,7 @@
 // })
 
 
-// DEEP CLONE -- 45 mins sher video deep copy and shallow copy 
+// DEEP CLONE 
 
 
 
