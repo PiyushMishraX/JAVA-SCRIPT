@@ -37,21 +37,32 @@
 
 
 // Spearation
-function add(n1,n2) {
-    // logic
-    return n1 + n2;
-}
+// function add(n1,n2) {
+//     // logic
+//     return n1 + n2;
+// }
 
-btn.addEventListener("click", function(){
-    const num1 = Math.floor(Math.random()*10);
-    const num2 = Math.floor(Math.random()*10);
+// btn.addEventListener("click", function(){
+//     const num1 = Math.floor(Math.random()*10);
+//     const num2 = Math.floor(Math.random()*10);
 
-    let finalAdd = add(num1, num2);
-    // DOM
-    let li = document.createElement("li");
-    li.textContent = finalAdd;
-    ul.appendChild(li);
+//     let finalAdd = add(num1, num2);
+//     // DOM
+//     let li = document.createElement("li");
+//     li.textContent = finalAdd;
+//     ul.appendChild(li);
 
-});
+// });
 
 // logic , DOM , api calling etc alag
+
+
+
+
+// CUSTOM UTILITIES - 
+
+// create my own map filter reduce functions etc
+// if no map function exists in js we will create our own
+
+// map-> ek array e top pe chalta hai and us array ke sabhi memebr us map function ke andar aate and map funtion ek naya array return karta hai and us naye array mai jo bhi map ne return kiya hoga wahi placed hota hai
+
