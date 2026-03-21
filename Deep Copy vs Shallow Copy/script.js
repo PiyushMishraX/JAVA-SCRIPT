@@ -44,6 +44,49 @@
 
 
 // a very deep object
+// var obj = {
+//     name:  "piyush",
+//     age: 20,
+//     scoial: {
+//         facebook: {
+//             ac1: "a@gmail.com",
+//             ac2: "a@gmail.com",
+//         },
+//         twitter: {
+//             free:{
+//                  ac1: "a@gmail.com",
+//             },
+//             paid: {
+//                  ac1: "a@gmail.com",
+//             }
+//         }
+//     }
+// }
+
+// var obj2 = {...obj};
+
+// console.log(obj);
+// console.log(obj2); 
+
+// obj2.scoial.facebook.ac1 = "changed";
+
+// console.log(obj.scoial.facebook.ac1);
+// console.log(obj2.scoial.facebook.ac1);
+
+// obj2.scoial.facebook = "f-changed";
+
+// console.log(obj.scoial.facebook);
+// console.log(obj2.scoial.facebook);
+
+// shallow copy hota hai jab aap kisi object ko copy kare object.assign ke through ya fir spread operator ke through , in dono hi case mein top level properties(props) to copy ho jati hai par kisi bhi nested object ki properties copy hone ki jagah fir se refernce pass kar deti hai 
+
+// nested objected ke andar change hua to main mein change ho jaayega , uuka reference hi paas hota hai 
+
+
+
+// Deep Copy - exact copy ( even if nested proper duplicate is created)
+
+
 var obj = {
     name:  "piyush",
     age: 20,
@@ -54,16 +97,24 @@ var obj = {
         },
         twitter: {
             free:{
-                 ac1: "a@gmail.com",
+                ac1: "a@gmail.com",
             },
             paid: {
-                 ac1: "a@gmail.com",
+                ac1: "a@gmail.com",
             }
         }
     }
 }
 
-var obj2 = {...obj};
+// no logic - method one line code , interviewrs genrally rejecty it or ask the real proper method - 
+
+// {a: 1, b:2 } pass refernce
+// '{a: 1, b:2 }' - can be copied to make proper copy
+
+// JSON.stringify({a: 1, b:2 })
+
+
+var obj2 = JSON.parse(JSON.stringify(obj)); // real deep copy created  // beacause obj converted to string , primitive data type instead of refernce data type
 
 console.log(obj);
 console.log(obj2); 
@@ -72,14 +123,3 @@ obj2.scoial.facebook.ac1 = "changed";
 
 console.log(obj.scoial.facebook.ac1);
 console.log(obj2.scoial.facebook.ac1);
-
-obj2.scoial.facebook = "f-changed";
-
-console.log(obj.scoial.facebook);
-console.log(obj2.scoial.facebook);
-
-// shallow copy hota hai jab aap kisi object ko copy kare object.assign ke through ya fir spread operator ke through , in dono hi case mein top level properties(props) to copy ho jati hai par kisi bhi nested object ki properties copy hone ki jagah fir se refernce pass kar deti hai 
-
-// nested objected ke andar change hua to main mein change ho jaayega , uuka reference hi paas hota hai 
-
-
