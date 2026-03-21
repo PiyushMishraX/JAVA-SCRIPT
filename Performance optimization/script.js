@@ -272,3 +272,14 @@
 // button.removeEventListener('click', () => { console.log('hi'); });
 
 // The browser looks at the second line and says: "I don't have a listener for 'Function B' to remove." It stays looking for "Function A," which is now trapped in memory because you have no way to reference it anymore. It’s like locking a door and immediately throwing the key into the ocean.
+
+
+
+
+// MINDSET -
+// why do performance optimization
+// important for user experience 
+// so the user returns again
+// important for attension grabbing too in 1 to 2 seconds
+
+
