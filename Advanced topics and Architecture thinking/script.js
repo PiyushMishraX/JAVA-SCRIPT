@@ -36,3 +36,22 @@
 // });
 
 
+// Spearation
+function add(n1,n2) {
+    // logic
+    return n1 + n2;
+}
+
+btn.addEventListener("click", function(){
+    const num1 = Math.floor(Math.random()*10);
+    const num2 = Math.floor(Math.random()*10);
+
+    let finalAdd = add(num1, num2);
+    // DOM
+    let li = document.createElement("li");
+    li.textContent = finalAdd;
+    ul.appendChild(li);
+
+});
+
+// logic , DOM , api calling etc alag
