@@ -157,3 +157,107 @@
     // part 3. recursive call
     // deepcopy() // we don't know what is in an elemetn  ssuch as a we just recursive call with a
 // }
+
+
+
+// Program -- 
+
+// var obj = {
+//     name:  "piyush",
+//     age: 20,
+//     scoial: {
+//         facebook: {
+//             ac1: "a@gmail.com",
+//             ac2: "a@gmail.com",
+//         },
+//         twitter: {
+//             free:{
+//                 ac1: "a@gmail.com",
+//             },
+//             paid: {
+//                 ac1: "a@gmail.com",
+//             }
+//         },
+//         fun(){
+//             console.log("funny");
+//         }
+//     }
+
+// }
+
+
+
+
+// deep copy function
+
+// typeof null is object too
+// can check for it specially null === nul true
+
+// typeof {} = object
+// typeof [] = object
+
+// Array.isArray([]) ->true
+// Array.isArray({}) ->false
+
+function makeDeepCopy(obj){ // this obj is just a parameter not same as the global variable 
+
+    if(typeof obj !== 'object' || obj === null ){
+        return obj;
+    }
+
+    var copiedval = Array.isArray(obj) ? [] : {}; // blank array and blank object
+
+    // Object.keys(arr) -> give indexes in an array
+    // Object.keys(obj) -> give naem of properties in an array
+
+    var keys = Object.keys(obj); // object or indexs according to condition // keys is an array
+
+    // legth of keys (1 to n)
+    for(var i=0; i<keys.length; i++){
+        // obj[keys[i]] for i =0 -> obj[keys[0]] -> obj[name] -> 'piyush'
+        // copiedval[keys[0]] -> copiedval['name] ->  anem create hua aur vale set hui
+        copiedval[keys[i]] = makeDeepCopy(obj[keys[i]]); 
+    }
+
+    return copiedval; // return after completion
+
+}
+
+// [1,2,3,4]
+// makeDeepCopy(null);
+// var copy = makeDeepCopy({name: 'piyush', age: 20});
+// console.log(copy);
+
+
+
+var userinfo = {
+    name:  "piyush",
+    age: 20,
+    social: {
+        facebook: {
+            ac1: "a@gmail.com",
+            ac2: "a@gmail.com",
+        },
+        twitter: {
+            free:{
+                ac1: "a@gmail.com",
+            },
+            paid: {
+                ac1: "a@gmail.com",
+            }
+        },
+        fun(){
+            console.log("funny");
+        }
+    }
+
+}
+
+
+var copy = makeDeepCopy(userinfo);
+console.log(copy);
+
+copy.social.facebook.ac1 = "changed";
+
+console.log(userinfo.social.facebook.ac1);
+console.log(copy.social.facebook.ac1);
