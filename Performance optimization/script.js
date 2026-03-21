@@ -120,3 +120,30 @@
 // agar koi eleement scrren ke niche hai usko observe kar rahe ki jaise hi wo screen ke andar aaye , tab koi action perform kare
 
 
+/// images dekhna ki wo viewport ke andar aa rahi hai
+
+// document.querySelectorAll("img").forEach(entry => {
+//     entry.classList.add("loaded");
+//     entry.src = entry.dataset.src;
+// });
+
+
+
+// let img = document.querySelectorAll("img");
+
+// observer using api  of instersection observer
+// const observer0 = new IntersectionObserver(function(entries, obserer){
+//    entries.forEach(function(entry){
+//     if(entry.isIntersecting){
+//         const img = entry.target;
+//         img.classList.add("loaded");
+//         img.src = img.dataset.src;
+//     }
+//    });
+// }, {
+//     root: null, // view port ko manega
+//     threshold: 0.1, // 10 percent 
+// })
+
+
+
