@@ -158,4 +158,11 @@
 // jo call stack mai hota hai  usse chalate hai
 
 // set timeout directly call stack mai nahi jata kyuki wo asynchronus hai
-// wo jaata hai call back queue mai and wait karta hai , jab mein stack khali ho jaayega tab wo jaaayega mein stack mein fir exectre hoga
+// wo jaata hai call back queue mai and wait karta hai , jab mein stack khali ( totally ) ho jaayega tab wo jaaayega mein stack mein fir exectre hoga
+
+// agar 5 sec ka timeout bana to pehle wo chalega behind the scenes fir task queue mei jaayega
+
+// Event loop
+// the component checking if call stack is empty or not is event loop ( it takes one element from task queue input it in call stack execute it and empty it out from call stack and then take the next queue element )
+
+
