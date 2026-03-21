@@ -99,21 +99,34 @@
 // Function complete hone ke baad stack se nikal jata hai ( pop ho jata hai ).
 
 
-function a() {
-    console.log("a");
-    // c()  - RangeError: Maximum call stack size exceeded
-}
-function b() {
-    a();
-    console.log("b");
-}
-function c() {
-    b();
-    console.log("c");
-}
-c();
+// function a() {
+//     console.log("a");
+//     // c()  - RangeError: Maximum call stack size exceeded
+// }
+// function b() {
+//     a();
+//     console.log("b");
+// }
+// function c() {
+//     b();
+//     console.log("c");
+// }
+// c();
 
-// c-> b -> a-> print a ->b-> print b -> c -> print c
-// sab functions call stack mai jaate jaate fir jab top wala return hota hai ya call end hoti he to wo pop hota he fir niche wala end hoke stack se pop hote jata hai , jab tak call stack en dnahi  ho jata
+// // c-> b -> a-> print a ->b-> print b -> c -> print c
+// // sab functions call stack mai jaate jaate fir jab top wala return hota hai ya call end hoti he to wo pop hota he fir niche wala end hoke stack se pop hote jata hai , jab tak call stack en dnahi  ho jata
 
 
+// WEB APIs
+
+// console setTimeout setInterval alert prompt 
+// js ka part nahi hoti hai ( this are webs apis)
+
+// js mai x features hai and browser ke khud ke y features hai , to user ke pass total x+y feature honge
+// x features js ka part hai
+// y features brwoser(chrome ) ke part hai - that are called web apis
+
+// alert();
+
+
+// in nodejs these web apis don't work even console don't work ( they have custom things)
