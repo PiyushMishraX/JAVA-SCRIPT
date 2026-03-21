@@ -184,11 +184,17 @@
 // split in 100 200 500 ... lines and load them when needed 
 
 
-const btn = document.querySelector("button");
+// const btn = document.querySelector("button");
 
-btn.addEventListener("click", async function(){
-    // import() // asynchronus hota hai load hota tab bas chalte only ye lkhne se baad ko cod ephele chal jata hai await se ispe code ruk jaayega loading tak
-    // await se pehle ye line chalegi fir aageka chalega
-    let heavy = await import("./heavy.js"); // heavy object hai jisme data aaya not the function but whole with all exports from heavy.js
-    heavy.veryHeavy();
-});
+// btn.addEventListener("click", async function(){
+//     // import() // asynchronus hota hai load hota tab bas chalte only ye lkhne se baad ko cod ephele chal jata hai await se ispe code ruk jaayega loading tak
+//     // await se pehle ye line chalegi fir aageka chalega
+//     let heavy = await import("./heavy.js"); // heavy object hai jisme data aaya not the function but whole with all exports from heavy.js
+//     heavy.veryHeavy();
+// });
+
+
+
+
+//  AVOIDING UNNECESSARY REFLOWS AND REPAINTS
+// baar baar screen mai dom change naho   - slow loading hoti hai
