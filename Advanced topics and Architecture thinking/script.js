@@ -99,5 +99,21 @@
 // Function complete hone ke baad stack se nikal jata hai ( pop ho jata hai ).
 
 
+function a() {
+    console.log("a");
+    // c()  - RangeError: Maximum call stack size exceeded
+}
+function b() {
+    a();
+    console.log("b");
+}
+function c() {
+    b();
+    console.log("c");
+}
+c();
+
+// c-> b -> a-> print a ->b-> print b -> c -> print c
+// sab functions call stack mai jaate jaate fir jab top wala return hota hai ya call end hoti he to wo pop hota he fir niche wala end hoke stack se pop hote jata hai , jab tak call stack en dnahi  ho jata
 
 
