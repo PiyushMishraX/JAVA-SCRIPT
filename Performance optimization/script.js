@@ -218,14 +218,57 @@
 
 // }, 300); // abhi bhi timer lagataar chal raha hai /
 
-let count =0;
-const int = setInterval(() => {
-    if(count < 10){
-        count++;
-        console.log(count);
-    }else{
-        clearInterval(int); // timer cleared just his interation runs then end
-        console.log("finished");
-    }
+// let count =0;
+// const int = setInterval(() => {
+//     if(count < 10){
+//         count++;
+//         console.log(count);
+//     }else{
+//         clearInterval(int); // timer cleared just his interation runs then end
+//         console.log("finished");
+//     }
 
-}, 300);
+// }, 300);
+
+
+
+// meomory leaks event listenrer 
+
+// // Problem: Adding an event listener without removing it causes a memory leak.
+// const button = document.createElement('button');
+// button.textContent = 'Click me';
+// document.body.appendChild(button);
+
+// // Add a listener using an anonymous function
+// button.addEventListener('click', () => {
+//   console.log('Button clicked');
+// });
+
+// // Remove the button from the DOM, but the listener remains
+// button.remove();
+
+// // The listener still holds a reference to the button, preventing garbage collection.
+// // Over time, repeated additions/removals without cleanup lead to memory bloat.   
+
+// const button = document.createElement('button');
+// button.textContent = 'Click me';
+// document.body.appendChild(button);
+
+// // Solution: Store a reference and remove the listener
+// const handleClick = () => {
+//   console.log('Button clicked');
+// };
+
+// button.addEventListener('click', handleClick);
+// button.remove();
+// button.removeEventListener('click', handleClick); // Now eligible for garbage collection   
+
+
+// // why passing refence instead of function directly
+// // This creates "Function A"
+// button.addEventListener('click', () => { console.log('hi'); });
+
+// // This creates "Function B" (a brand new object)
+// button.removeEventListener('click', () => { console.log('hi'); });
+
+// The browser looks at the second line and says: "I don't have a listener for 'Function B' to remove." It stays looking for "Function A," which is now trapped in memory because you have no way to reference it anymore. It’s like locking a door and immediately throwing the key into the ocean.
