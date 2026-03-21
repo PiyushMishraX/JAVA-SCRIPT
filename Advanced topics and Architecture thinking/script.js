@@ -12,3 +12,8 @@
 // ADVANCED TOPICS AN DARCHITECTURE THINKING
 
 // sepeartion of conserns - DOM vs Logic
+
+// dom ka code and logic ka code alag rehna chahiye 
+// seperation of concerns
+
+
