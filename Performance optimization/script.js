@@ -198,3 +198,34 @@
 
 //  AVOIDING UNNECESSARY REFLOWS AND REPAINTS
 // baar baar screen mai dom change naho   - slow loading hoti hai
+
+
+
+
+// MEMORY LEAKS: TIMERS AND EVENT LISTNERS
+
+// meory leaks with timers
+// SET INTERVAL LEAK
+
+// let count =0;
+// const int = setInterval(() => {
+//     if(count < 10){
+//         count++;
+//         console.log(count);
+//     }else{
+//         console.log("still chal raha hai");
+//     }
+
+// }, 300); // abhi bhi timer lagataar chal raha hai /
+
+let count =0;
+const int = setInterval(() => {
+    if(count < 10){
+        count++;
+        console.log(count);
+    }else{
+        clearInterval(int); // timer cleared just his interation runs then end
+        console.log("finished");
+    }
+
+}, 300);
