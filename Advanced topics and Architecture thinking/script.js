@@ -165,4 +165,34 @@
 // Event loop
 // the component checking if call stack is empty or not is event loop ( it takes one element from task queue input it in call stack execute it and empty it out from call stack and then take the next queue element )
 
+// setTimeout(function(){
+//     console.log("hey1 ");
+// }, 1000);
+// setTimeout(function(){
+//     console.log("hey2 ");
+// }, 1200)
+// setTimeout(function(){
+//     console.log("hey3 ");
+// }, 400);
+// setTimeout(function(){
+//     console.log("hey4 ");
+// }, 4000)
 
+// function a() {
+//     setTimeout(() => {
+//         console.log("a1");    // it will enter the call back queue too and without running this code the function returns to b - because in terms of synchronus work the callin gis complete because thsi timeout enters the queue
+//     }, 5000);
+//     console.log("a2");
+// }
+// function b() {
+//     a();
+//     console.log("b");
+// }
+// function c() {
+//     b();
+//     console.log("c");
+// }
+// c();
+
+
+// revise this - so the hold on concept  won't get weak 
