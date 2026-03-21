@@ -73,4 +73,13 @@ obj2.scoial.facebook.ac1 = "changed";
 console.log(obj.scoial.facebook.ac1);
 console.log(obj2.scoial.facebook.ac1);
 
+obj2.scoial.facebook = "f-changed";
+
+console.log(obj.scoial.facebook);
+console.log(obj2.scoial.facebook);
+
 // shallow copy hota hai jab aap kisi object ko copy kare object.assign ke through ya fir spread operator ke through , in dono hi case mein top level properties(props) to copy ho jati hai par kisi bhi nested object ki properties copy hone ki jagah fir se refernce pass kar deti hai 
+
+// nested objected ke andar change hua to main mein change ho jaayega , uuka reference hi paas hota hai 
+
+
