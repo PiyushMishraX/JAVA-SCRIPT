@@ -155,3 +155,7 @@
 // set ITme out -> web apis ke thorugh aata hai 
 // web sapis ke through jo chizze chalti, wo jab bhi complete hoti hai , hum unhe callback queue (task queue) mai dalte hai 
 
+// jo call stack mai hota hai  usse chalate hai
+
+// set timeout directly call stack mai nahi jata kyuki wo asynchronus hai
+// wo jaata hai call back queue mai and wait karta hai , jab mein stack khali ho jaayega tab wo jaaayega mein stack mein fir exectre hoga
