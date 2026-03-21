@@ -17,3 +17,22 @@
 // seperation of concerns
 
 
+// const btn = document.querySelector("button");
+// const ul = document.querySelector("ul");
+
+// ye kharab taarika hai yaha logic and dom mixed hai
+// btn.addEventListener("click", function(){
+//     const num1 = Math.floor(Math.random()*10);
+//     const num2 = Math.floor(Math.random()*10);
+
+//     // logic
+//     let add = num1 + num2; 
+
+//     // DOM
+//     let li = document.createElement("li");
+//     li.textContent = add;
+//     ul.appendChild(li);
+
+// });
+
+
