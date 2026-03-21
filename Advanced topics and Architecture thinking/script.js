@@ -137,3 +137,21 @@
 
 
 
+
+// js have two ypes of taks in js - synchronus and asynchronus jo jis order mai complete ho chala dena 
+// setTimeout(function(){
+//     console.log("hey1 ");
+// }, 1000);
+// setTimeout(function(){
+//     console.log("hey2 ");
+// }, 1200)
+// setTimeout(function(){
+//     console.log("hey3 ");
+// }, 400);
+// setTimeout(function(){
+//     console.log("hey4 ");
+// }, 4000)
+
+// set ITme out -> web apis ke thorugh aata hai 
+// web sapis ke through jo chizze chalti, wo jab bhi complete hoti hai , hum unhe callback queue (task queue) mai dalte hai 
+
