@@ -68,18 +68,36 @@
 // arr.map 
 
 // custom map
-const arr = [1,2,3,4,5];
-function myMap(arr, callback){
-    let newarr = [];
-    for (let i = 0; i < arr.length; i++) {
-        newarr.push(callback(arr[i], i , arr)); // yaha callback ka anser return hoga // i .,arr  isliy kyuki asli map mai index and arr bhai de sakte hai  
-    }
+// const arr = [1,2,3,4,5];
+// function myMap(arr, callback){
+//     let newarr = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         newarr.push(callback(arr[i], i , arr)); // yaha callback ka anser return hoga // i .,arr  isliy kyuki asli map mai index and arr bhai de sakte hai  
+//     }
 
-    return newarr;// return map mai zaaruri hai
-}
+//     return newarr;// return map mai zaaruri hai
+// }
 
-let ans = myMap([1,2,3,4], (num)=> num +3);
+// let ans = myMap([1,2,3,4], (num)=> num +3);
 
-let plustwo = myMap(arr, function(val){
-    return val + 3;
-})
+// let plustwo = myMap(arr, function(val){
+//     return val + 3;
+// })
+
+
+// DEEP CLONE -- 45 mins sher video deep copy and shallow copy 
+
+
+
+// How JS works in browser ( Event Loop , Web API , Call Stack)
+
+
+// Call stack (Execution stack )
+
+// JS single threaded hai -> ek time par ek hi kaam karta hai. // Synchronusly chalti hai 
+// Jab tum function call karte ho-> wo stack ke top pe chala jata hai.  // funtion calling iside a fucntion // function composition
+// Function complete hone ke baad stack se nikal jata hai ( pop ho jata hai ).
+
+
+
+
