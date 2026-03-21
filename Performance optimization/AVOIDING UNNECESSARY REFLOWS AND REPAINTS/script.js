@@ -11,19 +11,23 @@
 
 // create better
 
-const ul = document.querySelector("ul");
-const space = document.createDocumentFragment();
-// ek space banna dega aur ul ki jagah space mai append karen ge // jo ki dom tree se alag hai
+// const ul = document.querySelector("ul");
+// const space = document.createDocumentFragment();
+// // ek space banna dega aur ul ki jagah space mai append karen ge // jo ki dom tree se alag hai
 
-for(let i = 0; i<100 ; i++){
-    const li = document.createElement("li");
-    li.textContent = i;
-    space.appendChild(li);
-}
+// for(let i = 0; i<100 ; i++){
+//     const li = document.createElement("li");
+//     li.textContent = i;
+//     space.appendChild(li);
+// }
 
-ul.appendChild(space);
+// ul.appendChild(space);
 
 // optimaization approches - jitne screen mai dikhe utne hi load kare - fir aage ke ( 10000 mai se 100 -150 tak )
 // fir scroll ho to load karo lazy loading jese
 
 
+
+
+
+// for css if we want to change multiple properties so create a class add them in it and attach the class
