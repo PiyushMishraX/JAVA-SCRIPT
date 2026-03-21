@@ -189,6 +189,6 @@ const btn = document.querySelector("button");
 btn.addEventListener("click", async function(){
     // import() // asynchronus hota hai load hota tab bas chalte only ye lkhne se baad ko cod ephele chal jata hai await se ispe code ruk jaayega loading tak
     // await se pehle ye line chalegi fir aageka chalega
-    // let heavy = await import("./heavy.js"); // heavy object hai jisme data aaya not the function but whole with all exports from heavy.js
-    // heavy.veryHeavy();
+    let heavy = await import("./heavy.js"); // heavy object hai jisme data aaya not the function but whole with all exports from heavy.js
+    heavy.veryHeavy();
 });
