@@ -201,3 +201,12 @@
 // MINDSET- 
 
 // architecture is everything , not direct coding but architecuture of working - read it in good level to create scalable apps 
+
+
+
+
+// Performace of the website - 
+// optimization and performance (aage ki chiize ) - using debugger, folder structure , as you progress you learn 
+// react nodejs , mern projects etc
+// inspect -> performance - green 
+// LCP , ( largest contentful paint ) ->0.06 in local because no internet , netwoek involvement
