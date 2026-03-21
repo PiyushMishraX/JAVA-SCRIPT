@@ -196,3 +196,8 @@
 
 
 // revise this - so the hold on concept  won't get weak 
+
+
+// MINDSET- 
+
+// architecture is everything , not direct coding but architecuture of working - read it in good level to create scalable apps 
