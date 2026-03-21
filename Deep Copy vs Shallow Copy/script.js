@@ -25,14 +25,49 @@
 
 // real copy 
 
+// var obj = {
+//     name:  "piyush",
+//     age: 20,
+// }
+// var obj2 = {...obj}; // now actual copy created
+
+// obj2.name = "new";
+
+// console.log(obj);
+// console.log(obj2); 
+
+
+
+
+// nested objects  -
+
+
+// a very deep object
 var obj = {
     name:  "piyush",
     age: 20,
+    scoial: {
+        facebook: {
+            ac1: "a@gmail.com",
+            ac2: "a@gmail.com",
+        },
+        twitter: {
+            free:{
+                 ac1: "a@gmail.com",
+            },
+            paid: {
+                 ac1: "a@gmail.com",
+            }
+        }
+    }
 }
-var obj2 = {...obj}; // now actual copy created
 
-obj2.name = "new";
+var obj2 = {...obj};
 
 console.log(obj);
 console.log(obj2); 
 
+obj2.scoial.facebook.ac1 = "changed";
+
+console.log(obj.scoial.facebook.ac1);
+console.log(obj2.scoial.facebook.ac1);
