@@ -130,3 +130,10 @@
 
 
 // in nodejs these web apis don't work even console don't work ( they have custom things)
+
+
+// demo write window an dconsole to see them
+// alert cachews , clearTIme out , interval etc
+
+
+
