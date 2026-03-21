@@ -1,5 +1,6 @@
 // shallow copy and deep copy
 
+// only refernce passed "NO COPY" created 
 // var obj = {
 //     name: "Piyush ",
 //     age: 20,
@@ -71,3 +72,5 @@ obj2.scoial.facebook.ac1 = "changed";
 
 console.log(obj.scoial.facebook.ac1);
 console.log(obj2.scoial.facebook.ac1);
+
+// shallow copy hota hai jab aap kisi object ko copy kare object.assign ke through ya fir spread operator ke through , in dono hi case mein top level properties(props) to copy ho jati hai par kisi bhi nested object ki properties copy hone ki jagah fir se refernce pass kar deti hai 
