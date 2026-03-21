@@ -186,7 +186,7 @@
 
 // pure vs impure functions
 
-// a fnc jo baahr ki vlaue naa badle hai wo hai pure function
+// a fnc jo baahr ki value naa badle hai wo hai pure function
 
 // let a =12;
 // function abcd() {
