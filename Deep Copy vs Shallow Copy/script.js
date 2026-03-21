@@ -199,29 +199,28 @@
 // Array.isArray([]) ->true
 // Array.isArray({}) ->false
 
-function makeDeepCopy(obj){ // this obj is just a parameter not same as the global variable 
+// function makeDeepCopy(obj){ // this obj is just a parameter not same as the global variable 
 
-    if(typeof obj !== 'object' || obj === null ){
-        return obj;
-    }
+//     if(typeof obj !== 'object' || obj === null ){
+//         return obj;
+//     }
 
-    var copiedval = Array.isArray(obj) ? [] : {}; // blank array and blank object
+//     var copiedval = Array.isArray(obj) ? [] : {}; // blank array and blank object
 
-    // Object.keys(arr) -> give indexes in an array
-    // Object.keys(obj) -> give naem of properties in an array
+//     // Object.keys(arr) -> give indexes in an array
+//     // Object.keys(obj) -> give naem of properties in an array
 
-    var keys = Object.keys(obj); // object or indexs according to condition // keys is an array
+//     var keys = Object.keys(obj); // object or indexs according to condition // "keys" is an array with total number of keys in arr or object
 
-    // legth of keys (1 to n)
-    for(var i=0; i<keys.length; i++){
-        // obj[keys[i]] for i =0 -> obj[keys[0]] -> obj[name] -> 'piyush'
-        // copiedval[keys[0]] -> copiedval['name] ->  anem create hua aur vale set hui
-        copiedval[keys[i]] = makeDeepCopy(obj[keys[i]]); 
-    }
+//     // legth of keys (1 to n)
+//     for(var i=0; i<keys.length; i++){
+//         // obj[keys[i]] for i =0 -> obj[keys[0]] -> obj[name] -> 'piyush'
+//         // copiedval[keys[0]] -> copiedval['name] ->  anem create hua aur vale set hui
+//         copiedval[keys[i]] = makeDeepCopy(obj[keys[i]]);  // recurive check for the inside values 
+//     }
 
-    return copiedval; // return after completion
-
-}
+//     return copiedval; // return after completion
+// }
 
 // [1,2,3,4]
 // makeDeepCopy(null);
@@ -230,34 +229,56 @@ function makeDeepCopy(obj){ // this obj is just a parameter not same as the glob
 
 
 
-var userinfo = {
-    name:  "piyush",
-    age: 20,
-    social: {
-        facebook: {
-            ac1: "a@gmail.com",
-            ac2: "a@gmail.com",
-        },
-        twitter: {
-            free:{
-                ac1: "a@gmail.com",
-            },
-            paid: {
-                ac1: "a@gmail.com",
-            }
-        },
-        fun(){
-            console.log("funny");
-        }
+// var userinfo = {
+//     name:  "piyush",
+//     age: 20,
+//     social: {
+//         facebook: {
+//             ac1: "a@gmail.com",
+//             ac2: "a@gmail.com",
+//         },
+//         twitter: {
+//             free:{
+//                 ac1: "a@gmail.com",
+//             },
+//             paid: {
+//                 ac1: "a@gmail.com",
+//             }
+//         },
+//         fun(){
+//             console.log("funny");
+//         }
+//     }
+
+// }
+
+
+
+
+// var copy = makeDeepCopy(userinfo);
+// console.log(copy);
+
+// copy.social.facebook.ac1 = "changed";
+
+// console.log(userinfo.social.facebook.ac1);
+// console.log(copy.social.facebook.ac1);
+
+
+
+//            DEEP COPY                //
+
+
+function makeDeepCopy(obj){ 
+    if(typeof obj !== 'object' || obj === null ){
+        return obj;
     }
 
+    var copiedval = Array.isArray(obj) ? [] : {}; // 
+    var keys = Object.keys(obj); 
+
+    for(var i=0; i<keys.length; i++){
+        copiedval[keys[i]] = makeDeepCopy(obj[keys[i]]); 
+    }
+
+    return copiedval; 
 }
-
-
-var copy = makeDeepCopy(userinfo);
-console.log(copy);
-
-copy.social.facebook.ac1 = "changed";
-
-console.log(userinfo.social.facebook.ac1);
-console.log(copy.social.facebook.ac1);
