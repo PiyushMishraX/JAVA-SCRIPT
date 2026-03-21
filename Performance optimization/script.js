@@ -117,3 +117,6 @@
 
 // Lazy loading images -- jitna area dikhana hai view mai utni load karo aur fir jab scroll ho tab unhe load karo bas
 // intersection observer ke madad se lazy loading 
+// agar koi eleement scrren ke niche hai usko observe kar rahe ki jaise hi wo screen ke andar aaye , tab koi action perform kare
+
+
