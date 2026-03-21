@@ -65,4 +65,21 @@
 // if no map function exists in js we will create our own
 
 // map-> ek array e top pe chalta hai and us array ke sabhi memebr us map function ke andar aate and map funtion ek naya array return karta hai and us naye array mai jo bhi map ne return kiya hoga wahi placed hota hai
+// arr.map 
 
+// custom map
+const arr = [1,2,3,4,5];
+function myMap(arr, callback){
+    let newarr = [];
+    for (let i = 0; i < arr.length; i++) {
+        newarr.push(callback(arr[i], i , arr)); // yaha callback ka anser return hoga // i .,arr  isliy kyuki asli map mai index and arr bhai de sakte hai  
+    }
+
+    return newarr;// return map mai zaaruri hai
+}
+
+let ans = myMap([1,2,3,4], (num)=> num +3);
+
+let plustwo = myMap(arr, function(val){
+    return val + 3;
+})
