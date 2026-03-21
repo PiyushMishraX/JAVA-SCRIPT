@@ -147,26 +147,45 @@
 
 
 
-let imgs = document.querySelectorAll("img");
+// let imgs = document.querySelectorAll("img");
 
-// observer passed to to itself so we can unobserve
-const observer = new IntersectionObserver(function(entries , observer){
-    // entries are elements more than one or one that might intersect and we observe them
-    entries.forEach(function(entry){
-        if(entry.isIntersecting){
-            const img = entry.target; // entry mai target field img hai abhi
-            img.src= img.dataset.src ; // dataset -> valuye starting with data-
-            img.classList.add("loaded");
-            observer.unobserve(entry);
-        }
-    })
-}, { // function ke just badd ye
-    root: null, // can be set to a specific div or a section null means -> full screen
-    threshold: 0.1, // choote hi jab 10 percent image andar aayegi tab
+// // observer passed to to itself so we can unobserve
+// const observer = new IntersectionObserver(function(entries , observer){
+//     // entries are elements more than one or one that might intersect and we observe them
+//     entries.forEach(function(entry){
+//         if(entry.isIntersecting){
+//             const img = entry.target; // entry mai target field img hai abhi
+//             img.src= img.dataset.src ; // dataset -> valuye starting with data-
+//             img.classList.add("loaded");
+//             observer.unobserve(entry);
+//         }
+//     })
+// }, { // function ke just badd ye
+//     root: null, // can be set to a specific div or a section null means -> full screen
+//     threshold: 0.1, // choote hi jab 10 percent image andar aayegi tab
 
-})
+// })
 
-imgs.forEach(function (img) {
-    // create observer
-    observer.observe(img);
+// imgs.forEach(function (img) {
+//     // create observer
+//     observer.observe(img);
+// })
+
+
+
+
+
+// Code spliting (intro level )
+
+// code splitting by dynamic import
+
+// jitna code user ko jaruri hai utan abass loade karna
+// 2000 line ->heavy ( js )
+// split in 100 200 500 ... lines and load them when needed 
+
+
+const btn = document.querySelector("button");
+
+btn.addEventListener("click", function(){
+    
 })
